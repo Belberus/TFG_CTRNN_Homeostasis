@@ -1,0 +1,6 @@
+\select@language {spanish}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Valor de salida de una CTRNN. \textbf {Izquierda:} Un nodo autoconectado. \textbf {Derecha:} Funci\IeC {\'o}n sigmoide aplicada para calcular la salida de una neurona.\relax }}{2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema de la estructura de la red utilizada con 8 neuronas totalmente interconectadas.\relax }}{4}

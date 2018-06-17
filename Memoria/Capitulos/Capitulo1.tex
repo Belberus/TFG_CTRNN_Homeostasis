@@ -1,0 +1,48 @@
+\chapter{Introducción}
+\pagenumbering{arabic}
+Incorporar comportamiento adaptativo en agentes artificales es uno de los medios esenciales para que estos puedan desenvolverse en entornos con cambios o incertidumbre de manera satisfactoria.
+
+En ingeniería, uno de los pioneros trabajos en este ámbito se debe a William Ashby ('A Design for a Brain'), en el que se interesó por investigar como funcionan los mecanismos de
+adaptación en sistemas vivos. La tesis de Ashby fue que todos los organismos tienen ciertas variables esenciales, que deben mantenerse dentro de unos límites, y que a menudo están
+vinculadas entre sí, provocando que cambios en algunas de ellas puedan afectar a las demás. El estado de supervivencia del organismo ocurre cuando un comportamiento no mueve ninguna variable esencial
+fuera de sus límites. Al conjunto de mecanismos que permiten esta estabilidad se lo conoce como regulación homeostática. En lugar de atribuir a los organismos conductas intencionales de búsqueda de objetivos,
+Ashby exploró estos mecanismos que permitían generar un comportamiento adaptativo autoinducido mediante el mantenimiento de la estabilidad interna de sus variables esenciales.
+
+Trabajos recientes en neurociencia han mostrado que existen mecanismos reguladores homeostáticos de eficacia sináptica en el cerebro. Estos mecanismos entre neuronas están impulsados por la
+necesidad de adaptarse a los cambios que dependen de una actividad, al tiempo que mantienen la estabilidad interna.
+
+Dotar a un agente artificial de propiedades de adaptación homeostática le permitiría adaptarse y resolver problemas para los que inicialmente no fue entrenado, permitiéndole alterar sus variables
+internas hasta obtener una estabilidad completa de su sistema al mismo tiempo que ejecuta las tareas encomendadas.
+
+\section{Contexto y motivación}
+Me planteo estudiar el comportamiento..... para ...... TODO TODO TODO
+
+\section{Objetivos}
+En este trabajo de fin de grado se pretenden aplicar y analizar las ideas de
+ultrastabilidad de William Ashby en agentes artificiales. Dichos agentes serán diseñados mediante controladores
+basados en redes neuronales recurrentes a las que se les impondrá una regulación
+homeostática de su actividad sináptica (las neuronas tendrán funciones de activación
+adecuadas para generar estas estructuras de estabilidad). Los agentes serán evolucionados
+para solucionar un problema de fototaxis (búsqueda y acercamiento a una fuente de luz).
+Una vez programados agentes artificiales homeostáticos se buscará analizar:
+
+\begin{itemize}
+\item Si los agentes pueden adaptarse a cambios en las reglas del entorno, aunque no hayan
+evolucionado específicamente para resolver nuevas tareas. Se buscará probar que, tal
+como ocurre en organismos vivos, estos mecanismos de adaptación facilitan
+implícitamente el mantenimiento de estabilidad y el desarrollo de nuevos
+comportamientos.
+\item  Si en entornos sociales de agentes artificiales, donde los comportamientos para resolver
+problemas se basen en estrategias colectivas, los patrones de estabilidad son más
+robustos. Para ello se someterán las configuraciones obtenidas a estímulos ruidosos o
+perturbaciones, y mediremos el grado de estabilidad de los patrones homeostáticos.
+\end{itemize}
+
+\section{Estructura}
+La memoria cuenta con un primer apartado de introducción, seguido por otro del estado del arte, en los que se explica el contexto del problema a resolver, los principales objetivos,
+motivaciones y situación actual del ámbito en el que se desarrolla el trabajo. A continuación se encuentra el apartado de diseño e implementación, en el cual se habla sobre las distintas
+herramientas y técnicas utilizadas para la realización del trabajo. Por último, en la sección de experimentación se enuncian y se analizan los dos procesos que se han ejecutado para la
+realización de los dos objetivos anteriormente descritos.
+
+En los anexos se puede observar el tiempo invertido en este proyecto junto con las tareas las que se dedicó. Además,
+se incluye el código correspondiente en el lenguaje de programación Python desarollado para la obtención de los resultados necesarios.

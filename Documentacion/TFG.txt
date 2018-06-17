@@ -1,0 +1,24 @@
+VEHICULOS DE BRAITENBERG
+------------------------
+Definición Wikipedia: https://en.wikipedia.org/wiki/Braitenberg_vehicle
+Documentación: http://homes.lmc.gatech.edu/~mateas/courses/LCC6310-Fall2005/Syllabus2005.html
+Codigo Github: http://homes.lmc.gatech.edu/~mateas/courses/LCC6310-Fall2005/braitenberg_code.pdf
+Codigo Github: https://github.com/wiseman/braitenberg-vehicles
+
+HOMEOSTASIS
+-----------
+Ejemplo homeostat: http://stevebattle.github.io/homeostat/
+Ejemplo homeostat: https://github.com/cleinias/Homeo
+
+TUTORIAL SOBRE IA EN GENERAL
+----------------------------
+Link: http://www.cs.us.es/~fsancho/?p=doc-iaic-2017-18#Recursos
+Código del funcionamiento del tutorial: https://github.com/fsancho/IA/tree/master/11.%20Machine%20Learning/6.0
+NetLOGO para hacer practicas sobre la IA en general.
+Teoria Hebbiana: https://es.wikipedia.org/wiki/Teor%C3%ADa_hebbiana
+
+CTRNN (REDES RECURRENTES)
+--------------------------
+Información de la Wikipedia https://en.wikipedia.org/wiki/Recurrent_neural_network
+
+Alternativa en Python https://github.com/madvn/CTRNN/blob/master/README.md

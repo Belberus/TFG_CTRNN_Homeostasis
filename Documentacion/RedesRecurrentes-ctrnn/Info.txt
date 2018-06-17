@@ -1,0 +1,5 @@
+El codigo del rar es para Matlab.
+
+Información de la Wikipedia https://en.wikipedia.org/wiki/Recurrent_neural_network
+
+Alternativa en Python https://github.com/madvn/CTRNN/blob/master/README.md

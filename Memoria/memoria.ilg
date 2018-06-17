@@ -1,0 +1,7 @@
+This is makeindex, version 2.15 [TeX Live 2015] (kpathsea + Thai support).
+Scanning input file memoria.idx...
+!! Input index error (file = memoria.idx, line = 1):
+   -- Illegal page number .
+done (0 entries accepted, 1 rejected).
+Nothing written in memoria.ind.
+Transcript written in memoria.ilg.
