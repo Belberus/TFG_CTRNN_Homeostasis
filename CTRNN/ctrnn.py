@@ -136,63 +136,40 @@ def evaluate(individual):
         # Save the time the light will be on
         fitnessValues[luces][3] = time
 
-        # PreIntegration in order to let the individual stabilize
-        for ciclos in range(0, CICLOS_PREVIOS):
-            inputs[0] = 0.0
-            inputs[1] = 0.0
+        # PreIntegration in order to let the individual stabilize, only the first light
+        if (luces == 0):
+            for ciclos in range(0, CICLOS_PREVIOS):
+                inputs[0] = 0.0
+                inputs[1] = 0.0
 
-            # Sensor 1 position
-            rad1 = normalize(anguloAgente + SEPARACIONSENSOR)
-            xSensor1 = xAgente + ((RADIO_AGENTE) * math.cos(rad1))
-            ySensor1 = yAgente + ((RADIO_AGENTE) * math.sin(rad1))
+                # Sensor 1 position
+                rad1 = normalize(anguloAgente + SEPARACIONSENSOR)
+                xSensor1 = xAgente + ((RADIO_AGENTE) * math.cos(rad1))
+                ySensor1 = yAgente + ((RADIO_AGENTE) * math.sin(rad1))
 
-            # Sensor 2 position
-            rad2 = normalize(anguloAgente - SEPARACIONSENSOR)
-            xSensor2 = xAgente + ((RADIO_AGENTE) * math.cos(rad2))
-            ySensor2 = yAgente + ((RADIO_AGENTE) * math.sin(rad2))
+                # Sensor 2 position
+                rad2 = normalize(anguloAgente - SEPARACIONSENSOR)
+                xSensor2 = xAgente + ((RADIO_AGENTE) * math.cos(rad2))
+                ySensor2 = yAgente + ((RADIO_AGENTE) * math.sin(rad2))
 
-            # Angle between light and agent
-            angAgenteLuz = normalize(math.atan2(yLuz - yAgente, xLuz - xAgente) - anguloAgente)
+                # Angle between light and agent
+                angAgenteLuz = normalize(math.atan2(yLuz - yAgente, xLuz - xAgente) - anguloAgente)
 
-            # # Check if the sensors will be ON and update inputs
-            # if (angAgenteLuz <= llimit1):
-            #     ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
-            #     inputs[0] = intensidadLuz / ds1
-            #     if (angAgenteLuz <= llimit2):
-            #         ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
-            #         inputs[1] = intensidadLuz / ds2
-            # elif (angAgenteLuz >= hlimit2):
-            #     ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
-            #     inputs[1] = intensidadLuz / ds2
-            #     if (angAgenteLuz >= hlimit1):
-            #         ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
-            #         inputs[0] = intensidadLuz / ds1
-            # Check if the sensors will be ON and update inputs
-            if (angAgenteLuz <= llimit1):
-                # Square of the distance between the light and the sensor
-                ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
-                # Distance between the light and the center of the agent
-                da = distance(xAgente, yAgente, xLuz, yLuz)
-                a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds1) / (da * da)
-                if (a <= 1.0):
-                    inputs[0] = intensidadLuz / ds1
-                if (angAgenteLuz <= llimit2):
-                    # Square of the distance between the light and the sensor
-                    ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
-                    # Distance between the light and the center of the agent
-                    da = distance(xAgente, yAgente, xLuz, yLuz)
-                    a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds2) / (da * da)
-                    if (a <= 1.0):
-                        inputs[1] = intensidadLuz / ds2
-            elif (angAgenteLuz >= hlimit2):
-                # Square of the distance between the light and the sensor
-                ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
-                # Distance between the light and the center of the agent
-                da = distance(xAgente, yAgente, xLuz, yLuz)
-                a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds2) / (da * da)
-                if (a <= 1.0):
-                    inputs[1] = intensidadLuz / ds2
-                if (angAgenteLuz >= hlimit1):
+                # # Check if the sensors will be ON and update inputs
+                # if (angAgenteLuz <= llimit1):
+                #     ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
+                #     inputs[0] = intensidadLuz / ds1
+                #     if (angAgenteLuz <= llimit2):
+                #         ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
+                #         inputs[1] = intensidadLuz / ds2
+                # elif (angAgenteLuz >= hlimit2):
+                #     ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
+                #     inputs[1] = intensidadLuz / ds2
+                #     if (angAgenteLuz >= hlimit1):
+                #         ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
+                #         inputs[0] = intensidadLuz / ds1
+                # Check if the sensors will be ON and update inputs
+                if (angAgenteLuz <= llimit1):
                     # Square of the distance between the light and the sensor
                     ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
                     # Distance between the light and the center of the agent
@@ -200,23 +177,47 @@ def evaluate(individual):
                     a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds1) / (da * da)
                     if (a <= 1.0):
                         inputs[0] = intensidadLuz / ds1
+                    if (angAgenteLuz <= llimit2):
+                        # Square of the distance between the light and the sensor
+                        ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
+                        # Distance between the light and the center of the agent
+                        da = distance(xAgente, yAgente, xLuz, yLuz)
+                        a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds2) / (da * da)
+                        if (a <= 1.0):
+                            inputs[1] = intensidadLuz / ds2
+                elif (angAgenteLuz >= hlimit2):
+                    # Square of the distance between the light and the sensor
+                    ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
+                    # Distance between the light and the center of the agent
+                    da = distance(xAgente, yAgente, xLuz, yLuz)
+                    a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds2) / (da * da)
+                    if (a <= 1.0):
+                        inputs[1] = intensidadLuz / ds2
+                    if (angAgenteLuz >= hlimit1):
+                        # Square of the distance between the light and the sensor
+                        ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
+                        # Distance between the light and the center of the agent
+                        da = distance(xAgente, yAgente, xLuz, yLuz)
+                        a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds1) / (da * da)
+                        if (a <= 1.0):
+                            inputs[0] = intensidadLuz / ds1
 
-            # Multiply with the gain
-            inputs[0] = inputs[0] * gainSensor
-            inputs[0] = inputs[1] * gainSensor
+                # Multiply with the gain
+                inputs[0] = inputs[0] * gainSensor
+                inputs[0] = inputs[1] * gainSensor
 
-            # Make CTRNN RUN
-            for i in range(0, N_NEURONAS):
-                change = -outputs[i]
+                # Make CTRNN RUN
+                for i in range(0, N_NEURONAS):
+                    change = -outputs[i]
 
-                for j in range(0, N_NEURONAS):
-                    temp = outputs[j] + vBias[j]
-                    change += vW[j][i] * sigmoid(temp)
+                    for j in range(0, N_NEURONAS):
+                        temp = outputs[j] + vBias[j]
+                        change += vW[j][i] * sigmoid(temp)
 
-                change = change + inputs[i]
-                change = change / vTau[i]
+                    change = change + inputs[i]
+                    change = change / vTau[i]
 
-                outputs[i] = outputs[i] + (change * TIME_STEP)
+                    outputs[i] = outputs[i] + (change * TIME_STEP)
 
         # Once PreIntegration is finished, we can start our run
         for ciclos in range(0, time):
@@ -370,8 +371,14 @@ def evaluate(individual):
         fitnessValues[luces][1] = distance(xAgente, yAgente, xLuz, yLuz)
 
     # Rebuild the individual with the new weights
+    vBias = [(i - BIAS_MIN)/(BIAS_MAX - BIAS_MIN) for i in vBias]
+    vTau = [(i - TAU_MIN)/(TAU_MAX - TAU_MIN) for i in vTau]
+    gainMotor = (gainMotor - GAIN_MIN)/(GAIN_MAX - GAIN_MIN)
+    gainSensor = (gainSensor - GAIN_MIN)/(GAIN_MAX - GAIN_MIN)
     flatW = [item for sublist in vW for item in sublist]
     flatP = [item for sublist in vP for item in sublist]
+    flatW = [(i - W_MIN)/(W_MAX - W_MIN) for i in flatW]
+    flatP = [(i - PLASTICIY_RATE_MIN)/(PLASTICIY_RATE_MAX - PLASTICIY_RATE_MIN) for i in flatP]
     indiv = vBias + vTau + [gainMotor] + [gainSensor] + flatW + flatP + vPType
     individual = indiv[:]
 
@@ -392,8 +399,8 @@ def evaluate(individual):
 
         Fh = homeostaticas / N_NEURONAS
 
-        # finalFitness.append((Fd * 0.44) + (Fp * 0.44) + (Fh * 0.12))
-        finalFitness.append((Fd * 0.2) + (Fp * 0.8))
+        finalFitness.append((Fd * 0.34) + (Fp * 0.54) + (Fh * 0.12))
+        # finalFitness.append((Fd * 0.2) + (Fp * 0.8))
 
 
     return (sum(finalFitness) / N_LUCES),
@@ -418,7 +425,7 @@ INTENSIDAD_LUZ_MAX = 1500 # Max. value of light intensity
 SEPARACIONSENSOR = 1.0472 # Separation between sensor position and agent axis angle, 60º
 VISIONSENSOR = 1.39626 # Reading arc of the sensor in wich it reads light inputs, 80
 
-T = 800 # Variable to calculate the time the lightsource will be on
+T = 1600 # Variable to calculate the time the lightsource will be on
 
 W_MAX = 10.0
 W_MIN = -10.0
@@ -464,7 +471,7 @@ if __name__ == "__main__":
 
     # Begin evolution
     generations = 0.0
-    while(max(fits) < 0.89):
+    while(max(fits) < 0.95):
         generations = generations + 1
         print("Generation number: ", generations)
         print("Best fitness at the moment: ", max(fits))
@@ -481,7 +488,6 @@ if __name__ == "__main__":
         for child1, child2 in zip(offspring[::2], offspring[1::2]):
             if (random.random() < 0.5):
                 toolbox.crossover(child1, child2, 0.5)
-                # toolbox.crossover(child1, child2)
                 del child1.fitness.values
                 del child2.fitness.values
 
