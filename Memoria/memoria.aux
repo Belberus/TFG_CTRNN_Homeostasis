@@ -8,43 +8,105 @@
 \@writefile{toc}{\select@language{spanish}}
 \@writefile{lof}{\select@language{spanish}}
 \@writefile{lot}{\select@language{spanish}}
-\@writefile{toc}{\contentsline {chapter}{Lista de Figuras}{XI}}
-\@writefile{toc}{\contentsline {chapter}{Lista de Tablas}{XIII}}
+\@writefile{toc}{\contentsline {chapter}{Lista de Figuras}{IX}}
+\@writefile{toc}{\contentsline {chapter}{Lista de Tablas}{XI}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {1.1}Contexto y motivaci\IeC {\'o}n}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Contexto y motivaci\IeC {\'o}n}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Objetivos}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.3}Estructura}{2}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.3}Estructura}{3}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Estado del arte}{1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Dise\IeC {\~n}o e implementaci\IeC {\'o}n}{1}}
+\@writefile{toc}{\contentsline {subsubsection}{H\IeC {\'a}bitos}{1}}
+\@writefile{toc}{\contentsline {subsubsection}{Agentes artificiales basados en h\IeC {\'a}bitos: Operativizaci\IeC {\'o}n de la noci\IeC {\'o}n de homeostasis}{2}}
+\citation{DiPaolo_1}
+\citation{DiPaolo_2}
+\citation{DiPaolo_3}
+\citation{MathayomchanBeer}
+\citation{HoinvilleHenaff}
+\citation{TurrigianoGG}
+\@writefile{toc}{\contentsline {subsubsection}{Controladores con plasticidad homeost\IeC {\'a}tica}{3}}
+\citation{JesperDario}
+\citation{FunaYNaka}
+\@writefile{toc}{\contentsline {subsubsection}{Controladores dise\IeC {\~n}ados mediante computaci\IeC {\'o}n evolutiva}{4}}
+\citation{Nolfi}
+\@writefile{toc}{\contentsline {subsubsection}{Conclusiones}{5}}
+\citation{BeerRD}
+\citation{FunaYNaka}
+\citation{BeerRD}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Fundamentos te\IeC {\'o}ricos}{1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}Redes neuronales recurrentes de tiempo continuo (CTRNN)}{1}}
 \@writefile{toc}{\contentsline {subsubsection}{Descripci\IeC {\'o}n matem\IeC {\'a}tica de una CTRNN}{1}}
 \newlabel{eq:funcionCTRNN}{{3.1}{1}}
 \newlabel{eq:funcionSIGMOIDE}{{3.2}{1}}
+\citation{BeerRD}
+\citation{Hywel}
 \@writefile{toc}{\contentsline {subsubsection}{Valores de activaci\IeC {\'o}n y de salida de la neurona de una CTRNN}{2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Valor de salida de una CTRNN. \textbf  {Izquierda:} Un nodo autoconectado. \textbf  {Derecha:} Funci\IeC {\'o}n sigmoide aplicada para calcular la salida de una neurona.\relax }}{2}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:figuraCTRNNBasica}{{3.1}{2}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}Homeostasis, ultraestabilidad y plasticidad}{2}}
-\newlabel{eq:R0plasticityRule}{{3.3}{3}}
-\newlabel{eq:R1plasticityRule}{{3.4}{3}}
-\newlabel{eq:R2plasticityRule}{{3.5}{3}}
-\newlabel{eq:R3plasticityRule}{{3.6}{3}}
-\newlabel{eq:WeightUpdate}{{3.7}{4}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Agente}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Homeostasis}{2}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema de un Homeostato individual. La unidad recibe las entradas del resto de unidades ($w_{i}s_{i}$) y de si misma ($w_{1}s_{1}$). La salida $s_{1}$ es una funci\IeC {\'o}n lineal por partes de la suma ponderada de las entradas.)\relax }}{3}}
+\newlabel{fig:figuraHomeostatSchema}{{3.2}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de funci\IeC {\'o}n de transferencia de una unidad Homeostat. La funci\IeC {\'o}n es lineal por partes con puntos en ($x_{1},j_{1}$),...,($x_{p},y_{p}$) donde $x_{1}$ = 0 y $x_{p}$ = $N$, para todas las unidades en una red de $N$ unidades. Las lineas discontinuas representan el rango homeostatico de la red.\relax }}{3}}
+\newlabel{fig:homeostatTransferFunction}{{3.3}{3}}
+\newlabel{eq:sumaPonderadaHomeostat}{{3.3}{3}}
+\newlabel{eq:ecuPartesHomeostat}{{3.4}{3}}
+\citation{JennaCarr}
+\newlabel{eq:aferenteEQ}{{3.5}{4}}
+\newlabel{eq:transferEQ}{{3.6}{4}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Algoritmo gen\IeC {\'e}tico}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Componentes, estructura y terminolog\IeC {\'\i }a}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Ejemplo de estructura de poblaci\IeC {\'o}n, cromosomas y genes.\relax }}{5}}
+\newlabel{fig:figuraPoblacionGA}{{3.4}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo de operaci\IeC {\'o}n de recombinaci\IeC {\'o}n de dos cromosomas.\relax }}{6}}
+\newlabel{fig:figuraCrossover}{{3.5}{6}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Modelo e implementaci\IeC {\'o}n}{1}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema del agente utilizado.\relax }}{1}}
+\newlabel{fig:figuraMyAgent}{{4.1}{1}}
+\newlabel{eq:VFormula}{{4.1}{1}}
+\newlabel{eq:WFormula}{{4.2}{1}}
+\newlabel{eq:newXformula}{{4.3}{2}}
+\newlabel{eq:newYformula}{{4.4}{2}}
+\newlabel{eq:newAformula}{{4.5}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.1}Controlador}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.0.2}Plasticidad}{2}}
+\newlabel{eq:R0plasticityRule}{{4.6}{3}}
+\newlabel{eq:R1plasticityRule}{{4.7}{3}}
+\newlabel{eq:R2plasticityRule}{{4.8}{3}}
+\newlabel{eq:R3plasticityRule}{{4.9}{3}}
+\newlabel{eq:WeightUpdate}{{4.10}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Agente}{3}}
 \@writefile{toc}{\contentsline {subsubsection}{Estructura de la red, simetr\IeC {\'\i }a y rangos de valores utilizados}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema de la estructura de la red utilizada con 8 neuronas totalmente interconectadas.\relax }}{4}}
-\newlabel{fig:figuraMyRed}{{3.2}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Esquema de la estructura de la red utilizada con 8 neuronas totalmente interconectadas.\relax }}{4}}
+\newlabel{fig:figuraMyRed}{{4.2}{4}}
+\newlabel{table:tablaValoresParametros}{{\caption@xref {table:tablaValoresParametros}{ on input line 125}}{4}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Rango de valores para los par\IeC {\'a}metros de la red\relax }}{4}}
 \bibstyle{unsrt}
-\bibdata{Bibliografia_TFM}
+\bibdata{Capitulos/Bibliografia}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Experimentos}{7}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\bibcite{DiPaolo_1}{1}
+\bibcite{DiPaolo_2}{2}
+\bibcite{DiPaolo_3}{3}
+\bibcite{MathayomchanBeer}{4}
+\bibcite{HoinvilleHenaff}{5}
+\bibcite{TurrigianoGG}{6}
+\bibcite{JesperDario}{7}
+\bibcite{FunaYNaka}{8}
+\bibcite{Nolfi}{9}
+\bibcite{BeerRD}{10}
+\bibcite{Hywel}{11}
+\bibcite{JennaCarr}{12}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Bibliograf\'{\i }a}{9}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
 \citation{*}
-\newlabel{table:tablaValoresParametros}{{\caption@xref {table:tablaValoresParametros}{ on input line 120}}{5}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Rango de valores para los par\IeC {\'a}metros de la red\relax }}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Evoluci\IeC {\'o}n}{5}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.5}Entorno de trabajo}{5}}
-\@writefile{toc}{\contentsline {chapter}{Anexos}{6}}
+\@writefile{toc}{\contentsline {chapter}{Anexos}{11}}

@@ -196,19 +196,6 @@ def evaluate(individual):
                 angAgenteLuz = normalize(math.atan2(yLuz - agent.posY, xLuz - agent.posX) - agent.angulo)
 
                 # # Check if the sensors will be ON and update inputs
-                # if (angAgenteLuz <= llimit1):
-                #     ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
-                #     inputs[0] = intensidadLuz / ds1
-                #     if (angAgenteLuz <= llimit2):
-                #         ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
-                #         inputs[1] = intensidadLuz / ds2
-                # elif (angAgenteLuz >= hlimit2):
-                #     ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
-                #     inputs[1] = intensidadLuz / ds2
-                #     if (angAgenteLuz >= hlimit1):
-                #         ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
-                #         inputs[0] = intensidadLuz / ds1
-                # Check if the sensors will be ON and update inputs
                 if (angAgenteLuz <= llimit1):
                     # Square of the distance between the light and the sensor
                     ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
@@ -278,20 +265,6 @@ def evaluate(individual):
 
                 # Angle between light and agent
                 angAgenteLuz = normalize(math.atan2(yLuz - agent.posY, xLuz - agent.posX) - agent.angulo)
-
-                # # Check if the sensors will be ON and update inputs
-                # if (angAgenteLuz <= llimit1):
-                #     ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
-                #     inputs[0] = intensidadLuz / ds1
-                #     if (angAgenteLuz <= llimit2):
-                #         ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
-                #         inputs[1] = intensidadLuz / ds2
-                # elif (angAgenteLuz >= hlimit2):
-                #     ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
-                #     inputs[1] = intensidadLuz / ds2
-                #     if (angAgenteLuz >= hlimit1):
-                #         ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
-                #         inputs[0] = intensidadLuz / ds1
 
                 # Check if the sensors will be ON and update inputs
                 if (angAgenteLuz <= llimit1):
@@ -421,8 +394,8 @@ def evaluate(individual):
         gainSensor = (agent.gainSensor - GAIN_MIN)/(GAIN_MAX - GAIN_MIN)
         flatW = [item for sublist in agent.vW for item in sublist]
         flatP = [item for sublist in agent.vP for item in sublist]
-        flatW = [(i - W_MIN)/(W_MAX - W_MIN) for i in agent.flatW]
-        flatP = [(i - PLASTICIY_RATE_MIN)/(PLASTICIY_RATE_MAX - PLASTICIY_RATE_MIN) for i in agent.flatP]
+        flatW = [(i - W_MIN)/(W_MAX - W_MIN) for i in flatW]
+        flatP = [(i - PLASTICIY_RATE_MIN)/(PLASTICIY_RATE_MAX - PLASTICIY_RATE_MIN) for i in flatP]
         flatW = [item for sublist in agent.vW for item in sublist]
         flatP = [item for sublist in agent.vP for item in sublist]
         indiv.extend(vBias + vTau + [gainMotor] + [gainSensor] + flatW + flatP + agent.vPType)
@@ -480,7 +453,7 @@ SEPARACIONSENSOR = 1.0472 # Separation between sensor position and agent axis an
 VISIONSENSOR = 1.39626 # Reading arc of the sensor in wich it reads light inputs, 80
 DISTANCIA_INICIAL_AGENTE_MIN = RADIO_AGENTE * 4
 DISTANCIA_INICIAL_AGENTE_MAX = RADIO_AGENTE * 8
-T = 800 # Variable to calculate the time the lightsource will be on
+T = 1600 # Variable to calculate the time the lightsource will be on
 
 W_MAX = 10.0
 W_MIN = -10.0
@@ -526,7 +499,7 @@ if __name__ == "__main__":
 
     # Begin evolution
     generations = 0.0
-    while(max(fits) < 0.89):
+    while(max(fits) < 0.95):
         generations = generations + 1
         print("Generation number: ", generations)
         print("Best fitness at the moment: ", max(fits))

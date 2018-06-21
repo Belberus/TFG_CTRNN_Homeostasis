@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.30)  14 JUN 2018 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.30)  21 JUN 2018 20:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **memoria.tex
-(/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/memoria.tex
+(/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -394,12 +394,19 @@ Package tocbibind Info: The document has chapter divisions on input line 50.
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count94
+\float@exts=\toks19
+\float@box=\box26
+\@float@everytoks=\toks20
+\@floatcapt=\box27
 ) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks19
+\pgfutil@everybye=\toks21
 \pgfutil@tempdima=\dimen107
 \pgfutil@tempdimb=\dimen108
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box26
+\pgfutil@abb=\box28
  (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
@@ -409,10 +416,10 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
  (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks20
-\pgfkeys@temptoks=\toks21
+\pgfkeys@pathtoks=\toks22
+\pgfkeys@temptoks=\toks23
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
-\pgfkeys@tmptoks=\toks22
+\pgfkeys@tmptoks=\toks24
 ))
 \pgf@x=\dimen109
 \pgf@y=\dimen110
@@ -424,13 +431,13 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \pgf@yc=\dimen116
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
-\c@pgf@counta=\count94
-\c@pgf@countb=\count95
-\c@pgf@countc=\count96
-\c@pgf@countd=\count97
-\t@pgf@toka=\toks23
-\t@pgf@tokb=\toks24
-\t@pgf@tokc=\toks25
+\c@pgf@counta=\count95
+\c@pgf@countb=\count96
+\c@pgf@countc=\count97
+\c@pgf@countd=\count98
+\t@pgf@toka=\toks25
+\t@pgf@tokb=\toks26
+\t@pgf@tokc=\toks27
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -442,8 +449,8 @@ File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 ))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count98
-\pgfsyssoftpath@bigbuffer@items=\count99
+\pgfsyssoftpath@smallbuffer@items=\count99
+\pgfsyssoftpath@bigbuffer@items=\count100
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 )) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -466,14 +473,14 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen117
-\pgfmath@count=\count100
-\pgfmath@box=\box27
-\pgfmath@toks=\toks26
-\pgfmath@stack@operand=\toks27
-\pgfmath@stack@operation=\toks28
+\pgfmath@count=\count101
+\pgfmath@box=\box29
+\pgfmath@toks=\toks28
+\pgfmath@stack@operand=\toks29
+\pgfmath@stack@operation=\toks30
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count101
+\c@pgfmathroundto@lastzeros=\count102
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen118
@@ -501,10 +508,10 @@ File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@start@additional=\dimen135
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box28
-\pgf@hbox=\box29
-\pgf@layerbox@main=\box30
-\pgf@picture@serial@count=\count102
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count103
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen136
@@ -525,12 +532,12 @@ File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen141
-\pgf@sys@shading@range@num=\count103
+\pgf@sys@shading@range@num=\count104
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box31
+\pgfexternal@startupbox=\box33
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
@@ -540,7 +547,7 @@ File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 ))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box32
+\pgfnodeparttextbox=\box34
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 ) (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
@@ -555,13 +562,13 @@ Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen144
 \pgffor@skip=\dimen145
-\pgffor@stack=\toks29
-\pgffor@toks=\toks30
+\pgffor@stack=\toks31
+\pgffor@toks=\toks32
 )) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count104
+\pgf@plot@mark@count=\count105
 \pgfplotmarksize=\dimen146
 )
 \tikz@lastx=\dimen147
@@ -570,21 +577,21 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikz@lastysaved=\dimen150
 \tikzleveldistance=\dimen151
 \tikzsiblingdistance=\dimen152
-\tikz@figbox=\box33
-\tikz@figbox@bg=\box34
-\tikz@tempbox=\box35
-\tikz@tempbox@bg=\box36
-\tikztreelevel=\count105
-\tikznumberofchildren=\count106
-\tikznumberofcurrentchild=\count107
-\tikz@fig@count=\count108
+\tikz@figbox=\box35
+\tikz@figbox@bg=\box36
+\tikz@tempbox=\box37
+\tikz@tempbox@bg=\box38
+\tikztreelevel=\count106
+\tikznumberofchildren=\count107
+\tikznumberofcurrentchild=\count108
+\tikz@fig@count=\count109
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count109
-\pgfmatrixcurrentcolumn=\count110
-\pgf@matrix@numberofcolumns=\count111
+\pgfmatrixcurrentrow=\count110
+\pgfmatrixcurrentcolumn=\count111
+\pgf@matrix@numberofcolumns=\count112
 )
-\tikz@expandcount=\count112
+\tikz@expandcount=\count113
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 ))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
@@ -610,26 +617,26 @@ File: pgflibraryshapes.arrows.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
  (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
-\pgfnodepartlowerbox=\box37
-\pgfnodeparttwobox=\box38
-\pgfnodepartthreebox=\box39
-\pgfnodepartfourbox=\box40
-\pgfnodeparttwentybox=\box41
-\pgfnodepartnineteenbox=\box42
-\pgfnodeparteighteenbox=\box43
-\pgfnodepartseventeenbox=\box44
-\pgfnodepartsixteenbox=\box45
-\pgfnodepartfifteenbox=\box46
-\pgfnodepartfourteenbox=\box47
-\pgfnodepartthirteenbox=\box48
-\pgfnodeparttwelvebox=\box49
-\pgfnodepartelevenbox=\box50
-\pgfnodeparttenbox=\box51
-\pgfnodepartninebox=\box52
-\pgfnodeparteightbox=\box53
-\pgfnodepartsevenbox=\box54
-\pgfnodepartsixbox=\box55
-\pgfnodepartfivebox=\box56
+\pgfnodepartlowerbox=\box39
+\pgfnodeparttwobox=\box40
+\pgfnodepartthreebox=\box41
+\pgfnodepartfourbox=\box42
+\pgfnodeparttwentybox=\box43
+\pgfnodepartnineteenbox=\box44
+\pgfnodeparteighteenbox=\box45
+\pgfnodepartseventeenbox=\box46
+\pgfnodepartsixteenbox=\box47
+\pgfnodepartfifteenbox=\box48
+\pgfnodepartfourteenbox=\box49
+\pgfnodepartthirteenbox=\box50
+\pgfnodeparttwelvebox=\box51
+\pgfnodepartelevenbox=\box52
+\pgfnodeparttenbox=\box53
+\pgfnodepartninebox=\box54
+\pgfnodeparteightbox=\box55
+\pgfnodepartsevenbox=\box56
+\pgfnodepartsixbox=\box57
+\pgfnodepartfivebox=\box58
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
@@ -651,10 +658,11 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen159
 \caption@hangindent=\dimen160
 )
-\c@ContinuedFloat=\count113
+\c@ContinuedFloat=\count114
+Package caption Info: float package is loaded.
 )
-\c@subfigure=\count114
-\c@subtable=\count115
+\c@subfigure=\count115
+\c@subtable=\count116
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/03 v2.15a AMS math features
 \@mathmargin=\skip43
@@ -664,7 +672,7 @@ For additional information on amsmath, use the `?' option.
 Package: amstext 2000/06/29 v2.01 AMS text
  (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks31
+\@emptytoks=\toks33
 \ex@=\dimen161
 )) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
@@ -672,54 +680,54 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count116
+\inf@bad=\count117
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count117
-\leftroot@=\count118
+\uproot@=\count118
+\leftroot@=\count119
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count119
-\DOTSCASE@=\count120
+\classnum@=\count120
+\DOTSCASE@=\count121
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box57
-\strutbox@=\box58
+\Mathstrutbox@=\box59
+\strutbox@=\box60
 \big@size=\dimen163
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count121
-\c@MaxMatrixCols=\count122
+\macc@depth=\count122
+\c@MaxMatrixCols=\count123
 \dotsspace@=\muskip10
-\c@parentequation=\count123
-\dspbrk@lvl=\count124
-\tag@help=\toks32
-\row@=\count125
-\column@=\count126
-\maxfields@=\count127
-\andhelp@=\toks33
+\c@parentequation=\count124
+\dspbrk@lvl=\count125
+\tag@help=\toks34
+\row@=\count126
+\column@=\count127
+\maxfields@=\count128
+\andhelp@=\toks35
 \eqnshift@=\dimen164
 \alignsep@=\dimen165
 \tagshift@=\dimen166
 \tagwidth@=\dimen167
 \totwidth@=\dimen168
 \lineht@=\dimen169
-\@envbody=\toks34
+\@envbody=\toks36
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks35
+\mathdisplay@stack=\toks37
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 ) (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks36
-\thm@bodyfont=\toks37
-\thm@headfont=\toks38
-\thm@notefont=\toks39
-\thm@headpunct=\toks40
+\thm@style=\toks38
+\thm@bodyfont=\toks39
+\thm@headfont=\toks40
+\thm@notefont=\toks41
+\thm@headpunct=\toks42
 \thm@preskip=\skip46
 \thm@postskip=\skip47
 \thm@headsep=\skip48
-\dth@everypar=\toks41
+\dth@everypar=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
@@ -737,15 +745,15 @@ Package: pdfpages 2015/09/18 v0.5d Insert pages of external PDF documents (AM)
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 ) (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count128
-\calc@Bcount=\count129
+\calc@Acount=\count129
+\calc@Bcount=\count130
 \calc@Adimen=\dimen170
 \calc@Bdimen=\dimen171
 \calc@Askip=\skip49
 \calc@Bskip=\skip50
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count130
+\calc@Ccount=\count131
 \calc@Cskip=\skip51
 ) (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
@@ -760,10 +768,10 @@ Package ifpdf Info: pdfTeX in PDF mode is detected.
  (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2015/09/18 v0.5d Pdfpages driver for pdfTeX (AM)
 )
-\AM@pagebox=\box59
-\AM@toc@title=\toks42
-\c@AM@survey=\count131
-\AM@templatesizebox=\box60
+\AM@pagebox=\box61
+\AM@toc@title=\toks44
+\c@AM@survey=\count132
+\AM@templatesizebox=\box62
 ) (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
@@ -780,10 +788,10 @@ Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
  (/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
  (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks43
-\XKV@tempa@toks=\toks44
+\XKV@toks=\toks45
+\XKV@tempa@toks=\toks46
 )
-\XKV@depth=\count132
+\XKV@depth=\count133
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
@@ -791,7 +799,7 @@ Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-
 Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
  (/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box61
+\collectedbox=\box63
 )
 \tc@llx=\dimen174
 \tc@lly=\dimen175
@@ -807,11 +815,11 @@ File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 \adjbox@Totalheight=\dimen181
  (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count133
+\c@checkoddpage=\count134
 ) (/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box62
-\sift@deathcycles=\count134
+\@vwid@box=\box64
+\sift@deathcycles=\count135
 \@vwid@loff=\dimen182
 \@vwid@roff=\dimen183
 )) (/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
@@ -826,39 +834,39 @@ Writing index file memoria.idx
 LaTeX Warning: Unused global option(s):
     [hidelinks].
 
-(/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/memoria.aux
+(/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
 \openout1 = `memoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Info: Redefining \. on input line 40.
+LaTeX Info: Redefining \% on input line 40.
  (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count135
+\scratchcounter=\count136
 \scratchdimen=\dimen184
-\scratchbox=\box63
-\nofMPsegments=\count136
-\nofMParguments=\count137
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count138
+\scratchbox=\box65
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks47
+\MPscratchCnt=\count139
 \MPscratchDim=\dimen185
-\MPnumerator=\count139
-\makeMPintoPDFobject=\count140
-\everyMPtoPDFconversion=\toks46
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks48
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
@@ -894,7 +902,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 )) ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box64
+\AtBeginShipoutBox=\box66
  (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
@@ -906,143 +914,141 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )) <Imagenes/UnizarLogo.png, id=4, 345.9324pt x 127.1952pt>
 File: Imagenes/UnizarLogo.png Graphic file (type png)
  <use Imagenes/UnizarLogo.png>
-Package pdftex.def Info: Imagenes/UnizarLogo.png used on input line 50.
+Package pdftex.def Info: Imagenes/UnizarLogo.png used on input line 51.
 (pdftex.def)             Requested size: 198.08806pt x 72.83583pt.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <28> not available
-(Font)              size <24.88> substituted on input line 55.
+(Font)              size <24.88> substituted on input line 56.
 
-LaTeX Font Info:    Calculating math sizes for size <28> on input line 58.
+LaTeX Font Info:    Calculating math sizes for size <28> on input line 59.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <19.59991> not available
-(Font)              size <20.74> substituted on input line 58.
+(Font)              size <20.74> substituted on input line 59.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <28> not available
-(Font)              size <24.88> substituted on input line 58.
+(Font)              size <24.88> substituted on input line 59.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <19.59991> not available
-(Font)              size <20.74> substituted on input line 58.
+(Font)              size <20.74> substituted on input line 59.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <28> not available
-(Font)              size <24.88> substituted on input line 58.
+(Font)              size <24.88> substituted on input line 59.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <19.59991> not available
-(Font)              size <20.74> substituted on input line 58.
+(Font)              size <20.74> substituted on input line 59.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 58.
+LaTeX Font Info:    Try loading font information for U+msa on input line 59.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 58.
+LaTeX Font Info:    Try loading font information for U+msb on input line 59.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 58.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 59.
  (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <28> not available
-(Font)              size <24.88> substituted on input line 58.
+(Font)              size <24.88> substituted on input line 59.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <19.59991> not available
-(Font)              size <20.74> substituted on input line 58.
+(Font)              size <20.74> substituted on input line 59.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <20> not available
-(Font)              size <20.74> substituted on input line 64.
+(Font)              size <20.74> substituted on input line 65.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18> not available
-(Font)              size <17.28> substituted on input line 80.
+(Font)              size <17.28> substituted on input line 81.
 
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Imagenes/UnizarLogo.png>] [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/UnizarLogo.png>] [2
 
 ]
 
-pdfTeX warning: pdflatex (file /home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 <Impresos/Autoria.pdf, id=17, 542.025pt x 796.77673pt>
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf>
-Package pdftex.def Info: Impresos/Autoria.pdf used on input line 128.
+Package pdftex.def Info: Impresos/Autoria.pdf used on input line 129.
 (pdftex.def)             Requested size: 542.02367pt x 796.77478pt.
 
 
-pdfTeX warning: pdflatex (file /home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 File: Impresos/Autoria.pdf Graphic file (type pdf)
 <use Impresos/Autoria.pdf>
-Package pdftex.def Info: Impresos/Autoria.pdf used on input line 128.
+Package pdftex.def Info: Impresos/Autoria.pdf used on input line 129.
 (pdftex.def)             Requested size: 542.02367pt x 796.77478pt.
 
 
-pdfTeX warning: pdflatex (file /home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 
 
-pdfTeX warning: pdflatex (file /home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+pdfTeX warning: pdflatex (file /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
 <Impresos/Autoria.pdf, id=20, page=1, 542.025pt x 796.77673pt>
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf, page 1>
-Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 128.
+Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 129.
 (pdftex.def)             Requested size: 542.02367pt x 796.77478pt.
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf, page 1>
-Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 128.
+Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 129.
 (pdftex.def)             Requested size: 575.42044pt x 845.86804pt.
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf, page 1>
-Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 128.
+Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 129.
 (pdftex.def)             Requested size: 575.42044pt x 845.86804pt.
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf, page 1>
-Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 128.
+Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 129.
 (pdftex.def)             Requested size: 575.42044pt x 845.86804pt.
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf, page 1>
-Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 128.
+Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 129.
 (pdftex.def)             Requested size: 575.42044pt x 845.86804pt.
- [1 </home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf>] [2
+ [1 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf>] [2
 
-] [3] [4
+] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Agradecimientos.tex) [3] [4
 
-] (/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Capitulos/Agradecimientos.tex) [5] [6
-
-] (/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Capitulos/Resumen.tex) [7] (/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Capitulos/Abstract.tex) [8] (/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/memoria.toc
+] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Resumen.tex) [5] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Abstract.tex) [6] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@toc=\write5
 \openout5 = `memoria.toc'.
 
- [9
+ [7
 
 
-] [10
+] [8
 
-] (/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/memoria.lof
+] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write6
 \openout6 = `memoria.lof'.
 
- [11] [12
+ [9] [10
 
-] (/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/memoria.lot
+] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lot=\write7
 \openout7 = `memoria.lot'.
 
- (/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo1.tex [13] [14
+ (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo1.tex [11] [12
 
 ]
 Cap\'{\i }tulo 1.
@@ -1056,39 +1062,100 @@ Underfull \hbox (badness 1117) in paragraph at lines 14--16
 []\OT1/cmr/m/n/12 Dotar a un agen-te ar-ti-fi-cial de pro-pie-da-des de adap-ta-ci^^Son ho-meost^^Sati-ca le
  []
 
-[1]) (/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo2.tex [2]
-Cap\'{\i }tulo 2.
-) (/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo3.tex [1
 
-] [2
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1]
+Underfull \vbox (badness 1142) has occurred while \output is active []
+
+ [2]) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo2.tex [3] [4
 
 ]
+Cap\'{\i }tulo 2.
+[1] [2]
+LaTeX Font Info:    Try loading font information for U+lasy on input line 29.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+) [3]
+Underfull \hbox (badness 3049) in paragraph at lines 36--37
+[]\OT1/cmr/m/n/12 La me-to-do-log^^S^^Pa em-plea-da es la si-guien-te: una po-bla-ci^^Son de cro-mo-so-mas
+ []
+
+[4]
+Underfull \hbox (badness 1184) in paragraph at lines 45--46
+\OT1/cmr/m/n/12 des-de as-pec-tos in-ge-nie-ri-les has-ta cient^^S^^Pficos[[]], al-gu-nos de los cua-les son:
+ []
+
+) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo3.tex [5] [6]
 Cap\'{\i }tulo 3.
 
 Underfull \hbox (badness 5832) in paragraph at lines 4--4
 []\OT1/cmr/bx/n/17.28 Redes neu-ro-na-les re-cu-rren-tes de tiem-po
  []
 
-<Imagenes/CTRNNBasica.png, id=96, 1591.9475pt x 772.8875pt>
+<Imagenes/CTRNNBasica.png, id=111, 1591.9475pt x 772.8875pt>
 File: Imagenes/CTRNNBasica.png Graphic file (type png)
  <use Imagenes/CTRNNBasica.png>
 Package pdftex.def Info: Imagenes/CTRNNBasica.png used on input line 37.
 (pdftex.def)             Requested size: 352.8044pt x 170.708pt.
- [1] [2 </home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Imagenes/CTRNNBasica.png>] [3] <Imagenes/MyRed.png, id=111, 362.35374pt x 463.7325pt>
+ [1
+
+] [2 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/CTRNNBasica.png>] <Imagenes/HomeostatSchema.png, id=122, 867.24pt x 539.01375pt>
+File: Imagenes/HomeostatSchema.png Graphic file (type png)
+ <use Imagenes/HomeostatSchema.png>
+Package pdftex.def Info: Imagenes/HomeostatSchema.png used on input line 61.
+(pdftex.def)             Requested size: 264.60707pt x 142.26222pt.
+ <Imagenes/HomeostatTransfer.png, id=123, 690.58pt x 526.96875pt>
+File: Imagenes/HomeostatTransfer.png Graphic file (type png)
+ <use Imagenes/HomeostatTransfer.png>
+Package pdftex.def Info: Imagenes/HomeostatTransfer.png used on input line 69.
+(pdftex.def)             Requested size: 264.6149pt x 170.71602pt.
+ [3 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/HomeostatSchema.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/HomeostatTransfer.png>]
+Underfull \hbox (badness 2221) in paragraph at lines 114--119
+[]\OT1/cmr/m/n/12 Estos al-go-rit-mos re-pre-sen-tan una ra-ma den-tro del cam-po co-no-ci-do co-mo
+ []
+
+[4] <Imagenes/PoblacionGA.png, id=131, 324.21124pt x 173.64874pt>
+File: Imagenes/PoblacionGA.png Graphic file (type png)
+ <use Imagenes/PoblacionGA.png>
+Package pdftex.def Info: Imagenes/PoblacionGA.png used on input line 145.
+(pdftex.def)             Requested size: 264.62807pt x 142.26836pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 150--158
+[]\OT1/cmr/m/n/12 Un al-go-rit-mo gen^^Seti-co co-mien-za con una \OT1/cmr/m/it/12 po-bla-ci^^Son ini-cial \OT1/cmr/m/n/12 de cro-mo-so-mas,
+ []
+
+[5 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/PoblacionGA.png>] <Imagenes/CrossoverExample.png, id=136, 1011.78pt x 284.06125pt>
+File: Imagenes/CrossoverExample.png Graphic file (type png)
+ <use Imagenes/CrossoverExample.png>
+Package pdftex.def Info: Imagenes/CrossoverExample.png used on input line 161.
+(pdftex.def)             Requested size: 441.01617pt x 142.26865pt.
+ [6 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/CrossoverExample.png>]) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo4.tex [7] [8
+
+]
+Cap\'{\i }tulo 4.
+<Imagenes/Agent.png, id=148, 370.38374pt x 257.96375pt>
+File: Imagenes/Agent.png Graphic file (type png)
+ <use Imagenes/Agent.png>
+Package pdftex.def Info: Imagenes/Agent.png used on input line 12.
+(pdftex.def)             Requested size: 352.81767pt x 170.72105pt.
+ [1 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent.png>] [2] [3] <Imagenes/MyRed.png, id=159, 362.35374pt x 463.7325pt>
 File: Imagenes/MyRed.png Graphic file (type png)
  <use Imagenes/MyRed.png>
-Package pdftex.def Info: Imagenes/MyRed.png used on input line 113.
+Package pdftex.def Info: Imagenes/MyRed.png used on input line 118.
 (pdftex.def)             Requested size: 176.40483pt x 199.17465pt.
+) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo5.tex [4 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/MyRed.png>] [5] [6
+
+]
+Cap\'{\i }tulo 5.
+) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.bbl [7] [8
+
+]
+Cap\'{\i }tulo 6.
+[9]) [10] [11
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4 </home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/Imagenes/MyRed.png>])
-No file memoria.bbl.
-[5] [6
-
-
-] [7] [8] (/home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/memoria.aux
+] [12] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
@@ -1098,18 +1165,18 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 19016 strings out of 493029
- 379955 string characters out of 6136234
- 454913 words of memory out of 5000000
- 22081 multiletter control sequences out of 15000+600000
- 15478 words of font info for 61 fonts, out of 8000000 for 9000
+ 19175 strings out of 493029
+ 383115 string characters out of 6136234
+ 457364 words of memory out of 5000000
+ 22217 multiletter control sequences out of 15000+600000
+ 16592 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,18n,77p,418b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /home/belbus/Dropbox/TrabajoFinDeGrado/Memoria/memoria.pdf (28 pages, 673358 bytes).
+ 55i,18n,77p,1416b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
+Output written on /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.pdf (44 pages, 830200 bytes).
 PDF statistics:
- 163 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 232 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 

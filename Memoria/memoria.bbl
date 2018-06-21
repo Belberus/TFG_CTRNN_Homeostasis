@@ -1,0 +1,72 @@
+\begin{thebibliography}{10}
+
+\bibitem{DiPaolo_1}
+Di~Paolo.
+\newblock Homeostatic adaptation to inversion of the visual, field and other
+  sensorimotor disruptions.
+\newblock 2000.
+
+\bibitem{DiPaolo_2}
+Di~Paolo.
+\newblock Organismically-inspired robotics: homeostatic adaptation and
+  teleology beyond the closed sensorimotor loop.
+\newblock 2003.
+
+\bibitem{DiPaolo_3}
+Di~Paolo.
+\newblock Evolving robust robots using fast homeostatic oscillators.
+\newblock 2002.
+
+\bibitem{MathayomchanBeer}
+Mathayomchan and R.~D. Beer.
+\newblock Centre-crossing recurrent neural networks for the evolution of
+  rhythmic behaviour.
+\newblock 2002.
+
+\bibitem{HoinvilleHenaff}
+Hoinville and Henaff.
+\newblock Evolving plastic neural controllers stabilized by homeostatic
+  mechanisms for adaptation to a perturbation.
+\newblock 2004.
+
+\bibitem{TurrigianoGG}
+G.~G. Turrigiano.
+\newblock Homeostatic plasticity in neuronal networks: The more things change,
+  the more they stay the same.
+\newblock {\em Trends Neuroscience}, 21:221--227, 1990.
+
+\bibitem{JesperDario}
+Jesper Blynel and Dario Floreano.
+\newblock Levels of dynamics and adaptive behavior in evolutionary neural
+  controllers.
+\newblock {\em In B. Hallam, D. Floreano, J. Hallam, G. Hayes, and J.-A. Meyer,
+  editors. Recompilation of papers}, 2002.
+
+\bibitem{FunaYNaka}
+K.~Funahashi and Y.~Nakamura.
+\newblock Aproximation of dynamical systems by continuous time recurrent neural
+  networks.
+\newblock {\em Neural Networks}, 6:801--806, 1996.
+
+\bibitem{Nolfi}
+Nolfi S. and D.~Floreano.
+\newblock Evolutionary robotics: The biology, intelligence, and technology of
+  self-organizing machines.
+\newblock {\em MA: MIT Press/Bradford Books}, 2000.
+
+\bibitem{BeerRD}
+R.~D. Beer.
+\newblock A dynamical systems perspective on agent-environment interaction.
+\newblock {\em Artificial Intelligence}, 3(2):459--509, 1995a.
+
+\bibitem{Hywel}
+Hywel Thomas~Parker Williams.
+\newblock Homeostatic adaptive networks.
+\newblock pages 26--27, 2016.
+
+\bibitem{JennaCarr}
+Jenna Carr.
+\newblock An introduction to genetic algorithms.
+\newblock 2014.
+
+\end{thebibliography}

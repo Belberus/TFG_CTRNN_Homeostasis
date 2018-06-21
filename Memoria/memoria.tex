@@ -9,6 +9,7 @@
 \usepackage{graphics}
 \usepackage{appendix}
 \usepackage[nottoc,numbib]{tocbibind}
+\usepackage{float}
 
 \usepackage{tikz}
 \usetikzlibrary{shapes,arrows}
@@ -129,15 +130,6 @@ ESCUELA DE INGENIERÍA Y ARQUITECTURA\\
 \cleardoublepage
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%		Dedicatoria
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newpage
-\begin{flushright}
-\textit{Dedicado a mi familia y extender con algo más}
-\end{flushright}
-\cleardoublepage
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %		Resumen
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -172,6 +164,8 @@ ESCUELA DE INGENIERÍA Y ARQUITECTURA\\
 \input{Capitulos/Capitulo1.tex}
 \input{Capitulos/Capitulo2.tex}
 \input{Capitulos/Capitulo3.tex}
+\input{Capitulos/Capitulo4.tex}
+\input{Capitulos/Capitulo5.tex}
 % \input{Capitulos/Conclusion.tex}
 
 %Puedes añadir más capítulos
@@ -180,7 +174,7 @@ ESCUELA DE INGENIERÍA Y ARQUITECTURA\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \bibliographystyle{unsrt} %plaindin
-\bibliography{Bibliografia_TFM}
+\bibliography{Capitulos/Bibliografia}
 \nocite{*}
 
 

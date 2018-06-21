@@ -10,11 +10,11 @@
 Conseguir dotar a un agente artificial con la capacidad de adaptabilidad presente en los seres vivos le proporcionaria las habilidades necesarias para que pudiera realizar tareas para las que no ha sido entrenado o
 para realizar tareas para las que se le ha entrenado pero en un entorno cambiante o con incertidumbre. Los mecanismos necesarios para conseguir estas propiedades se llaman mecanismos homeostáticos.
 
-En este trabajo se ha buscado diseñar e implementar un agente homeostático basado en redes neuronales recurrentes de tiempo continuo. Este agente se corresponde con el mejor candidato de entre una cierta población de candidatos,
-el cual ha sido seleccionado mediante un algorítmo genético elitista que aplica una sencilla prueba a cada uno de ellos para conseguir un ranking que clasifica a la población según la puntuación obtenida en base a unos parámetros
-que son medidos para cada candidato que realiza la prueba. El agente logra el comportamiento homeostático a traves de características de plasticidad, que le permiten modificar sus variables internas para alcanzar la estabilidad
-buscada.
+En este trabajo se ha buscado diseñar e implementar un agente homeostático basado en redes neuronales recurrentes de tiempo continuo con capacidad de fototaxis (búsqueda y acercamiento a una serie de luces en un espacio).
+Este agente se corresponde con el mejor candidate de entre una cierta población de candidatos, el cual ha sido seleccionado mediante un algorítmo genético. El agente desarrolla el comportamiento homeostático a través de
+la evolución y de sus mecanismos de plasticidad, que le permiten modificar sus variables internas para alcanzar un estado estable y mantenerse en el mismo.
 
-Una vez obtenido un agente con el comportamiento homeostático deseado se han ejecutado dos pruebas que han permitido obtener conclusiones sobre el comportamiento de este tipo de agentes:
-
-....... TODO
+Una vez obtenido el agente con las propiedades de fototaxis y plasticidad, se ha buscado dotar al mismo de comportamientos sociales para estudiar como interacciona en situaciones o pruebas donde hay más de un agente
+involucrado. El comportamiento social se ha añadido al agente siguiendo dos aproximaciones diferentes. La primera, desarrollada por () defiende que el comportamiento social es una característica que se tiene de manera
+innata pero que se va entrenando con el tiempo. La segunda, desarrollada por () defiende que el comportamiento social es una característica añadida a la red neuronal e independiente de la misma. El objetivo es comparar
+estas dos aproximaciones y sacar conclusiones sobre ello creando un experimento en el que varios agentes tienen que interactuar de manera social para la obtención de un objetivo.
