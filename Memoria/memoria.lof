@@ -9,6 +9,11 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo de operaci\IeC {\'o}n de recombinaci\IeC {\'o}n de dos cromosomas.\relax }}{6}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema del agente utilizado.\relax }}{1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Esquema de la estructura de la red utilizada con 8 neuronas totalmente interconectadas.\relax }}{4}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Esquema de la estructura del controlador del Agente 0.\relax }}{4}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de la estructura del controlador del Agente 1.\relax }}{5}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Esquema de la estructura del controlador del Agente 1.\relax }}{6}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Representaci\IeC {\'o}n codificado de un cromosoma que representa un agente de tipo 0.\relax }}{8}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Representaci\IeC {\'o}n codificado de un cromosoma que representa un agente de tipo 1 o 2.\relax }}{8}
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

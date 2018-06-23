@@ -204,7 +204,7 @@ def evaluate(individual):
 
                 # Multiply with the gain
                 inputs[0] = inputs[0] * gainSensor
-                inputs[0] = inputs[1] * gainSensor
+                inputs[1] = inputs[1] * gainSensor
 
                 # Make CTRNN RUN
                 for i in range(0, N_NEURONAS):

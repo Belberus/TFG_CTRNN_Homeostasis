@@ -19,10 +19,23 @@
 \contentsline {section}{\numberline {3.3}Algoritmo gen\IeC {\'e}tico}{4}
 \contentsline {subsection}{\numberline {3.3.1}Componentes, estructura y terminolog\IeC {\'\i }a}{4}
 \contentsline {chapter}{\numberline {4}Modelo e implementaci\IeC {\'o}n}{1}
-\contentsline {subsection}{\numberline {4.0.1}Controlador}{2}
-\contentsline {subsection}{\numberline {4.0.2}Plasticidad}{2}
-\contentsline {section}{\numberline {4.1}Agente}{3}
-\contentsline {subsubsection}{Estructura de la red, simetr\IeC {\'\i }a y rangos de valores utilizados}{4}
-\contentsline {chapter}{\numberline {5}Experimentos}{7}
-\contentsline {chapter}{\numberline {6}Bibliograf\'{\i }a}{9}
-\contentsline {chapter}{Anexos}{11}
+\contentsline {subsection}{\numberline {4.0.1}Plasticidad}{2}
+\contentsline {section}{\numberline {4.1}Agentes}{3}
+\contentsline {subsection}{\numberline {4.1.1}Agente 0: agente sin comportamiento social}{4}
+\contentsline {subsubsection}{Controlador}{4}
+\contentsline {subsection}{\numberline {4.1.2}Agente 1: agente colectivo seg\IeC {\'u}n (Nombre del tio)}{4}
+\contentsline {subsubsection}{Controlador}{5}
+\contentsline {subsection}{\numberline {4.1.3}Agente 2: agente colectivo seg\IeC {\'u}n (Nombre del tio)}{5}
+\contentsline {subsubsection}{Controlador}{6}
+\contentsline {section}{\numberline {4.2}Evoluci\IeC {\'o}n}{6}
+\contentsline {subsection}{\numberline {4.2.1}Codificaci\IeC {\'o}n de los agentes}{7}
+\contentsline {subsection}{\numberline {4.2.2}Creaci\IeC {\'o}n de la poblaci\IeC {\'o}n inicial}{8}
+\contentsline {subsection}{\numberline {4.2.3}Funci\IeC {\'o}n de selecci\IeC {\'o}n}{9}
+\contentsline {subsection}{\numberline {4.2.4}Funci\IeC {\'o}n de recombinaci\IeC {\'o}n}{9}
+\contentsline {subsection}{\numberline {4.2.5}Funci\IeC {\'o}n de mutaci\IeC {\'o}n}{9}
+\contentsline {section}{\numberline {4.3}Simetr\IeC {\'\i }a}{10}
+\contentsline {section}{\numberline {4.4}Parametros y rangos}{10}
+\contentsline {chapter}{\numberline {5}Experimentos}{11}
+\contentsline {chapter}{\numberline {6}Conclusiones}{13}
+\contentsline {chapter}{\numberline {7}Bibliograf\'{\i }a}{15}
+\contentsline {chapter}{Anexos}{17}

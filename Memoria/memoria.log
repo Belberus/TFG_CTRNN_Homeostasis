@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.30)  21 JUN 2018 20:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.30)  24 JUN 2018 01:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1023,23 +1023,23 @@ Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 129.
 ] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Resumen.tex) [5] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Abstract.tex) [6] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-\tf@toc=\write5
-\openout5 = `memoria.toc'.
-
  [7
 
 
-] [8
+])
+\tf@toc=\write5
+\openout5 = `memoria.toc'.
 
-] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.lof
+ [8] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lof=\write6
 \openout6 = `memoria.lof'.
 
- [9] [10
+ [9
+
+] [10
 
 ] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -1137,25 +1137,55 @@ Cap\'{\i }tulo 4.
 <Imagenes/Agent.png, id=148, 370.38374pt x 257.96375pt>
 File: Imagenes/Agent.png Graphic file (type png)
  <use Imagenes/Agent.png>
-Package pdftex.def Info: Imagenes/Agent.png used on input line 12.
-(pdftex.def)             Requested size: 352.81767pt x 170.72105pt.
- [1 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent.png>] [2] [3] <Imagenes/MyRed.png, id=159, 362.35374pt x 463.7325pt>
-File: Imagenes/MyRed.png Graphic file (type png)
- <use Imagenes/MyRed.png>
-Package pdftex.def Info: Imagenes/MyRed.png used on input line 118.
-(pdftex.def)             Requested size: 176.40483pt x 199.17465pt.
-) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo5.tex [4 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/MyRed.png>] [5] [6
+Package pdftex.def Info: Imagenes/Agent.png used on input line 13.
+(pdftex.def)             Requested size: 264.61325pt x 170.72105pt.
+ [1 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent.png>] [2] [3] <Imagenes/Agent0Controller.png, id=159, 342.27875pt x 522.95375pt>
+File: Imagenes/Agent0Controller.png Graphic file (type png)
+ <use Imagenes/Agent0Controller.png>
+Package pdftex.def Info: Imagenes/Agent0Controller.png used on input line 121.
+(pdftex.def)             Requested size: 176.40869pt x 199.17134pt.
+ [4 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent0Controller.png>] <Imagenes/Agent1Controller.png, id=164, 703.62875pt x 573.14125pt>
+File: Imagenes/Agent1Controller.png Graphic file (type png)
+ <use Imagenes/Agent1Controller.png>
+Package pdftex.def Info: Imagenes/Agent1Controller.png used on input line 141.
+(pdftex.def)             Requested size: 264.61168pt x 199.16818pt.
+ [5 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent1Controller.png>] <Imagenes/Agent2Controller.png, id=170, 583.17876pt x 522.95375pt>
+File: Imagenes/Agent2Controller.png Graphic file (type png)
+ <use Imagenes/Agent2Controller.png>
+Package pdftex.def Info: Imagenes/Agent2Controller.png used on input line 159.
+(pdftex.def)             Requested size: 220.5068pt x 199.17134pt.
+ [6 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent2Controller.png>] <Imagenes/vector0.png, id=175, 805.0075pt x 202.7575pt>
+File: Imagenes/vector0.png Graphic file (type png)
+ <use Imagenes/vector0.png>
+Package pdftex.def Info: Imagenes/vector0.png used on input line 184.
+(pdftex.def)             Requested size: 441.01126pt x 113.81258pt.
 
-]
+Underfull \vbox (badness 2856) has occurred while \output is active []
+
+ [7] <Imagenes/vector12.png, id=179, 805.0075pt x 202.7575pt>
+File: Imagenes/vector12.png Graphic file (type png)
+ <use Imagenes/vector12.png>
+Package pdftex.def Info: Imagenes/vector12.png used on input line 194.
+(pdftex.def)             Requested size: 441.01126pt x 113.81258pt.
+
+Underfull \vbox (badness 1675) has occurred while \output is active []
+
+ [8 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/vector0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/vector12.png>] [9]) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo5.tex [10]
 Cap\'{\i }tulo 5.
-) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.bbl [7] [8
+) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo6.tex [11
+
+] [12
 
 ]
 Cap\'{\i }tulo 6.
-[9]) [10] [11
+) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.bbl [13] [14
+
+]
+Cap\'{\i }tulo 7.
+[15]) [16] [17
 
 
-] [12] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.aux
+] [18] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
@@ -1165,18 +1195,18 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 19175 strings out of 493029
- 383115 string characters out of 6136234
- 457364 words of memory out of 5000000
- 22217 multiletter control sequences out of 15000+600000
+ 19204 strings out of 493029
+ 383938 string characters out of 6136234
+ 457356 words of memory out of 5000000
+ 22239 multiletter control sequences out of 15000+600000
  16592 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,18n,77p,1416b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.pdf (44 pages, 830200 bytes).
+Output written on /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.pdf (50 pages, 933822 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 151 compressed objects within 2 object streams
+ 259 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

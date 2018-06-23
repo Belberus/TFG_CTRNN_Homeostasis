@@ -246,7 +246,7 @@ def evaluate(individual):
             #         inputs[1] = intensidadLuz / ds2
             # elif (angAgenteLuz >= hlimit2):
             #     ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
-            #     inputs[1] = intensidadLuz / ds2
+            #     inputs[1] = intensidadLuz / ds2((Fh * 0.12)
             #     if (angAgenteLuz >= hlimit1):
             #         ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
             #         inputs[0] = intensidadLuz / ds1
@@ -287,7 +287,7 @@ def evaluate(individual):
 
             # Multiply with the gain
             inputs[0] = inputs[0] * gainSensor
-            inputs[0] = inputs[1] * gainSensor
+            inputs[1] = inputs[1] * gainSensor
 
             # Make CTRNN RUN
             for i in range(0, N_NEURONAS):

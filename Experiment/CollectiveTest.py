@@ -86,33 +86,51 @@ def everyOneHasEaten(vector):
     return True
 
 #############################################################################################################
-################################# Genetic algorithm functions ###############################################
-# Custom mutation function for the genetic algorithm
-def custom_mutation(individual):
-    for individuo in range(0, N_AGENTES):
-        # Mutate float parts
-        for i in range(0, INDIVIDUAL_SIZE - N_NEURONAS):
-            if (random.random() > 0.5):
-                individual[i] = random.random()
+#################################### Global parameters and constants ########################################
+N_NEURONAS_INTERMEDIAS = 2
+N_NEURONAS = N_NEURONAS_INTERMEDIAS + 4
+INDIVIDUAL_SIZE = 3 * N_NEURONAS + 2 + 2 * (N_NEURONAS * N_NEURONAS)
+N_LUCES = 6
+N_AGENTES = 5
 
-        # Mutate integer parts
-        for i in range(INDIVIDUAL_SIZE - N_NEURONAS, INDIVIDUAL_SIZE):
-            if (random.random() > 0.9):
-                individual[i] = random.randint(0 , 3)
+CICLOS_PREVIOS = 50
 
-    return individual,
+RADIO_AGENTE = 4    # Agent radius
+DIAMETRO_AGENTE = RADIO_AGENTE * 2  # Agent diameter
+DISTANCIA_LUZ_MIN = RADIO_AGENTE * 10  # Min. distance that the lightsource can appear from the (0,0)
+DISTANCIA_LUZ_MAX = RADIO_AGENTE * 25  # Max. distance that the lightsource can appear from the (0,0)
+DISTANCIA_MIN_FITNESS = RADIO_AGENTE * 4    # Distance in wich we consider the agent close enough to the lightsource
+INTENSIDAD_LUZ_MIN = 500 # Min. value of light intensity
+INTENSIDAD_LUZ_MAX = 1500 # Max. value of light intensity
+INTENSIDAD_VISUAL_AGENTE = 750
+SEPARACIONSENSOR = 1.0472 # Separation between sensor position and agent axis angle, 60º
+VISIONSENSOR = 1.39626 # Reading arc of the sensor in wich it reads light inputs, 80
+DISTANCIA_INICIAL_AGENTE_MIN = RADIO_AGENTE * 4
+DISTANCIA_INICIAL_AGENTE_MAX = RADIO_AGENTE * 8
+T = 1600 # Variable to calculate the time the lightsource will be on
 
-# Function used to create individuals
-def initES(icls):
-    group = []
-    for individuo in range(0, N_AGENTES):
-        floats=[random.random() for _ in range(0,INDIVIDUAL_SIZE-N_NEURONAS)]
-        ints=[random.randint(0 , 3) for _ in range (0, N_NEURONAS)]
-        group.extend(floats + ints)
-    return icls(group)
+W_MAX = 10.0
+W_MIN = -10.0
+TAU_MAX = 4.0
+TAU_MIN = 0.4
+BIAS_MAX = 3.0
+BIAS_MIN = -3.0
+GAIN_MAX = 10.0
+GAIN_MIN = 0.01
+PLASTICIY_RATE_MAX = 0.9
+PLASTICIY_RATE_MIN = -0.9
 
-# Evaluation function
-def evaluate(individual):
+TIME_STEP = 0.2
+
+#############################################################################################################
+##################################### Individual to test ####################################################
+
+individual = []
+
+#############################################################################################################
+##################################### MAIN ##################################################################
+
+if __name__ == "__main__":
     # Scale normalized [0,1] values to real values
     vAgents = []
     for agentID in range(0, N_AGENTES):
@@ -183,113 +201,6 @@ def evaluate(individual):
 
         # Auxiliar array to control the number of agents that are close to the light at the same time
         agentesCerca = [0 for _ in range(0,N_AGENTES)]
-
-        # PreIntegration in order to let the individual stabilize
-        for ciclos in range(0, CICLOS_PREVIOS):
-            for agent in vAgents:
-                agent.inputs[0] = 0.0
-                agent.inputs[1] = 0.0
-                agent.inputs[2] = 0.0
-                agent.inputs[3] = 0.0
-
-                # Sensor 1 position
-                rad1 = normalize(agent.angulo + SEPARACIONSENSOR)
-                xSensor1 = agent.posX + ((RADIO_AGENTE) * math.cos(rad1))
-                ySensor1 = agent.posY + ((RADIO_AGENTE) * math.sin(rad1))
-
-                # Sensor 2 position
-                rad2 = normalize(agent.angulo - SEPARACIONSENSOR)
-                xSensor2 = agent.posX + ((RADIO_AGENTE) * math.cos(rad2))
-                ySensor2 = agent.posY + ((RADIO_AGENTE) * math.sin(rad2))
-
-            # First we update light sensors
-                # Angle between light and agent
-                angAgenteLuz = normalize(math.atan2(yLuz - agent.posY, xLuz - agent.posX) - agent.angulo)
-
-                # Check if the sensors will be ON and update inputs
-                if (angAgenteLuz <= llimit1):
-                    # Square of the distance between the light and the sensor
-                    ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
-                    # Distance between the light and the center of the agent
-                    da = distance(agent.posX, agent.posY, xLuz, yLuz)
-                    a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds1) / (da * da)
-                    if (a <= 1.0):
-                        agent.inputs[0] = intensidadLuz / ds1
-                    if (angAgenteLuz <= llimit2):
-                        # Square of the distance between the light and the sensor
-                        ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
-                        # Distance between the light and the center of the agent
-                        da = distance(agent.posX, agent.posY, xLuz, yLuz)
-                        a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds2) / (da * da)
-                        if (a <= 1.0):
-                            agent.inputs[1] = intensidadLuz / ds2
-                elif (angAgenteLuz >= hlimit2):
-                    # Square of the distance between the light and the sensor
-                    ds2 = distance(xSensor2, ySensor2, xLuz, yLuz)**2
-                    # Distance between the light and the center of the agent
-                    da = distance(agent.posX, agent.posY, xLuz, yLuz)
-                    a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds2) / (da * da)
-                    if (a <= 1.0):
-                        agent.inputs[1] = intensidadLuz / ds2
-                    if (angAgenteLuz >= hlimit1):
-                        # Square of the distance between the light and the sensor
-                        ds1 = distance(xSensor1, ySensor1, xLuz, yLuz)**2
-                        # Distance between the light and the center of the agent
-                        da = distance(agent.posX, agent.posY, xLuz, yLuz)
-                        a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds1) / (da * da)
-                        if (a <= 1.0):
-                            agent.inputs[0] = intensidadLuz / ds1
-
-            # Then we check agent visual sensors
-                for agentToCheck in vAgents:
-                    if agentToCheck.id != agent.id:
-                        # Angle between the agent and the agent to check
-                        angAgentCheck = normalize(math.atan2(agentToCheck.posY - agent.posY, agentToCheck.posX - agent.posX) - agent.angulo)
-                        # Check if the agent sensor will be ON and update inputs
-                        if (angAgentCheck <= llimit1):
-                            ds1 = distance(xSensor1, ySensor1, agentToCheck.posX, agentToCheck.posY)**2
-                            da = distance(agent.posX, agent.posY, agentToCheck.posX, agentToCheck.posY)
-                            a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds1) / (da * da)
-                            if (a <= 1.0):
-                                agent.inputs[2] += INTENSIDAD_VISUAL_AGENTE / ds1
-                            if(angAgentCheck <= llimit2):
-                                ds2 = distance(xSensor2, ySensor2, agentToCheck.posX, agentToCheck.posY)**2
-                                da = distance(agent.posX, agent.posY, agentToCheck.posX, agentToCheck.posY)
-                                a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds2) / (da * da)
-                                if (a<= 1.0):
-                                    agent.inputs[3] += INTENSIDAD_VISUAL_AGENTE / ds2
-                        elif (angAgentCheck >= hlimit2):
-                            ds2 = distance(xSensor2, ySensor2, agentToCheck.posX, agentToCheck.posY)**2
-                            da = distance(agent.posX, agent.posY, agentToCheck.posX, agentToCheck.posY)
-                            a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds2) / (da * da)
-                            if (a<= 1.0):
-                                agent.inputs[3] += INTENSIDAD_VISUAL_AGENTE / ds2
-                            if (angAgentCheck >= hlimit1):
-                                ds1 = distance(xSensor1, ySensor1, agentToCheck.posX, agentToCheck.posY)**2
-                                da = distance(agent.posX, agent.posY, agentToCheck.posX, agentToCheck.posY)
-                                a = (((RADIO_AGENTE) * (RADIO_AGENTE)) + ds1) / (da * da)
-                                if (a <= 1.0):
-                                    agent.inputs[2] += INTENSIDAD_VISUAL_AGENTE / ds1
-
-                # Multiply with the gain
-                agent.inputs[0] = agent.inputs[0] * agent.gainSensor
-                agent.inputs[1] = agent.inputs[1] * agent.gainSensor
-                agent.inputs[2] = agent.inputs[2] * agent.gainSensor
-                agent.inputs[3] = agent.inputs[3] * agent.gainSensor
-
-                # Make CTRNN RUN
-                for i in range(0, N_NEURONAS):
-                    change = -agent.outputs[i]
-
-                    for j in range(0, N_NEURONAS):
-                        temp = agent.outputs[j] + agent.vBias[j]
-                        change += agent.vW[j][i] * sigmoid(temp)
-
-                    change = change + agent.inputs[i]
-                    change = change / agent.vTau[i]
-
-                    agent.outputs[i] = agent.outputs[i] + (change * TIME_STEP)
-
 
         # Once PreIntegration is finished, we can start our run
         for ciclos in range(0, time):
@@ -523,120 +434,3 @@ def evaluate(individual):
     Fh = sum(FhVector) / N_LUCES
 
     return ((Fd * 0.88) + (Fh * 0.12)),
-
-
-#############################################################################################################
-#################################### Global parameters and constants ########################################
-N_NEURONAS_INTERMEDIAS = 2
-N_NEURONAS = N_NEURONAS_INTERMEDIAS + 4
-INDIVIDUAL_SIZE = 3 * N_NEURONAS + 2 + 2 * (N_NEURONAS * N_NEURONAS)
-N_LUCES = 6
-N_AGENTES = 5
-
-CICLOS_PREVIOS = 50
-
-RADIO_AGENTE = 4    # Agent radius
-DIAMETRO_AGENTE = RADIO_AGENTE * 2  # Agent diameter
-DISTANCIA_LUZ_MIN = RADIO_AGENTE * 10  # Min. distance that the lightsource can appear from the (0,0)
-DISTANCIA_LUZ_MAX = RADIO_AGENTE * 25  # Max. distance that the lightsource can appear from the (0,0)
-DISTANCIA_MIN_FITNESS = RADIO_AGENTE * 4    # Distance in wich we consider the agent close enough to the lightsource
-INTENSIDAD_LUZ_MIN = 500 # Min. value of light intensity
-INTENSIDAD_LUZ_MAX = 1500 # Max. value of light intensity
-INTENSIDAD_VISUAL_AGENTE = 750
-SEPARACIONSENSOR = 1.0472 # Separation between sensor position and agent axis angle, 60º
-VISIONSENSOR = 1.39626 # Reading arc of the sensor in wich it reads light inputs, 80
-DISTANCIA_INICIAL_AGENTE_MIN = RADIO_AGENTE * 4
-DISTANCIA_INICIAL_AGENTE_MAX = RADIO_AGENTE * 8
-T = 1600 # Variable to calculate the time the lightsource will be on
-
-W_MAX = 10.0
-W_MIN = -10.0
-TAU_MAX = 4.0
-TAU_MIN = 0.4
-BIAS_MAX = 3.0
-BIAS_MIN = -3.0
-GAIN_MAX = 10.0
-GAIN_MIN = 0.01
-PLASTICIY_RATE_MAX = 0.9
-PLASTICIY_RATE_MIN = -0.9
-
-TIME_STEP = 0.2
-#############################################################################################################
-##################################### MAIN ##################################################################
-
-if __name__ == "__main__":
-
-    creator.create("Fitness", base.Fitness, weights=(1.0,))
-    creator.create("Individual", list, fitness=creator.Fitness)
-
-    toolbox = base.Toolbox()
-    toolbox.register("individual", initES, creator.Individual)
-    toolbox.register("population", tools.initRepeat, list, toolbox.individual)
-
-    toolbox.register("evaluate", evaluate)
-    toolbox.register("crossover", tools.cxUniform)
-    # toolbox.register("crossover", tools.cxTwoPoint)
-    toolbox.register("mutation", custom_mutation)
-    toolbox.register("selection", tools.selTournament, tournsize=10)
-    # toolbox.register("selection", tools.selRoulette)
-
-    # Create population
-    pop = toolbox.population(n=60)
-
-    # Evaluate the entire population
-    fitnesses = list(map(toolbox.evaluate, pop))
-    for ind, fit in zip(pop, fitnesses):
-        ind.fitness.values = fit
-
-    # Extract all fitness of individuals
-    fits = [ind.fitness.values[0] for ind in pop]
-
-    # Begin evolution
-    generations = 0.0
-    while(max(fits) < 0.95):
-        generations = generations + 1
-        print("Generation number: ", generations)
-        print("Best fitness at the moment: ", max(fits))
-        print("Best individual at the moment: ", pop[fits.index(max(fits))])
-        print("-----------------------------------------")
-
-        # Select next generation of individuals
-        offspring = toolbox.selection(pop, len(pop))
-
-        # Clone selected individuals
-        offspring = list(map(toolbox.clone, offspring))
-
-        # Execute crossover and mutation
-        for child1, child2 in zip(offspring[::2], offspring[1::2]):
-            if (random.random() < 0.5):
-                toolbox.crossover(child1, child2, 0.5)
-                del child1.fitness.values
-                del child2.fitness.values
-
-        for mutant in offspring:
-            if (random.random() < 0.5):
-                toolbox.mutation(mutant)
-                del mutant.fitness.values
-
-        # Re-evaluate individuals with invalid fitnesses (affected by changes)
-        invalid_ind = [ind for ind in offspring if not ind.fitness.valid]
-        fitnesses = toolbox.map(toolbox.evaluate, invalid_ind)
-        for ind, fit in zip(invalid_ind, fitnesses):
-            ind.fitness.values = fit
-
-        # Replace old population with offspring
-        pop[:] = offspring
-
-        # Extract all fitness of individuals
-        fits = [ind.fitness.values[0] for ind in pop]
-
-    # When it finishes, we can print some values and stats
-    print("Total number of generations: ", generations)
-    bestIndex = fits.index(max(fits))
-    bestFitness = fits[bestIndex]
-    bestIndividual = pop[bestIndex]
-    print(str(bestFitness) + " -> " + str(bestIndividual))
-    # Write all population values in a file
-    file = open("result.txt","w")
-    for i in range(0, len(pop)):
-        file.write(str(fits[i]) + " -> " + str(pop[i]) + "\n")
