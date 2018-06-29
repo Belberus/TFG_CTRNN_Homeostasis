@@ -1,33 +1,44 @@
 \begin{thebibliography}{10}
 
+\bibitem{Ashby}
+W.~Ashby.
+\newblock Design for a brain: The origin of adaptive behaviour.
+\newblock {\em New York, Wiley.}, 1952.
+
 \bibitem{DiPaolo_1}
-Di~Paolo.
-\newblock Homeostatic adaptation to inversion of the visual, field and other
+E.~A. Di~Paolo.
+\newblock Homeostatic adaptation to inversion of the visual field and other
   sensorimotor disruptions.
-\newblock 2000.
+\newblock {\em From Animals to Animats 6, Proceedings of the Sixth
+  International Conference on Simulation of Adaptive Behavior, Sep 2000, J-A.
+  Meyer, A. Berthoz, D. Floreano, H. Roitblat and S. Wilson., MIT Press}, pages
+  440 -- 449, 2000.
 
 \bibitem{DiPaolo_2}
-Di~Paolo.
+E.~A. Di~Paolo.
 \newblock Organismically-inspired robotics: homeostatic adaptation and
   teleology beyond the closed sensorimotor loop.
-\newblock 2003.
+\newblock {\em Erasmus Seminar Espaces d’action, espaces de perception.
+  Universitè de Technologie de Compiégne}, 2003.
 
 \bibitem{DiPaolo_3}
-Di~Paolo.
-\newblock Evolving robust robots using fast homeostatic oscillators.
+E.~A. Di~Paolo.
+\newblock Evolving robust robots using homeostatic oscillators.
 \newblock 2002.
 
 \bibitem{MathayomchanBeer}
-Mathayomchan and R.~D. Beer.
+B.~Mathayomchan and R.~D. Beer.
 \newblock Centre-crossing recurrent neural networks for the evolution of
   rhythmic behaviour.
-\newblock 2002.
+\newblock 14:2043 -- 2051, 2002.
 
 \bibitem{HoinvilleHenaff}
-Hoinville and Henaff.
+T.~Hoinville and P.~Henaff.
 \newblock Evolving plastic neural controllers stabilized by homeostatic
   mechanisms for adaptation to a perturbation.
-\newblock 2004.
+\newblock {\em International Conference on the Simulation and Synthesis of
+  Living Systems (ALIFE9, Sep 2004, Boston, United States.}, pages 81 -- 88,
+  2004.
 
 \bibitem{TurrigianoGG}
 G.~G. Turrigiano.
@@ -36,7 +47,7 @@ G.~G. Turrigiano.
 \newblock {\em Trends Neuroscience}, 21:221--227, 1990.
 
 \bibitem{JesperDario}
-Jesper Blynel and Dario Floreano.
+J.~Blynel and D.~Floreano.
 \newblock Levels of dynamics and adaptive behavior in evolutionary neural
   controllers.
 \newblock {\em In B. Hallam, D. Floreano, J. Hallam, G. Hayes, and J.-A. Meyer,
@@ -54,6 +65,23 @@ Nolfi S. and D.~Floreano.
   self-organizing machines.
 \newblock {\em MA: MIT Press/Bradford Books}, 2000.
 
+\bibitem{KernMoll}
+A.~Kern and H.~Moll.
+\newblock On the transformative character of collective intentionality and the
+  uniqueness of the human.
+\newblock {\em Philosophical Psychology}, 30(3):315--333, 2017.
+
+\bibitem{Carruthers}
+P.~Carruthers.
+\newblock The architecture of the mind: massive modularity and the flexibility
+  of thought.
+\newblock {\em Oxford University Press}, 2006.
+
+\bibitem{McDowell}
+J.~McDowell.
+\newblock Mind and world.
+\newblock {\em Harvard University Press}, 1996.
+
 \bibitem{BeerRD}
 R.~D. Beer.
 \newblock A dynamical systems perspective on agent-environment interaction.
@@ -62,10 +90,32 @@ R.~D. Beer.
 \bibitem{Hywel}
 Hywel Thomas~Parker Williams.
 \newblock Homeostatic adaptive networks.
-\newblock pages 26--27, 2016.
+\newblock {\em Doctoral dissertation. University of Leeds}, pages 26--27, 2016.
+
+\bibitem{Bratman}
+M.~E. Bratman.
+\newblock Shared agency: A planning theory of acting together.
+\newblock {\em New York, NY: Oxford University Press}, 2014.
+
+\bibitem{Tomasello}
+M.~Tomasello.
+\newblock A natural history of human thinking.
+\newblock {\em Cambridge, MA: Harvard University Press.}, 2014.
+
+\bibitem{Duijn}
+M.~Van~Duijn, F.~Keijzer, and D.~Franken.
+\newblock Principles of minimal cognition: Casting cognition as sensorimotor
+  coordination.
+\newblock {\em Adaptive Behavior 2006}, 14(157), 2006.
+
+\bibitem{Rohde}
+M.~Rohde.
+\newblock Enaction, embodiment, evolutionary robotics. simulation models in the
+  study of human cognition.
+\newblock {\em Atlantis Press, Amsterdam, Series: Thinking Machines.}, 2010.
 
 \bibitem{JennaCarr}
-Jenna Carr.
+J.~Carr.
 \newblock An introduction to genetic algorithms.
 \newblock 2014.
 

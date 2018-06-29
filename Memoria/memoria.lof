@@ -4,16 +4,45 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Valor de salida de una CTRNN. \textbf {Izquierda:} Un nodo autoconectado. \textbf {Derecha:} Funci\IeC {\'o}n sigmoide aplicada para calcular la salida de una neurona.\relax }}{2}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema de un Homeostato individual. La unidad recibe las entradas del resto de unidades ($w_{i}s_{i}$) y de si misma ($w_{1}s_{1}$). La salida $s_{1}$ es una funci\IeC {\'o}n lineal por partes de la suma ponderada de las entradas.)\relax }}{3}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de funci\IeC {\'o}n de transferencia de una unidad Homeostat. La funci\IeC {\'o}n es lineal por partes con puntos en ($x_{1},j_{1}$),...,($x_{p},y_{p}$) donde $x_{1}$ = 0 y $x_{p}$ = $N$, para todas las unidades en una red de $N$ unidades. Las lineas discontinuas representan el rango homeostatico de la red.\relax }}{3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Ejemplo de estructura de poblaci\IeC {\'o}n, cromosomas y genes.\relax }}{5}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo de operaci\IeC {\'o}n de recombinaci\IeC {\'o}n de dos cromosomas.\relax }}{6}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de funci\IeC {\'o}n de transferencia de una unidad Homeostat. La funci\IeC {\'o}n es lineal por partes con puntos en ($x_{1},j_{1}$),...,($x_{p},y_{p}$) donde $x_{1}$ = 0 y $x_{p}$ = $N$, para todas las unidades en una red de $N$ unidades. Las l\IeC {\'\i }neas discontinuas representan el rango homeostatico de la red.\relax }}{3}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Esquema del agente utilizado.\relax }}{1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Esquema de la estructura del controlador del Agente 0.\relax }}{4}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de la estructura del controlador del Agente 1.\relax }}{5}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Esquema de la estructura del controlador del Agente 1.\relax }}{6}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Representaci\IeC {\'o}n codificado de un cromosoma que representa un agente de tipo 0.\relax }}{8}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Representaci\IeC {\'o}n codificado de un cromosoma que representa un agente de tipo 1 o 2.\relax }}{8}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Esquema de la estructura del controlador del ``Agente 0''.\relax }}{4}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de la estructura del controlador del ``Agente 1''.\relax }}{5}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Esquema de la estructura del controlador del ``Agente 1''.\relax }}{6}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Representaci\IeC {\'o}n codificado de un cromosoma que representa un agente de tipo 0.\relax }}{7}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Representaci\IeC {\'o}n codificado de un cromosoma que representa un agente de tipo 1 o 2.\relax }}{7}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Trayectoria del ``Agente 0'' durante la realizaci\IeC {\'o}n del experimento individual.\relax }}{14}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Fragmento de trayectorias del conjunto de agentes de tipo 1 que demuestran comportamiento de fototaxis colectiva.\relax }}{16}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Activaciones de las 6 neuronas del agente representativo del grupo de agentes de tipo 1.\relax }}{17}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los sensores de los agentes de tipo 1.\relax }}{18}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los ritmos de plasticidad de los agentes de tipo 1.\relax }}{20}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los pesos sin\IeC {\'a}pticos de los agentes de tipo 1.\relax }}{21}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Fragmento de trayectorias del conjunto de agentes de tipo 2 que demuestran comportamiento de fototaxis colectiva.\relax }}{22}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Activaciones de las 6 neuronas del agente representativo del grupo de agentes de tipo 2.\relax }}{23}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los sensores de los agentes de tipo 2.\relax }}{24}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los ritmos de plasticidad de los agentes de tipo 2.\relax }}{26}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los pesos sin\IeC {\'a}pticos de los agentes de tipo 2.\relax }}{27}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Gr\IeC {\'a}fica de salidas del Homeostato implementado. \textbf {Eje X:} tiempo. \textbf {Eje Y: } salidas de cada una de las neuronas que componen el Homeostato.\relax }}{36}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Ejemplo de estructura de poblaci\IeC {\'o}n, cromosomas y genes.\relax }}{38}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Ejemplo de operaci\IeC {\'o}n de recombinaci\IeC {\'o}n de dos cromosomas.\relax }}{39}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {C.1}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 1 del tipo 1.\relax }}{41}
+\contentsline {figure}{\numberline {C.2}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 2 del tipo 1.\relax }}{42}
+\contentsline {figure}{\numberline {C.3}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 3 del tipo 1.\relax }}{42}
+\contentsline {figure}{\numberline {C.4}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 4 del tipo 1.\relax }}{43}
+\contentsline {figure}{\numberline {C.5}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 5 del tipo 1.\relax }}{43}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 1 del tipo 2.\relax }}{44}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 2 del tipo 2.\relax }}{45}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 3 del tipo 2.\relax }}{45}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 4 del tipo 2.\relax }}{46}
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 5 del tipo 2.\relax }}{46}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Cronograma del proyecto dividido por semanas, incluyendo las horas dedicadas cada semana a cada tarea.\relax }}{47}

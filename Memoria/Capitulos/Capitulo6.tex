@@ -1,1 +1,46 @@
 \chapter{Conclusiones}
+Este apartado se centrará en: (1) resumir cuáles han sido los resultados más relevantes tras los experimentos realizados,
+procurando ponerlos en relación entre sí, y (2) exponer algunas reflexiones sobre el carácter del modelado cognitivo y sobre
+las posibles líneas futuras que se podrían emprender para seguir avanzando en el tema del proyecto.
+
+Como se avanzó en la primera parte de esta memoria, existe actualmente un debate sobre qué capacidades cognitivas permiten a
+individuos u organismos participar en acciones conjuntas. Generalmente, se ha supuesto que esta no es más que una nueva capacidad
+que surge en la evolución o en el desarrollo, que se agrega a capacidades ya existentes. Por ejemplo, autores como Bratman \cite{Bratman},
+proponen la necesidad de una nueva capacidad dedicada a planificar y coordinar correctamente sus acciones con otros; Tomasello \cite{Tomasello},
+defiende la aparición, hacia el final del primer año de vida, de una nueva capacidad con la potencialidad de simular mentalmente
+las motivaciones de otros sujetos del grupo, imprescindible para poder coordinarse conjuntamente. Aunque sus propuestas son diferentes,
+lo que ambas sugieren es que las capacidades colectivas se agregan a otras capacidades preexistentes del individuo y se ejercen siempre
+que el individuo participe en actividades de cooperación.
+
+Más recientemente, han comenzado a surgir evidencias en el sentido contrario: las capacidades colectivas son elementos transformativos de
+todas las capacidades que los agentes ya tenían de manera individual \cite{KernMoll}. Es decir, es algo más que una capacidad específica que un
+individuo actualiza cuando coopera con otros y que incluso está presente fuera de las actividades conjuntas con otros.
+Por ejemplo, muchas de las habilidades individuales que aprendemos en la infancia, lo hacemos por imitación.
+Aunque la habilidad sea propia del sujeto, en su base no deja de ser una capacidad compartida y guiada por el ejemplo de otros.
+
+Una vez analizados los resultados de los experimentos las conclusiones que pueden obtenerse comparando a los agentes de tipo 1 y de tipo 2
+son, las siguientes.
+
+\subsubsection{Comportamientos o conducta externa}
+\begin{enumerate}
+  \item {Los mecanismos de doble circuito planteados hacen que, estructuralmente, los agentes de tipo 1 tengan menor eficacia en la consecución de sus tareas (su fitness es sustancialmente inferior (0.44) en relación con los agentes de tipo 2 (0.59). Los primeros,
+  son agentes con una nueva capacidad, pero esta debe combinarse con otras y, en esa combinación, el éxito no es muy elevado.}
+  \item {Por otro lado, si nos fijamos en sus trayectorias, pueden observarse que tienen un carácter más errático, posiblemente un rasgo relacionado con el punto anterior. Es, en función de estos resultados, que podemos decir que el Agente 1, en lo que se refiere a su dimensión de comportamiento,
+  presenta algunos rasgos comparativamente peores en relación con el Agente 2.}
+  \item {Finalmente, como medida para cuantificar la robustez de ambas conductas, se han realizado experimentos en los que sometemos a los agentes a una señal ruidosa en sus sensores y vemos el efecto en la fitness global. En este apartado, podemos observar que ambos agentes presentan resultados parecidos.}
+\end{enumerate}
+
+A la vista de estos resultados, podríamos afirmar que, al menos a un nivel de modelado mínimo, las soluciones que consideran las capacidades sociales como estructurales derivan en agentes más robustos.
+
+\subsubsection{Estructura o robustez interna}
+Una vez analizados algunos de los indicadores de la conducta externa de los agentes, nos interesamos por resultados de robustez interna que llevaremos a cabo con medidas de estabilidad en relación con aleatorizar valores en parámetros internos del agente.
+\begin{enumerate}
+  \item {Las perturbaciones en los pesos sinápticos afectan significativamente al rendimiento de los dos tipos de agente. Es decir, las estructuras neuronales que se obtienen por evolución son sensibles a cambios. En ambos, al cambiar levemente los pesos, su comportamiento se ve afectado.}
+  \item {Si nos centramos en los patrones de activación neuronal en relación con sus límites homeostáticos, observamos que los agentes de tipo 1 pierden estabilidad con más frecuencia (sus patrones son más irregulares) al compararlos con agentes del tipo 2 (con patrones más constantes, incluso en la zona fuera de su límite homeostático). Además, los segundos, aunque tardan más en volver a la estabilidad que los del tipo 1, se mantienen posteriormente estables más tiempo (en promedio, solo salen una única ocasión de la zona homeostática).}
+  \item {Paradójicamente, las perturbaciones en los ritmos de plasticidad afectan al rendimiento del Agente 2, pero no del Agente 1. Es decir, aunque a nivel comportamental despliega características más robustas, mantiene un nivel más crítico en su estructura homeostática.}
+\end{enumerate}
+
+Aunque este es un debate proveniente del ámbito de la Psicología o Estudios del desarrollo cognitivo, en este trabajo nos hemos planteado abordarlo desde el punto de vista del modelado cognitivo mínimo \cite{Duijn}.
+La cognición mínima busca modelos que, con mínimos recursos, sean capaces de materializar capacidades cognitivas primitivas o los orígenes de capacidades cognitivas más elaboradas. En la última década, la relevancia en la comprension de fenómenos cognitivos a partir de modelos mínimos ha ido en aumento.
+Concentrarse en una versión simplificada, mínima, de un fenómeno de estudio, sirve al investigador como herramienta para pensar sobre el fenómeno. Por ejemplo, algunos modelos deliberadamente simples pueden confirmar que existen alternativas explicativas a fenómenos que se suponía que funcionaban de una determinada manera. En palabras de autores como Rohde \cite{Rohde}, los modelos sirven como ``gimnasia mental'', es decir, son entidades equivalentes a los experimentos mentales clásicos, son artefactos que nos ayudan a pensar. En el área del estudio ingenieril de la inteligencia, podemos encontrar dos motivaciones: (i) La primera es puramente técnica. Trata de encontrar algoritmos útiles en campos tecnológicos, que tienen una amplia gama de beneficios. (ii) La segunda motivación es científica, esto es, se usan computadores, modelos de simulación, bots, etc. como plataformas experimentales para la investigación de cuestiones acerca de la inteligencia. Esta es la conocida como ``metodología sintética'' que se presenta como alternativa a la tradicional, y que defiende que existe espacio para un estudio ingenieril sobre las capacidades cognitivas que debería funcionar más como un campo científico que permita examinar hipótesis particulares, y en el que haya una investigación teórica para averiguar por qué ciertos modelos son mejores o no en términos de las asunciones que suponen.
+Los modelos mínimos consisten en agentes sintéticos que habitan entornos virtuales y con ellos se pretende capturar aspectos concretos de una tarea cognitiva. Su condición de ``mínimos'' permite que puedan ser estudiados de manera completa. Estos modelos no son estructuras que organizan datos experimentales. Su valor proviene del valor científico que tiene el estudio de los patrones observados y la relación de tales patrones con hipótesis teóricas. Sirven como herramientas para cuestionar concepciones sobre como un cierto comportamiento es generado. Son modelos con una complejidad manejable que permiten un análisis completo y muchas veces analítico.

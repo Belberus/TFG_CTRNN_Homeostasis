@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import random
 import copy
 
-# N unidades conectadas. Cada unidad recive N inputs de ella y de las otras unidades
+# N unidades conectadas. Cada unidad recibe N inputs de ella y de las otras unidades
 # cuyo peso esta definido por la fuerza de la conexion entre ellas. El peso del
 # sumatorio I de las inputs sobre una unidad determina su salida s.
 # Una unidad estara especidifica como un set de parametros U={w1,...wN,x1,...xN,y1,...yN}

@@ -1,0 +1,80 @@
+\chapter{Algoritmo genético}\label{ch:anexo2}
+Los algoritmos genéticos son un tipo de algoritmos de optimización, lo que quiere decir que se utilizan para
+obtener la solución o soluciones óptimas de un problema computacional\cite{JennaCarr}.
+
+Estos algoritmos representan una rama dentro del campo conocido como ``Computación evolutiva''. En ella, se
+imitan los procesos biológicos de reproducción y selección natural con el fin de encontrar la mejor solución al
+problema para el que son creados. Al igual que en la evolución, muchos de los procesos de un algoritmo genético son
+aleatorios, aunque las técnicas de optimización permiten limitar el nivel de aleatoriedad y adaptar el control sobre
+el algoritmo que se considere necesario.
+
+Este tipo de algoritmos permiten encontrar soluciones a problemas que otros algoritmos de optimización no pueden calcular
+por falta de continuidad, derivabilidad, linealidad u otras características.
+
+\subsection{Componentes, estructura y terminología}
+Dado que los algoritmos genéticos están diseñados para simular procesos biológicos, gran parte de su terminología ha sido tomado
+prestada de la biología. A pesar de ello, las entidades a las que esta terminología se refieren en el entorno de los algoritmos genéticos
+son mucho más simples que sus equivalentes biológicos. Los componentes básicos de prácticamente todos los algoritmos genéticos son:
+
+\begin{itemize}
+	\item{Una función \textbf{fitness} para la optimización}
+	\item{Una \textbf{población} de \textbf{cromosomas}}
+	\item{Una función de \textbf{selección} para elegir los cromosomas que van a reproducirse}
+	\item{Una función de \textbf{recombinación} (o \textit{crossover}) para la producción de la siguiente generación de cromosomas}
+	\item{Una función de \textbf{mutación} para aleatorizar algunos cromosomas de la nueva población}
+\end{itemize}
+
+La \textit{función fitness} es la función que el algoritmo está tratando de optimizar. La palabra ``fitness'' se toma prestada de la teoría evolutiva.
+Se utiliza porque la función de fitness testea y valora como de buena (como de ``\textit{fit}'') es cada solución potencial del problema. El término
+\textit{cromosoma} hace referencia al valor o valores numéricos que representan posibles soluciones candidatas al problema que se está intentando resolver.
+Cada cromosoma está formado por una lista de parámetros, llamados \textit{genes}. Al conjunto de cromosomas que van a evaluarse como posibles candidatos a solución
+del problema se le llama \textit{población}. Antiguamente los cromosomas eran codificados como listas de unos y ceros (codificación binaria), sin embargo, actualmente la computación
+moderna permite codificar los cromosomas como números reales u otros objetos.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth,height=5cm]{Imagenes/PoblacionGA}
+    \caption{Ejemplo de estructura de población, cromosomas y genes.}
+    \label{fig:figuraPoblacionGA}
+\end{figure}
+
+Un algoritmo genético comienza con una \textit{población inicial} de cromosomas, generados de forma aleatoria, que representan la primera generación de posibles soluciones. A continuación,
+se evalúa cada cromosoma de dicha población mediante la función fitness para comprobar cómo de bien resuelve el problema planteado. Al finalizar, cada candidato tiene asignada una puntuación
+de fitness que representa lo bien (o lo mal) que lo ha hecho intentando resolver el problema.
+Una vez con la población inicial completamente evaluada, el \textit{operador de selección} escoge de entre toda la población de candidatos algunos cromosomas para la reproducción (creación
+de una nueva generación). Existen muchos tipos de algoritmos de selección, pero generalmente en todos ellos se eligen los cromosomas que mejor puntuación fitness han obtenido, buscando que
+las siguientes generaciones creadas a partir de ellos den resultados como mínimo igual de buenos a los suyos.
+En el siguiente paso, el \textit{operador de recombinación} simula las operaciones de recombinación de cromosomas presentes en las operaciones de división celular de tipo \textit{meiosis}. En la figura
+\ref{fig:figuraCrossover} se puede observar un ejemplo de operación de recombinación. En este proceso se seleccionan dos cromosomas de la población y se recombinan para crear dos descendientes.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth,height=5cm]{Imagenes/CrossoverExample}
+    \caption{Ejemplo de operación de recombinación de dos cromosomas.}
+    \label{fig:figuraCrossover}
+\end{figure}
+
+El \textit{operador de mutación} modifica de forma aleatoria genes de los cromosomas descendientes (por ejemplo cambiando un 1 por un 0 y viceversa, en cromosomas binarios). Estas mutaciones ocurren
+generalmente con una probabilidad bastante baja. A primera vista, el proceso de mutación puede parecer innecesario e incluso entorpecedor. La realidad es que toma un papel muy importante. Las operaciones
+de selección y recombinación mantienen la información genética de los cromosomas con mejor puntuación fitness, pero estos cromosomos sólo son considerados los mejores respecto a la población de la generación
+en la que fueron elegidos. Esto puede provocar que el algoritmo converga demasiado rápido y de una solución final alejada de la solución máxima. En otras palabras, puede provocar que el algoritmo se quede
+atascado en un máximo local antes de encontrar el máximo global óptimo. El operador de mutación ayuda a proteger el algoritmo de este problema manteniendo la diversidad en la población, a costa de aumentar
+el tiempo de convergencia.
+
+Lo normal es que la selección, recombinación y mutación continuen hasta que el numero de descendientes es igual al número de cromosomas de la población inicial, para que esta segunda generación esté compuesta
+en su totalidad por descendentienes y reemplace a la población anterior.
+
+Ahora la segunda generación se evalúa mediante la función fitness y todo el proceso se repite. Es una práctica comúm el almacenar el cromosoma con la mayor puntuación de fitness junto con dicha puntuación para
+guardar un registro del mejor cromosoma hasta el momento.
+
+Los algoritmos genéticos iteran hasta que la puntuación fitness del mejor cromosoma hasta el momento se estabiliza y no cambia en una serie de generaciones. Esto significa que el algoritmo ha convergido en una
+o solución. A todo el proceso de iteraciones se llama \textit{carrera} (en inglés, \textit{run}). Al final de cada carrera se tiene, normalmente, al menos un cromosoma que es una solución lo suficientemente
+buena (lo suficientemente \textit{fit}) del problema. Dependiendo del tipo de algoritmo utilizado, la mejor solución puede ser el mejor cromosoma que ha aparecido en todas las iteraciones o el mejor cromosoma
+de la última generación.
+
+El rendimiento de un algoritmo genético depende enormemente de los métodos utilizados para codificar posibles soluciones en cromosomas y el criterio utilizado en la función fitness para evaluar a los candidatos.
+Otros detalles importantes a tener en cuenta son las probabilidades de recombinación y mutación, el tamaño de la población y el número de iteraciones. Estos valores puedes ser ajustados convenientemente después
+de analizar el rendimiento del algoritmo tras unas carreras de prueba.
+
+Los algoritmos genéticos tienen una gran variedad de aplicaciones. Algunos ejemplos destacados son la \textit{programación automática} y el \textit{``machine learning''}. Funcionan también especialmente bien para
+modelar distintos fenómenos en economía, ecología, el sistema inmunológico humano, genética y sistemas sociales.

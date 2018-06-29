@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.30)  24 JUN 2018 01:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.30)  29 JUN 2018 10:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -974,105 +974,85 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18> not available
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/UnizarLogo.png>] [2
 
-]
-
-pdfTeX warning: pdflatex (file /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Impresos/Autoria.pdf, id=17, 542.025pt x 796.77673pt>
+] <Impresos/Autoria.pdf, id=17, 612.8496pt x 844.11362pt>
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf>
 Package pdftex.def Info: Impresos/Autoria.pdf used on input line 129.
-(pdftex.def)             Requested size: 542.02367pt x 796.77478pt.
-
-
-pdfTeX warning: pdflatex (file /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
+(pdftex.def)             Requested size: 612.84808pt x 844.11156pt.
 File: Impresos/Autoria.pdf Graphic file (type pdf)
-<use Impresos/Autoria.pdf>
+ <use Impresos/Autoria.pdf>
 Package pdftex.def Info: Impresos/Autoria.pdf used on input line 129.
-(pdftex.def)             Requested size: 542.02367pt x 796.77478pt.
-
-
-pdfTeX warning: pdflatex (file /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex (file /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<Impresos/Autoria.pdf, id=20, page=1, 542.025pt x 796.77673pt>
+(pdftex.def)             Requested size: 612.84808pt x 844.11156pt.
+ <Impresos/Autoria.pdf, id=20, page=1, 612.8496pt x 844.11362pt>
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf, page 1>
 Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 129.
-(pdftex.def)             Requested size: 542.02367pt x 796.77478pt.
+(pdftex.def)             Requested size: 612.84808pt x 844.11156pt.
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf, page 1>
 Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 129.
-(pdftex.def)             Requested size: 575.42044pt x 845.86804pt.
+(pdftex.def)             Requested size: 598.33482pt x 824.1216pt.
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf, page 1>
 Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 129.
-(pdftex.def)             Requested size: 575.42044pt x 845.86804pt.
+(pdftex.def)             Requested size: 598.33482pt x 824.1216pt.
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf, page 1>
 Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 129.
-(pdftex.def)             Requested size: 575.42044pt x 845.86804pt.
+(pdftex.def)             Requested size: 598.33482pt x 824.1216pt.
 File: Impresos/Autoria.pdf Graphic file (type pdf)
  <use Impresos/Autoria.pdf, page 1>
 Package pdftex.def Info: Impresos/Autoria.pdf, page1 used on input line 129.
-(pdftex.def)             Requested size: 575.42044pt x 845.86804pt.
- [1 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf>] [2
+(pdftex.def)             Requested size: 598.33482pt x 824.1216pt.
+ [1 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf
 
-] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Agradecimientos.tex) [3] [4
+pdfTeX warning: pdflatex (file /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Impresos/Autoria.pdf): PDF inclusion: Subtype in Resources dict is not a name (key 'Subtype', type <stream>); ignored.
+>] [2
 
-] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Resumen.tex) [5] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Abstract.tex) [6] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.toc
+] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Resumen.tex)
+Underfull \hbox (badness 1024) in paragraph at lines 18--141
+[]\OT1/cmr/m/n/12 Una vez ob-te-ni-do el agen-te con las pro-pie-da-des de fo-to-ta-xis y plas-ti-ci-dad
+ []
+
+[3
+
+] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Abstract.tex) [4] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
- [7
+ [5
 
 
 ])
 \tf@toc=\write5
 \openout5 = `memoria.toc'.
 
- [8] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.lof
+ [6] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+ [7
+
+])
 \tf@lof=\write6
 \openout6 = `memoria.lof'.
 
- [9
-
-] [10
-
-] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.lot
+ [8] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
 \tf@lot=\write7
 \openout7 = `memoria.lot'.
 
- (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo1.tex [11] [12
+ (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo1.tex [9
 
 ]
 Cap\'{\i }tulo 1.
+[1
 
-Underfull \hbox (badness 2582) in paragraph at lines 11--13
-[]\OT1/cmr/m/n/12 Trabajos re-cien-tes en neu-ro-cien-cia han mos-tra-do que exis-ten me-ca-nis-mos
- []
-
-
-Underfull \hbox (badness 1117) in paragraph at lines 14--16
-[]\OT1/cmr/m/n/12 Dotar a un agen-te ar-ti-fi-cial de pro-pie-da-des de adap-ta-ci^^Son ho-meost^^Sati-ca le
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1]
-Underfull \vbox (badness 1142) has occurred while \output is active []
-
- [2]) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo2.tex [3] [4
-
-]
+] [2]) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo2.tex [3]
 Cap\'{\i }tulo 2.
-[1] [2]
+[1
+
+] [2]
 LaTeX Font Info:    Try loading font information for U+lasy on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -1081,111 +1061,631 @@ Underfull \hbox (badness 3049) in paragraph at lines 36--37
 []\OT1/cmr/m/n/12 La me-to-do-log^^S^^Pa em-plea-da es la si-guien-te: una po-bla-ci^^Son de cro-mo-so-mas
  []
 
-[4]
-Underfull \hbox (badness 1184) in paragraph at lines 45--46
-\OT1/cmr/m/n/12 des-de as-pec-tos in-ge-nie-ri-les has-ta cient^^S^^Pficos[[]], al-gu-nos de los cua-les son:
- []
-
-) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo3.tex [5] [6]
+[4] [5]) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo3.tex [6]
 Cap\'{\i }tulo 3.
 
 Underfull \hbox (badness 5832) in paragraph at lines 4--4
 []\OT1/cmr/bx/n/17.28 Redes neu-ro-na-les re-cu-rren-tes de tiem-po
  []
 
-<Imagenes/CTRNNBasica.png, id=111, 1591.9475pt x 772.8875pt>
+<Imagenes/CTRNNBasica.png, id=88, 1591.9475pt x 772.8875pt>
 File: Imagenes/CTRNNBasica.png Graphic file (type png)
  <use Imagenes/CTRNNBasica.png>
 Package pdftex.def Info: Imagenes/CTRNNBasica.png used on input line 37.
 (pdftex.def)             Requested size: 352.8044pt x 170.708pt.
  [1
 
-] [2 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/CTRNNBasica.png>] <Imagenes/HomeostatSchema.png, id=122, 867.24pt x 539.01375pt>
+] [2 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/CTRNNBasica.png>] <Imagenes/HomeostatSchema.png, id=97, 867.24pt x 539.01375pt>
 File: Imagenes/HomeostatSchema.png Graphic file (type png)
  <use Imagenes/HomeostatSchema.png>
 Package pdftex.def Info: Imagenes/HomeostatSchema.png used on input line 61.
 (pdftex.def)             Requested size: 264.60707pt x 142.26222pt.
- <Imagenes/HomeostatTransfer.png, id=123, 690.58pt x 526.96875pt>
+ <Imagenes/HomeostatTransfer.png, id=98, 690.58pt x 526.96875pt>
 File: Imagenes/HomeostatTransfer.png Graphic file (type png)
  <use Imagenes/HomeostatTransfer.png>
 Package pdftex.def Info: Imagenes/HomeostatTransfer.png used on input line 69.
 (pdftex.def)             Requested size: 264.6149pt x 170.71602pt.
  [3 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/HomeostatSchema.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/HomeostatTransfer.png>]
-Underfull \hbox (badness 2221) in paragraph at lines 114--119
-[]\OT1/cmr/m/n/12 Estos al-go-rit-mos re-pre-sen-tan una ra-ma den-tro del cam-po co-no-ci-do co-mo
+Underfull \hbox (badness 1038) in paragraph at lines 109--111
+[]\OT1/cmr/m/n/12 Durante la rea-li-za-ci^^Son de es-te tra-ba-jo de di-se~n^^So e im-ple-ment^^So un sen-ci-llo
  []
 
-[4] <Imagenes/PoblacionGA.png, id=131, 324.21124pt x 173.64874pt>
-File: Imagenes/PoblacionGA.png Graphic file (type png)
- <use Imagenes/PoblacionGA.png>
-Package pdftex.def Info: Imagenes/PoblacionGA.png used on input line 145.
-(pdftex.def)             Requested size: 264.62807pt x 142.26836pt.
-
-Underfull \hbox (badness 1253) in paragraph at lines 150--158
-[]\OT1/cmr/m/n/12 Un al-go-rit-mo gen^^Seti-co co-mien-za con una \OT1/cmr/m/it/12 po-bla-ci^^Son ini-cial \OT1/cmr/m/n/12 de cro-mo-so-mas,
- []
-
-[5 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/PoblacionGA.png>] <Imagenes/CrossoverExample.png, id=136, 1011.78pt x 284.06125pt>
-File: Imagenes/CrossoverExample.png Graphic file (type png)
- <use Imagenes/CrossoverExample.png>
-Package pdftex.def Info: Imagenes/CrossoverExample.png used on input line 161.
-(pdftex.def)             Requested size: 441.01617pt x 142.26865pt.
- [6 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/CrossoverExample.png>]) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo4.tex [7] [8
-
-]
+[4]) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo4.tex [5]
 Cap\'{\i }tulo 4.
-<Imagenes/Agent.png, id=148, 370.38374pt x 257.96375pt>
+<Imagenes/Agent.png, id=110, 370.38374pt x 257.96375pt>
 File: Imagenes/Agent.png Graphic file (type png)
  <use Imagenes/Agent.png>
 Package pdftex.def Info: Imagenes/Agent.png used on input line 13.
 (pdftex.def)             Requested size: 264.61325pt x 170.72105pt.
- [1 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent.png>] [2] [3] <Imagenes/Agent0Controller.png, id=159, 342.27875pt x 522.95375pt>
+ [1
+
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent.png>] [2] [3] <Imagenes/Agent0Controller.png, id=121, 342.27875pt x 522.95375pt>
 File: Imagenes/Agent0Controller.png Graphic file (type png)
  <use Imagenes/Agent0Controller.png>
-Package pdftex.def Info: Imagenes/Agent0Controller.png used on input line 121.
+Package pdftex.def Info: Imagenes/Agent0Controller.png used on input line 128.
 (pdftex.def)             Requested size: 176.40869pt x 199.17134pt.
- [4 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent0Controller.png>] <Imagenes/Agent1Controller.png, id=164, 703.62875pt x 573.14125pt>
+
+Underfull \hbox (badness 2617) in paragraph at lines 134--137
+[]\OT1/cmr/m/n/12 Este agen-te, al igual que el ``Agen-te 0'', est^^Sa di-se~nado pa-ra se-guir un
+ []
+
+[4 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent0Controller.png>] <Imagenes/Agent1Controller.png, id=126, 703.62875pt x 573.14125pt>
 File: Imagenes/Agent1Controller.png Graphic file (type png)
  <use Imagenes/Agent1Controller.png>
-Package pdftex.def Info: Imagenes/Agent1Controller.png used on input line 141.
+Package pdftex.def Info: Imagenes/Agent1Controller.png used on input line 148.
 (pdftex.def)             Requested size: 264.61168pt x 199.16818pt.
- [5 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent1Controller.png>] <Imagenes/Agent2Controller.png, id=170, 583.17876pt x 522.95375pt>
+ [5 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent1Controller.png>] <Imagenes/Agent2Controller.png, id=131, 583.17876pt x 522.95375pt>
 File: Imagenes/Agent2Controller.png Graphic file (type png)
  <use Imagenes/Agent2Controller.png>
-Package pdftex.def Info: Imagenes/Agent2Controller.png used on input line 159.
+Package pdftex.def Info: Imagenes/Agent2Controller.png used on input line 164.
 (pdftex.def)             Requested size: 220.5068pt x 199.17134pt.
- [6 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent2Controller.png>] <Imagenes/vector0.png, id=175, 805.0075pt x 202.7575pt>
+
+Underfull \vbox (badness 7649) has occurred while \output is active []
+
+ [6 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agent2Controller.png>] <Imagenes/vector0.png, id=137, 805.0075pt x 202.7575pt>
 File: Imagenes/vector0.png Graphic file (type png)
  <use Imagenes/vector0.png>
-Package pdftex.def Info: Imagenes/vector0.png used on input line 184.
+Package pdftex.def Info: Imagenes/vector0.png used on input line 178.
 (pdftex.def)             Requested size: 441.01126pt x 113.81258pt.
-
-Underfull \vbox (badness 2856) has occurred while \output is active []
-
- [7] <Imagenes/vector12.png, id=179, 805.0075pt x 202.7575pt>
+ <Imagenes/vector12.png, id=138, 805.0075pt x 202.7575pt>
 File: Imagenes/vector12.png Graphic file (type png)
  <use Imagenes/vector12.png>
-Package pdftex.def Info: Imagenes/vector12.png used on input line 194.
+Package pdftex.def Info: Imagenes/vector12.png used on input line 188.
 (pdftex.def)             Requested size: 441.01126pt x 113.81258pt.
+ [7 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/vector0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/vector12.png>] [8] [9] [10] [11]
 
-Underfull \vbox (badness 1675) has occurred while \output is active []
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 295.
 
- [8 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/vector0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/vector12.png>] [9]) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo5.tex [10]
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 295.
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 308.
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 308.
+
+) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo5.tex [12]
 Cap\'{\i }tulo 5.
-) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo6.tex [11
+<Imagenes/Agente0Trayectoria.png, id=163, 700.11563pt x 422.32782pt>
+File: Imagenes/Agente0Trayectoria.png Graphic file (type png)
+ <use Imagenes/Agente0Trayectoria.png>
+Package pdftex.def Info: Imagenes/Agente0Trayectoria.png used on input line 19.
+(pdftex.def)             Requested size: 352.82382pt x 199.17073pt.
 
-] [12
+Underfull \hbox (badness 1009) in paragraph at lines 20--20
+[]\OT1/cmr/m/n/12 Figura 5.1: |Tra-yec-to-ria del ``Agen-te 0'' du-ran-te la rea-li-za-ci^^Son del ex-pe-ri-men-to
+ []
 
-]
+[13
+
+] [14 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente0Trayectoria.png>] [15] <Imagenes/Agente1Trayectoria.png, id=174, 692.5875pt x 415.5525pt>
+File: Imagenes/Agente1Trayectoria.png Graphic file (type png)
+ <use Imagenes/Agente1Trayectoria.png>
+Package pdftex.def Info: Imagenes/Agente1Trayectoria.png used on input line 66.
+(pdftex.def)             Requested size: 396.92429pt x 227.62248pt.
+ <Imagenes/Activaciones10.png, id=175, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones10.png Graphic file (type png)
+ <use Imagenes/Activaciones10.png>
+Package pdftex.def Info: Imagenes/Activaciones10.png used on input line 77.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+ <Imagenes/Activaciones11.png, id=176, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones11.png Graphic file (type png)
+ <use Imagenes/Activaciones11.png>
+Package pdftex.def Info: Imagenes/Activaciones11.png used on input line 78.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+ <Imagenes/Activaciones12.png, id=177, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones12.png Graphic file (type png)
+ <use Imagenes/Activaciones12.png>
+Package pdftex.def Info: Imagenes/Activaciones12.png used on input line 80.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+ <Imagenes/Activaciones13.png, id=178, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones13.png Graphic file (type png)
+ <use Imagenes/Activaciones13.png>
+Package pdftex.def Info: Imagenes/Activaciones13.png used on input line 81.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+ <Imagenes/Activaciones14.png, id=179, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones14.png Graphic file (type png)
+ <use Imagenes/Activaciones14.png>
+Package pdftex.def Info: Imagenes/Activaciones14.png used on input line 83.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+ <Imagenes/Activaciones15.png, id=180, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones15.png Graphic file (type png)
+ <use Imagenes/Activaciones15.png>
+Package pdftex.def Info: Imagenes/Activaciones15.png used on input line 84.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Trayectoria.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones10.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones11.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones12.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones13.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones14.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones15.png>] <Imagenes/BoxPlot1.png, id=194, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlot1.png Graphic file (type png)
+ <use Imagenes/BoxPlot1.png>
+Package pdftex.def Info: Imagenes/BoxPlot1.png used on input line 117.
+(pdftex.def)             Requested size: 352.82484pt x 227.62827pt.
+ [18 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/BoxPlot1.png>] <Imagenes/BoxPlotNP1.png, id=200, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlotNP1.png Graphic file (type png)
+ <use Imagenes/BoxPlotNP1.png>
+Package pdftex.def Info: Imagenes/BoxPlotNP1.png used on input line 148.
+(pdftex.def)             Requested size: 352.82484pt x 227.62827pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19] [20 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/BoxPlotNP1.png>] <Imagenes/BoxPlotNW1.png, id=208, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlotNW1.png Graphic file (type png)
+ <use Imagenes/BoxPlotNW1.png>
+Package pdftex.def Info: Imagenes/BoxPlotNW1.png used on input line 176.
+(pdftex.def)             Requested size: 352.82484pt x 227.62827pt.
+ [21 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/BoxPlotNW1.png>] <Imagenes/Agente2Trayectoria.png, id=213, 696.35156pt x 413.29407pt>
+File: Imagenes/Agente2Trayectoria.png Graphic file (type png)
+ <use Imagenes/Agente2Trayectoria.png>
+Package pdftex.def Info: Imagenes/Agente2Trayectoria.png used on input line 208.
+(pdftex.def)             Requested size: 396.91388pt x 199.1735pt.
+ <Imagenes/Activaciones20.png, id=214, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones20.png Graphic file (type png)
+ <use Imagenes/Activaciones20.png>
+Package pdftex.def Info: Imagenes/Activaciones20.png used on input line 219.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+ <Imagenes/Activaciones21.png, id=215, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones21.png Graphic file (type png)
+ <use Imagenes/Activaciones21.png>
+Package pdftex.def Info: Imagenes/Activaciones21.png used on input line 220.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+ <Imagenes/Activaciones22.png, id=216, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones22.png Graphic file (type png)
+ <use Imagenes/Activaciones22.png>
+Package pdftex.def Info: Imagenes/Activaciones22.png used on input line 222.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+ <Imagenes/Activaciones23.png, id=217, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones23.png Graphic file (type png)
+ <use Imagenes/Activaciones23.png>
+Package pdftex.def Info: Imagenes/Activaciones23.png used on input line 223.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+ <Imagenes/Activaciones24.png, id=218, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones24.png Graphic file (type png)
+ <use Imagenes/Activaciones24.png>
+Package pdftex.def Info: Imagenes/Activaciones24.png used on input line 225.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+ <Imagenes/Activaciones25.png, id=219, 602.25pt x 451.6875pt>
+File: Imagenes/Activaciones25.png Graphic file (type png)
+ <use Imagenes/Activaciones25.png>
+Package pdftex.def Info: Imagenes/Activaciones25.png used on input line 226.
+(pdftex.def)             Requested size: 198.45662pt x 148.84367pt.
+
+[22 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Trayectoria.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones20.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones21.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones22.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones23.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones24.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Activaciones25.png>] <Imagenes/BoxPlot2.png, id=233, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlot2.png Graphic file (type png)
+ <use Imagenes/BoxPlot2.png>
+Package pdftex.def Info: Imagenes/BoxPlot2.png used on input line 258.
+(pdftex.def)             Requested size: 352.82484pt x 227.62827pt.
+ [24 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/BoxPlot2.png>] <Imagenes/BoxPlotNP2.png, id=240, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlotNP2.png Graphic file (type png)
+ <use Imagenes/BoxPlotNP2.png>
+Package pdftex.def Info: Imagenes/BoxPlotNP2.png used on input line 288.
+(pdftex.def)             Requested size: 352.82484pt x 227.62827pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25] [26 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/BoxPlotNP2.png>] <Imagenes/BoxPlotNW2.png, id=248, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlotNW2.png Graphic file (type png)
+ <use Imagenes/BoxPlotNW2.png>
+Package pdftex.def Info: Imagenes/BoxPlotNW2.png used on input line 315.
+(pdftex.def)             Requested size: 352.82484pt x 227.62827pt.
+) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo6.tex [27 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/BoxPlotNW2.png>]
 Cap\'{\i }tulo 6.
-) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.bbl [13] [14
+[28
 
 ]
+Underfull \hbox (badness 2591) in paragraph at lines 38--39
+[]\OT1/cmr/m/n/12 Las per-tur-ba-cio-nes en los pe-sos sin^^Sapti-cos afec-tan sig-ni-fi-ca-ti-va-men-te al
+ []
+
+[29]) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Capitulos/Capitulo7.tex [30]
 Cap\'{\i }tulo 7.
-[15]) [16] [17
+) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.bbl [31
+
+]
+Cap\'{\i }tulo 8.
+[32
+
+]) [33] [34
 
 
-] [18] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.aux
+] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Anexos/Anexo1.tex
+Anexos A.
+[35
+
+] <Imagenes/CustomHomeostat.png, id=278, 597.23125pt x 448.67625pt>
+File: Imagenes/CustomHomeostat.png Graphic file (type png)
+ <use Imagenes/CustomHomeostat.png>
+Package pdftex.def Info: Imagenes/CustomHomeostat.png used on input line 24.
+(pdftex.def)             Requested size: 352.81903pt x 227.61691pt.
+) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Anexos/Anexo2.tex [36 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/CustomHomeostat.png>]
+Anexos B.
+
+Underfull \hbox (badness 2221) in paragraph at lines 5--10
+[]\OT1/cmr/m/n/12 Estos al-go-rit-mos re-pre-sen-tan una ra-ma den-tro del cam-po co-no-ci-do co-mo
+ []
+
+[37
+
+] <Imagenes/PoblacionGA.png, id=286, 324.21124pt x 173.64874pt>
+File: Imagenes/PoblacionGA.png Graphic file (type png)
+ <use Imagenes/PoblacionGA.png>
+Package pdftex.def Info: Imagenes/PoblacionGA.png used on input line 36.
+(pdftex.def)             Requested size: 264.62807pt x 142.26836pt.
+
+Underfull \hbox (badness 1253) in paragraph at lines 41--49
+[]\OT1/cmr/m/n/12 Un al-go-rit-mo gen^^Seti-co co-mien-za con una \OT1/cmr/m/it/12 po-bla-ci^^Son ini-cial \OT1/cmr/m/n/12 de cro-mo-so-mas,
+ []
+
+[38 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/PoblacionGA.png>] <Imagenes/CrossoverExample.png, id=291, 1011.78pt x 284.06125pt>
+File: Imagenes/CrossoverExample.png Graphic file (type png)
+ <use Imagenes/CrossoverExample.png>
+Package pdftex.def Info: Imagenes/CrossoverExample.png used on input line 52.
+(pdftex.def)             Requested size: 441.01617pt x 142.26865pt.
+ [39 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/CrossoverExample.png>]) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Anexos/Anexo3.tex [40]
+Anexos C.
+<Imagenes/Agente1Activaciones/Agente0/Neurona0.png, id=299, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente0/Neurona0.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente0/Neurona0.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente0/Neurona0.png used on input line 5.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente0/Neurona1.png, id=300, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente0/Neurona1.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente0/Neurona1.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente0/Neurona1.png used on input line 8.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente0/Neurona2.png, id=301, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente0/Neurona2.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente0/Neurona2.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente0/Neurona2.png used on input line 11.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente0/Neurona3.png, id=302, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente0/Neurona3.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente0/Neurona3.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente0/Neurona3.png used on input line 15.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente0/Neurona4.png, id=303, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente0/Neurona4.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente0/Neurona4.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente0/Neurona4.png used on input line 18.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente0/Neurona5.png, id=304, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente0/Neurona5.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente0/Neurona5.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente0/Neurona5.png used on input line 21.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente1/Neurona0.png, id=305, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente1/Neurona0.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente1/Neurona0.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente1/Neurona0.png used on input line 29.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+
+<Imagenes/Agente1Activaciones/Agente1/Neurona1.png, id=306, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente1/Neurona1.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente1/Neurona1.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente1/Neurona1.png used on input line 32.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente1/Neurona2.png, id=307, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente1/Neurona2.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente1/Neurona2.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente1/Neurona2.png used on input line 35.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente1/Neurona3.png, id=308, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente1/Neurona3.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente1/Neurona3.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente1/Neurona3.png used on input line 39.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente1/Neurona4.png, id=309, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente1/Neurona4.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente1/Neurona4.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente1/Neurona4.png used on input line 42.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente1/Neurona5.png, id=310, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente1/Neurona5.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente1/Neurona5.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente1/Neurona5.png used on input line 45.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Imagenes/Agente1Activaciones/Agente2/Neurona0.png, id=311, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente2/Neurona0.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente2/Neurona0.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente2/Neurona0.png used on input line 53.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente2/Neurona1.png, id=312, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente2/Neurona1.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente2/Neurona1.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente2/Neurona1.png used on input line 56.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente2/Neurona2.png, id=313, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente2/Neurona2.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente2/Neurona2.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente2/Neurona2.png used on input line 59.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente2/Neurona3.png, id=314, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente2/Neurona3.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente2/Neurona3.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente2/Neurona3.png used on input line 63.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente2/Neurona4.png, id=315, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente2/Neurona4.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente2/Neurona4.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente2/Neurona4.png used on input line 66.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente2/Neurona5.png, id=316, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente2/Neurona5.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente2/Neurona5.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente2/Neurona5.png used on input line 69.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Imagenes/Agente1Activaciones/Agente3/Neurona0.png, id=317, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente3/Neurona0.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente3/Neurona0.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente3/Neurona0.png used on input line 77.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente3/Neurona1.png, id=318, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente3/Neurona1.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente3/Neurona1.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente3/Neurona1.png used on input line 80.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente3/Neurona2.png, id=319, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente3/Neurona2.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente3/Neurona2.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente3/Neurona2.png used on input line 83.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente3/Neurona3.png, id=320, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente3/Neurona3.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente3/Neurona3.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente3/Neurona3.png used on input line 87.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente3/Neurona4.png, id=321, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente3/Neurona4.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente3/Neurona4.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente3/Neurona4.png used on input line 90.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente3/Neurona5.png, id=322, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente3/Neurona5.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente3/Neurona5.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente3/Neurona5.png used on input line 93.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Imagenes/Agente1Activaciones/Agente4/Neurona0.png, id=323, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente4/Neurona0.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente4/Neurona0.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente4/Neurona0.png used on input line 101.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente4/Neurona1.png, id=324, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente4/Neurona1.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente4/Neurona1.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente4/Neurona1.png used on input line 104.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente4/Neurona2.png, id=325, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente4/Neurona2.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente4/Neurona2.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente4/Neurona2.png used on input line 107.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente4/Neurona3.png, id=326, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente4/Neurona3.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente4/Neurona3.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente4/Neurona3.png used on input line 111.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente4/Neurona4.png, id=327, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente4/Neurona4.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente4/Neurona4.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente4/Neurona4.png used on input line 114.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente1Activaciones/Agente4/Neurona5.png, id=328, 602.25pt x 451.6875pt>
+File: Imagenes/Agente1Activaciones/Agente4/Neurona5.png Graphic file (type png)
+ <use Imagenes/Agente1Activaciones/Agente4/Neurona5.png>
+Package pdftex.def Info: Imagenes/Agente1Activaciones/Agente4/Neurona5.png used on input line 117.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Anexos/Anexo4.tex [41
+
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente0/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente0/Neurona1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente0/Neurona2.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente0/Neurona3.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente0/Neurona4.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente0/Neurona5.png>] [42 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente1/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente1/Neurona1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente1/Neurona2.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activacio
+nes/Agente1/Neurona3.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente1/Neurona4.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente1/Neurona5.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente2/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente2/Neurona1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente2/Neurona2.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente2/Neurona3.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente2/Neurona4.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente2/Neurona5.png>] [43 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente3/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/
+Imagenes/Agente1Activaciones/Agente3/Neurona1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente3/Neurona2.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente3/Neurona3.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente3/Neurona4.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente3/Neurona5.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente4/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente4/Neurona1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente4/Neurona2.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente4/Neurona3.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente4/Neurona4.png> </home/belbus/GitHub/tfg/Trabaj
+oFinDeGrado/Memoria/Imagenes/Agente1Activaciones/Agente4/Neurona5.png>]
+Anexos D.
+<Imagenes/Agente2Activaciones/Agente0/Neurona0.png, id=369, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente0/Neurona0.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente0/Neurona0.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente0/Neurona0.png used on input line 5.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente0/Neurona1.png, id=370, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente0/Neurona1.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente0/Neurona1.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente0/Neurona1.png used on input line 8.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente0/Neurona2.png, id=371, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente0/Neurona2.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente0/Neurona2.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente0/Neurona2.png used on input line 11.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente0/Neurona3.png, id=372, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente0/Neurona3.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente0/Neurona3.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente0/Neurona3.png used on input line 15.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente0/Neurona4.png, id=373, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente0/Neurona4.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente0/Neurona4.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente0/Neurona4.png used on input line 18.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente0/Neurona5.png, id=374, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente0/Neurona5.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente0/Neurona5.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente0/Neurona5.png used on input line 21.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente1/Neurona0.png, id=375, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente1/Neurona0.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente1/Neurona0.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente1/Neurona0.png used on input line 29.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+
+<Imagenes/Agente2Activaciones/Agente1/Neurona1.png, id=376, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente1/Neurona1.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente1/Neurona1.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente1/Neurona1.png used on input line 32.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente1/Neurona2.png, id=377, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente1/Neurona2.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente1/Neurona2.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente1/Neurona2.png used on input line 35.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente1/Neurona3.png, id=378, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente1/Neurona3.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente1/Neurona3.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente1/Neurona3.png used on input line 39.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente1/Neurona4.png, id=379, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente1/Neurona4.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente1/Neurona4.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente1/Neurona4.png used on input line 42.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente1/Neurona5.png, id=380, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente1/Neurona5.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente1/Neurona5.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente1/Neurona5.png used on input line 45.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Imagenes/Agente2Activaciones/Agente2/Neurona0.png, id=381, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente2/Neurona0.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente2/Neurona0.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente2/Neurona0.png used on input line 53.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente2/Neurona1.png, id=382, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente2/Neurona1.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente2/Neurona1.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente2/Neurona1.png used on input line 56.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente2/Neurona2.png, id=383, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente2/Neurona2.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente2/Neurona2.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente2/Neurona2.png used on input line 59.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente2/Neurona3.png, id=384, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente2/Neurona3.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente2/Neurona3.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente2/Neurona3.png used on input line 63.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente2/Neurona4.png, id=385, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente2/Neurona4.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente2/Neurona4.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente2/Neurona4.png used on input line 66.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente2/Neurona5.png, id=386, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente2/Neurona5.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente2/Neurona5.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente2/Neurona5.png used on input line 69.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Imagenes/Agente2Activaciones/Agente3/Neurona0.png, id=387, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente3/Neurona0.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente3/Neurona0.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente3/Neurona0.png used on input line 77.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente3/Neurona1.png, id=388, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente3/Neurona1.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente3/Neurona1.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente3/Neurona1.png used on input line 80.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente3/Neurona2.png, id=389, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente3/Neurona2.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente3/Neurona2.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente3/Neurona2.png used on input line 83.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente3/Neurona3.png, id=390, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente3/Neurona3.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente3/Neurona3.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente3/Neurona3.png used on input line 87.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente3/Neurona4.png, id=391, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente3/Neurona4.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente3/Neurona4.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente3/Neurona4.png used on input line 90.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente3/Neurona5.png, id=392, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente3/Neurona5.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente3/Neurona5.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente3/Neurona5.png used on input line 93.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Imagenes/Agente2Activaciones/Agente4/Neurona0.png, id=393, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente4/Neurona0.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente4/Neurona0.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente4/Neurona0.png used on input line 101.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente4/Neurona1.png, id=394, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente4/Neurona1.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente4/Neurona1.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente4/Neurona1.png used on input line 104.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente4/Neurona2.png, id=395, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente4/Neurona2.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente4/Neurona2.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente4/Neurona2.png used on input line 107.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente4/Neurona3.png, id=396, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente4/Neurona3.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente4/Neurona3.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente4/Neurona3.png used on input line 111.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente4/Neurona4.png, id=397, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente4/Neurona4.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente4/Neurona4.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente4/Neurona4.png used on input line 114.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+ <Imagenes/Agente2Activaciones/Agente4/Neurona5.png, id=398, 602.25pt x 451.6875pt>
+File: Imagenes/Agente2Activaciones/Agente4/Neurona5.png Graphic file (type png)
+ <use Imagenes/Agente2Activaciones/Agente4/Neurona5.png>
+Package pdftex.def Info: Imagenes/Agente2Activaciones/Agente4/Neurona5.png used on input line 117.
+(pdftex.def)             Requested size: 145.53665pt x 109.15157pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Anexos/Anexo5.tex [44
+
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente0/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente0/Neurona1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente0/Neurona2.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente0/Neurona3.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente0/Neurona4.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente0/Neurona5.png>] [45 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente1/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente1/Neurona1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente1/Neurona2.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activacio
+nes/Agente1/Neurona3.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente1/Neurona4.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente1/Neurona5.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente2/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente2/Neurona1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente2/Neurona2.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente2/Neurona3.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente2/Neurona4.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente2/Neurona5.png>] [46 </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente3/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/
+Imagenes/Agente2Activaciones/Agente3/Neurona1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente3/Neurona2.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente3/Neurona3.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente3/Neurona4.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente3/Neurona5.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente4/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente4/Neurona1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente4/Neurona2.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente4/Neurona3.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente4/Neurona4.png> </home/belbus/GitHub/tfg/Trabaj
+oFinDeGrado/Memoria/Imagenes/Agente2Activaciones/Agente4/Neurona5.png>]
+Anexos E.
+<Imagenes/Cronograma.png, id=438, 887.56593pt x 169.38281pt>
+File: Imagenes/Cronograma.png Graphic file (type png)
+ <use Imagenes/Cronograma.png>
+Package pdftex.def Info: Imagenes/Cronograma.png used on input line 6.
+(pdftex.def)             Requested size: 441.01772pt x 84.16135pt.
+) [47
+
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/Imagenes/Cronograma.png>] (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.aux
 LaTeX Info: Redefining \. on input line 7.
 LaTeX Info: Redefining \% on input line 7.
 )
@@ -1195,18 +1695,19 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 19204 strings out of 493029
- 383938 string characters out of 6136234
- 457356 words of memory out of 5000000
- 22239 multiletter control sequences out of 15000+600000
- 16592 words of font info for 65 fonts, out of 8000000 for 9000
+ 19640 strings out of 493029
+ 402170 string characters out of 6136234
+ 457800 words of memory out of 5000000
+ 22617 multiletter control sequences out of 15000+600000
+ 17401 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,18n,77p,1416b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.pdf (50 pages, 933822 bytes).
+ 55i,18n,77p,1479b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
+Output written on /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Memoria/memoria.pdf (72 pages, 5416673 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
+ 493 PDF objects out of 1000 (max. 8388607)
+ 211 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 508 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,41 +1,67 @@
 \select@language {spanish}
-\contentsline {chapter}{Lista de Figuras}{IX}
-\contentsline {chapter}{Lista de Tablas}{XI}
+\contentsline {chapter}{Lista de Figuras}{VII}
+\contentsline {chapter}{Lista de Tablas}{IX}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}
 \contentsline {section}{\numberline {1.1}Contexto y motivaci\IeC {\'o}n}{2}
 \contentsline {section}{\numberline {1.2}Objetivos}{2}
 \contentsline {section}{\numberline {1.3}Estructura}{3}
+\contentsline {section}{\numberline {1.4}Planificaci\IeC {\'o}n}{3}
 \contentsline {chapter}{\numberline {2}Estado del arte}{1}
 \contentsline {subsubsection}{H\IeC {\'a}bitos}{1}
 \contentsline {subsubsection}{Agentes artificiales basados en h\IeC {\'a}bitos: Operativizaci\IeC {\'o}n de la noci\IeC {\'o}n de homeostasis}{2}
 \contentsline {subsubsection}{Controladores con plasticidad homeost\IeC {\'a}tica}{3}
 \contentsline {subsubsection}{Controladores dise\IeC {\~n}ados mediante computaci\IeC {\'o}n evolutiva}{4}
-\contentsline {subsubsection}{Conclusiones}{5}
+\contentsline {subsubsection}{Capacidades sociales}{5}
+\contentsline {subsubsection}{Conclusiones}{6}
 \contentsline {chapter}{\numberline {3}Fundamentos te\IeC {\'o}ricos}{1}
 \contentsline {section}{\numberline {3.1}Redes neuronales recurrentes de tiempo continuo (CTRNN)}{1}
 \contentsline {subsubsection}{Descripci\IeC {\'o}n matem\IeC {\'a}tica de una CTRNN}{1}
 \contentsline {subsubsection}{Valores de activaci\IeC {\'o}n y de salida de la neurona de una CTRNN}{2}
 \contentsline {section}{\numberline {3.2}Homeostasis}{2}
 \contentsline {section}{\numberline {3.3}Algoritmo gen\IeC {\'e}tico}{4}
-\contentsline {subsection}{\numberline {3.3.1}Componentes, estructura y terminolog\IeC {\'\i }a}{4}
 \contentsline {chapter}{\numberline {4}Modelo e implementaci\IeC {\'o}n}{1}
 \contentsline {subsection}{\numberline {4.0.1}Plasticidad}{2}
-\contentsline {section}{\numberline {4.1}Agentes}{3}
+\contentsline {section}{\numberline {4.1}Agentes}{4}
 \contentsline {subsection}{\numberline {4.1.1}Agente 0: agente sin comportamiento social}{4}
 \contentsline {subsubsection}{Controlador}{4}
-\contentsline {subsection}{\numberline {4.1.2}Agente 1: agente colectivo seg\IeC {\'u}n (Nombre del tio)}{4}
+\contentsline {subsection}{\numberline {4.1.2}Agente 1: agente colectivo aditivo}{5}
 \contentsline {subsubsection}{Controlador}{5}
-\contentsline {subsection}{\numberline {4.1.3}Agente 2: agente colectivo seg\IeC {\'u}n (Nombre del tio)}{5}
+\contentsline {subsection}{\numberline {4.1.3}Agente 2: agente colectivo estructural}{6}
 \contentsline {subsubsection}{Controlador}{6}
-\contentsline {section}{\numberline {4.2}Evoluci\IeC {\'o}n}{6}
+\contentsline {section}{\numberline {4.2}Evoluci\IeC {\'o}n}{7}
 \contentsline {subsection}{\numberline {4.2.1}Codificaci\IeC {\'o}n de los agentes}{7}
 \contentsline {subsection}{\numberline {4.2.2}Creaci\IeC {\'o}n de la poblaci\IeC {\'o}n inicial}{8}
-\contentsline {subsection}{\numberline {4.2.3}Funci\IeC {\'o}n de selecci\IeC {\'o}n}{9}
-\contentsline {subsection}{\numberline {4.2.4}Funci\IeC {\'o}n de recombinaci\IeC {\'o}n}{9}
+\contentsline {subsection}{\numberline {4.2.3}Funci\IeC {\'o}n de selecci\IeC {\'o}n}{8}
+\contentsline {subsection}{\numberline {4.2.4}Funci\IeC {\'o}n de recombinaci\IeC {\'o}n}{8}
 \contentsline {subsection}{\numberline {4.2.5}Funci\IeC {\'o}n de mutaci\IeC {\'o}n}{9}
-\contentsline {section}{\numberline {4.3}Simetr\IeC {\'\i }a}{10}
-\contentsline {section}{\numberline {4.4}Parametros y rangos}{10}
-\contentsline {chapter}{\numberline {5}Experimentos}{11}
-\contentsline {chapter}{\numberline {6}Conclusiones}{13}
-\contentsline {chapter}{\numberline {7}Bibliograf\'{\i }a}{15}
-\contentsline {chapter}{Anexos}{17}
+\contentsline {subsection}{\numberline {4.2.6}Funci\IeC {\'o}n fitness}{9}
+\contentsline {subsubsection}{Fitness individual}{9}
+\contentsline {subsubsection}{Fitness colectiva}{11}
+\contentsline {section}{\numberline {4.3}Simetr\IeC {\'\i }a}{12}
+\contentsline {section}{\numberline {4.4}Par\IeC {\'a}metros y rangos}{12}
+\contentsline {chapter}{\numberline {5}Experimentos}{13}
+\contentsline {section}{\numberline {5.1}Experimento individual}{13}
+\contentsline {subsection}{\numberline {5.1.1}Resultados del Agente 0}{13}
+\contentsline {section}{\numberline {5.2}Experimento colectivo}{14}
+\contentsline {subsection}{\numberline {5.2.1}Resultados del Agente 1}{15}
+\contentsline {subsubsection}{Trayectorias}{16}
+\contentsline {subsubsection}{Activaciones neuronales}{16}
+\contentsline {subsubsection}{Robustez ante ruido en los sensores}{18}
+\contentsline {subsubsection}{Robustez ante ruido en par\IeC {\'a}metros de la plasticidad}{19}
+\contentsline {subsection}{\numberline {5.2.2}Resultados del Agente 2}{22}
+\contentsline {subsubsection}{Trayectorias}{22}
+\contentsline {subsubsection}{Activaciones neuronales}{22}
+\contentsline {subsubsection}{Robustez ante ruido en los sensores}{24}
+\contentsline {subsubsection}{Robustez ante ruido en par\IeC {\'a}metros de la plasticidad}{25}
+\contentsline {chapter}{\numberline {6}Conclusiones}{28}
+\contentsline {subsubsection}{Comportamientos o conducta externa}{29}
+\contentsline {subsubsection}{Estructura o robustez interna}{29}
+\contentsline {chapter}{\numberline {7}Conclusiones personales}{31}
+\contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{32}
+\contentsline {chapter}{Anexos}{34}
+\contentsline {chapter}{\numberline {A}Homeostat}{35}
+\contentsline {chapter}{\numberline {B}Algoritmo gen\IeC {\'e}tico}{37}
+\contentsline {subsection}{\numberline {B.0.1}Componentes, estructura y terminolog\IeC {\'\i }a}{37}
+\contentsline {chapter}{\numberline {C}Gr\IeC {\'a}ficas completas de las activaciones neuronales del grupo de agentes de tipo 1}{41}
+\contentsline {chapter}{\numberline {D}Gr\IeC {\'a}ficas completas de las activaciones neuronales del grupo de agentes de tipo 2}{44}
+\contentsline {chapter}{\numberline {E}Planificaci\IeC {\'o}n y cronograma}{47}

@@ -28,7 +28,6 @@ class Agent:
 
         temp = [1 for _ in range(0, N_NEURONAS)]
         self.homeostatic = [ temp[:] for _ in range(0, N_LUCES)]
-        self.alimentado = False
 
         self.v = 0.0
         self.w = 0.0
@@ -158,9 +157,13 @@ def evaluate(individual):
         vAgents.append(Agent(agentID, 0.0 + (math.cos(randomAngle) * randomDistance), 0.0 + (math.sin(randomAngle) * randomDistance), random.random() * (2 * math.pi), vBias, vTau, gainMotor, gainSensor, vW, vP, vPType))
 
     # Preparation of fitness array to calculate centroid fitness (each agent takes care of his own fitness)
-    fitnessValues = []
+    collectiveFitness = []
     for i in range(0,N_LUCES):
-        fitnessValues.append([0.0, 0.0])   # Colective puntuation, time the light has been ON
+        collectiveFitness.append([0.0, 0.0])   # Colective puntuation, time the light has been ON
+
+    individualFitness = []
+    for i in range(0, N_AGENTES):
+        individualFitness.append([[0.0, 0.0] for _ in range(0, N_LUCES)])   # Individual puntuation. Each agent, each light, initial distance and final distance
 
     # Sensor 1 vision limits
     llimit1 = normalize(SEPARACIONSENSOR + VISIONSENSOR)   # 60º + 20º in radians
@@ -179,7 +182,11 @@ def evaluate(individual):
         time = random.randint(0.75 * T, 1.25 * T)   # Time the light will be on
 
         # Save the time the light will be on
-        fitnessValues[luces][1] = time
+        collectiveFitness[luces][1] = time
+
+        # Save the initial distance of each agent to that light
+        for i in range(0, N_AGENTES):
+            individualFitness[i][luces][0] = distance(vAgents[i].posX, vAgents[i].posY, xLuz, yLuz)
 
         # Auxiliar array to control the number of agents that are close to the light at the same time
         agentesCerca = [0 for _ in range(0,N_AGENTES)]
@@ -462,23 +469,14 @@ def evaluate(individual):
                 if (distance(agent.posX, agent.posY, xLuz, yLuz) < DISTANCIA_MIN_FITNESS):
                     agentesCerca[agent.id] = 1
                     if (sum(agentesCerca) > 3):
-                        fitnessValues[luces][0] -= 1
+                        collectiveFitness[luces][0] -= (1 * N_AGENTES)
                     else:
-                        if (agent.alimentado == False):
-                            agent.alimentado = True
-                            fitnessValues[luces][0] += 1
-                        elif (agent.alimentado == True and everyOneHasEaten(vAgents) == False):
-                            fitnessValues[luces][0] -= 1
-                        elif (agent.alimentado == True and everyOneHasEaten(vAgents) == True):
-                            fitnessValues[luces][0] += 1
-
-                # If everyone has eaten, change everyone to not eaten
-                if (everyOneHasEaten(vAgents) == True):
-                    for a in vAgents:
-                        a.alimentado = False
-
-        # At the end of current light, we do nothing anymore
-        # fitnessValues[luces][1] = distance(centroidX(vAgents), centroidY(vAgents), xLuz, yLuz)
+                        collectiveFitness[luces][0] += 1
+                else:
+                    agentesCerca[agent.id] = 0
+        # At the end of the light, calculate the final distance of each agent to the light
+        for i in range(0, N_AGENTES):
+            individualFitness[i][luces][1] = distance(vAgents[i].posX, vAgents[i].posY, xLuz, yLuz)
 
     # Rebuild the individual with the new weights
     indiv = []
@@ -499,13 +497,29 @@ def evaluate(individual):
 
     # When all lights have been run, calculate fitness of the group of individuals
     # Sum all the puntuation in the lights and the total time of the lights
+
+    temporalValues = [0.0 for _ in range(0, N_AGENTES)]
+    Fd = 0.0
+    FdTemp = 0.0
+    for i in range(0, N_AGENTES):
+        for j in range(0, N_LUCES):
+            if (individualFitness[i][j][1] > individualFitness[i][j][0]):
+                FdTemp = 0.0
+            else:
+                FdTemp = 1 - (individualFitness[i][j][1] / individualFitness[i][j][0])
+            temporalValues[i] += FdTemp
+
+        temporalValues[i] = temporalValues[i] / N_LUCES
+
+    Fd = sum(temporalValues) / N_AGENTES
+
     puntuacion = 0.0
     totalTime = 0.0
     for i in range(0, N_LUCES):
-        puntuacion += fitnessValues[i][0]
-        totalTime += fitnessValues[i][1]
+        puntuacion += collectiveFitness[i][0]
+        totalTime += collectiveFitness[i][1]
 
-    Fd =  puntuacion / (totalTime * 3)
+    Fp =  puntuacion / (totalTime * 3)
 
     FhVector = []
     for i in range(0, N_LUCES):
@@ -521,8 +535,11 @@ def evaluate(individual):
         FhVector.append(FhTemp)
 
     Fh = sum(FhVector) / N_LUCES
-
-    return ((Fd * 0.88) + (Fh * 0.12)),
+    # for i in range(0, N_LUCES):
+    #     print("Score: ", collectiveFitness[i][0], " - Time: ", collectiveFitness[i][1])
+    # print("-------------------------")
+    # print("Fp: ", Fp, " - Fh: ", Fh)
+    return ((Fd * 0.44) + (Fp * 0.44) + (Fh * 0.12)),
 
 
 #############################################################################################################

@@ -4,8 +4,27 @@
 \vspace{1cm}
 {\Large \bfseries ABSTRACT}
 
-\vspace{2.5cm}
+\vspace{1.5cm}
 \end{center}
 
+Being able to give adaptability features present in living beings to artificial agents, would provide them with the
+necessary skills to perform tasks for which they have not been trained for, or for which they have been trained
+but in a changing environment or with uncertainty. In this project we are interested, from an engineering perspective, in
+some of the self-regulating systems present in living organisms, known as homeostatic mechanisms, which are in the base of
+certain adaptation features.
 
-El resumen pero traducido al ingles
+In particular, the starting point has been the design and implementation of an homeostatic agent based on continuous time recurent
+neuronal networks with fototaxis features (ability to search and get closer to a lightsource). This agent will be the
+best candidate within a certain population, selected by a genetic algorithm. Which is interesting from the agent is that he
+develops homeostatic behaviour by plasticity mechanisms that let him modify his internal variables in order to reach a
+stable state and to keep himself in it even if affected by external disturbances.
+
+Once the agent with fototaxis behaviour and plasticity properties is obtained, we will give him certain features to let social behaviours appear,
+with the goal of analizing how does he interact in situations where more than one agent is involved. This social behaviour will be added following two
+different approaches. The first one assumes that agent features are additive. This means that the agent, once being
+able to orientate and move closer to a lightsource (or food), would need a new neuronal structure to encode a new feature (social
+coordination in this case). The system will be modeled with two different mechanisms in the controller, one for navigation
+and one for the social part. The sencond one defends that social behaviour is a structural feature of the system. Therefore,
+a new feature breaks throught previous features, restructuring the neuronal controller of the agent as a whole. The objective
+is to compare this two approaches and get conclusions about it by executing experiments in which various agents have to interact in
+a social way to archieve an objective.

@@ -8,14 +8,16 @@
 \@writefile{toc}{\select@language{spanish}}
 \@writefile{lof}{\select@language{spanish}}
 \@writefile{lot}{\select@language{spanish}}
-\@writefile{toc}{\contentsline {chapter}{Lista de Figuras}{IX}}
-\@writefile{toc}{\contentsline {chapter}{Lista de Tablas}{XI}}
+\@writefile{toc}{\contentsline {chapter}{Lista de Figuras}{VII}}
+\@writefile{toc}{\contentsline {chapter}{Lista de Tablas}{IX}}
+\citation{Ashby}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Contexto y motivaci\IeC {\'o}n}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Objetivos}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.3}Estructura}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}Planificaci\IeC {\'o}n}{3}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}Estado del arte}{1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -32,7 +34,12 @@
 \citation{FunaYNaka}
 \@writefile{toc}{\contentsline {subsubsection}{Controladores dise\IeC {\~n}ados mediante computaci\IeC {\'o}n evolutiva}{4}}
 \citation{Nolfi}
-\@writefile{toc}{\contentsline {subsubsection}{Conclusiones}{5}}
+\@writefile{toc}{\contentsline {subsubsection}{Capacidades sociales}{5}}
+\citation{KernMoll}
+\citation{KernMoll}
+\citation{Carruthers}
+\citation{McDowell}
+\@writefile{toc}{\contentsline {subsubsection}{Conclusiones}{6}}
 \citation{BeerRD}
 \citation{FunaYNaka}
 \citation{BeerRD}
@@ -52,19 +59,13 @@
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Homeostasis}{2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema de un Homeostato individual. La unidad recibe las entradas del resto de unidades ($w_{i}s_{i}$) y de si misma ($w_{1}s_{1}$). La salida $s_{1}$ es una funci\IeC {\'o}n lineal por partes de la suma ponderada de las entradas.)\relax }}{3}}
 \newlabel{fig:figuraHomeostatSchema}{{3.2}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de funci\IeC {\'o}n de transferencia de una unidad Homeostat. La funci\IeC {\'o}n es lineal por partes con puntos en ($x_{1},j_{1}$),...,($x_{p},y_{p}$) donde $x_{1}$ = 0 y $x_{p}$ = $N$, para todas las unidades en una red de $N$ unidades. Las lineas discontinuas representan el rango homeostatico de la red.\relax }}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Ejemplo de funci\IeC {\'o}n de transferencia de una unidad Homeostat. La funci\IeC {\'o}n es lineal por partes con puntos en ($x_{1},j_{1}$),...,($x_{p},y_{p}$) donde $x_{1}$ = 0 y $x_{p}$ = $N$, para todas las unidades en una red de $N$ unidades. Las l\IeC {\'\i }neas discontinuas representan el rango homeostatico de la red.\relax }}{3}}
 \newlabel{fig:homeostatTransferFunction}{{3.3}{3}}
 \newlabel{eq:sumaPonderadaHomeostat}{{3.3}{3}}
 \newlabel{eq:ecuPartesHomeostat}{{3.4}{3}}
-\citation{JennaCarr}
 \newlabel{eq:aferenteEQ}{{3.5}{4}}
 \newlabel{eq:transferEQ}{{3.6}{4}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Algoritmo gen\IeC {\'e}tico}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Componentes, estructura y terminolog\IeC {\'\i }a}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Ejemplo de estructura de poblaci\IeC {\'o}n, cromosomas y genes.\relax }}{5}}
-\newlabel{fig:figuraPoblacionGA}{{3.4}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Ejemplo de operaci\IeC {\'o}n de recombinaci\IeC {\'o}n de dos cromosomas.\relax }}{6}}
-\newlabel{fig:figuraCrossover}{{3.5}{6}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {4}Modelo e implementaci\IeC {\'o}n}{1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -75,61 +76,184 @@
 \newlabel{eq:newXformula}{{4.3}{2}}
 \newlabel{eq:newYformula}{{4.4}{2}}
 \newlabel{eq:newAformula}{{4.5}{2}}
+\newlabel{eq:intensity}{{4.6}{2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.0.1}Plasticidad}{2}}
-\newlabel{eq:R0plasticityRule}{{4.6}{3}}
-\newlabel{eq:R1plasticityRule}{{4.7}{3}}
-\newlabel{eq:R2plasticityRule}{{4.8}{3}}
-\newlabel{eq:R3plasticityRule}{{4.9}{3}}
-\newlabel{eq:WeightUpdate}{{4.10}{3}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}Agentes}{3}}
+\newlabel{eq:R0plasticityRule}{{4.7}{3}}
+\newlabel{eq:R1plasticityRule}{{4.8}{3}}
+\newlabel{eq:R2plasticityRule}{{4.9}{3}}
+\newlabel{eq:R3plasticityRule}{{4.10}{3}}
+\newlabel{eq:WeightUpdate}{{4.11}{3}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Agentes}{4}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}Agente 0: agente sin comportamiento social}{4}}
 \@writefile{toc}{\contentsline {subsubsection}{Controlador}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Esquema de la estructura del controlador del Agente 0.\relax }}{4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Esquema de la estructura del controlador del ``Agente 0''.\relax }}{4}}
 \newlabel{fig:a0Controller}{{4.2}{4}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Agente 1: agente colectivo seg\IeC {\'u}n (Nombre del tio)}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}Agente 1: agente colectivo aditivo}{5}}
 \@writefile{toc}{\contentsline {subsubsection}{Controlador}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de la estructura del controlador del Agente 1.\relax }}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Esquema de la estructura del controlador del ``Agente 1''.\relax }}{5}}
 \newlabel{fig:a1Controller}{{4.3}{5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Agente 2: agente colectivo seg\IeC {\'u}n (Nombre del tio)}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}Agente 2: agente colectivo estructural}{6}}
 \@writefile{toc}{\contentsline {subsubsection}{Controlador}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Esquema de la estructura del controlador del Agente 1.\relax }}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Esquema de la estructura del controlador del ``Agente 1''.\relax }}{6}}
 \newlabel{fig:a2Controller}{{4.4}{6}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Evoluci\IeC {\'o}n}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Evoluci\IeC {\'o}n}{7}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Codificaci\IeC {\'o}n de los agentes}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Representaci\IeC {\'o}n codificado de un cromosoma que representa un agente de tipo 0.\relax }}{8}}
-\newlabel{fig:vector0}{{4.5}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Representaci\IeC {\'o}n codificado de un cromosoma que representa un agente de tipo 1 o 2.\relax }}{8}}
-\newlabel{fig:vector12}{{4.6}{8}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Representaci\IeC {\'o}n codificado de un cromosoma que representa un agente de tipo 0.\relax }}{7}}
+\newlabel{fig:vector0}{{4.5}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Representaci\IeC {\'o}n codificado de un cromosoma que representa un agente de tipo 1 o 2.\relax }}{7}}
+\newlabel{fig:vector12}{{4.6}{7}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Creaci\IeC {\'o}n de la poblaci\IeC {\'o}n inicial}{8}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Funci\IeC {\'o}n de selecci\IeC {\'o}n}{9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Funci\IeC {\'o}n de recombinaci\IeC {\'o}n}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Funci\IeC {\'o}n de selecci\IeC {\'o}n}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Funci\IeC {\'o}n de recombinaci\IeC {\'o}n}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.5}Funci\IeC {\'o}n de mutaci\IeC {\'o}n}{9}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}Simetr\IeC {\'\i }a}{10}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}Parametros y rangos}{10}}
-\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Rango de valores para los par\IeC {\'a}metros de la red\relax }}{10}}
-\newlabel{table:tablaValoresParametros}{{4.1}{10}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Experimentos}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.6}Funci\IeC {\'o}n fitness}{9}}
+\@writefile{toc}{\contentsline {subsubsection}{Fitness individual}{9}}
+\newlabel{eq:FdIndi}{{4.12}{10}}
+\newlabel{eq:FpIndi}{{4.13}{10}}
+\newlabel{eq:FhIndi}{{4.14}{10}}
+\newlabel{eq:fitnessIndi}{{4.15}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{Fitness colectiva}{11}}
+\newlabel{eq:FdColectiva}{{4.16}{12}}
+\newlabel{eq:FpColectiva}{{4.17}{12}}
+\newlabel{eq:FhColectiva}{{4.18}{12}}
+\newlabel{eq:fitnessCol}{{4.19}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}Simetr\IeC {\'\i }a}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}Par\IeC {\'a}metros y rangos}{12}}
+\@writefile{lot}{\contentsline {table}{\numberline {4.1}{\ignorespaces Rango de valores para los par\IeC {\'a}metros de la red\relax }}{12}}
+\newlabel{table:tablaValoresParametros}{{4.1}{12}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Experimentos}{13}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Experimento individual}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1.1}Resultados del Agente 0}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Trayectoria del ``Agente 0'' durante la realizaci\IeC {\'o}n del experimento individual.\relax }}{14}}
+\newlabel{fig:agente0Trayectoria}{{5.1}{14}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Experimento colectivo}{14}}
+\newlabel{eq:eqRuido}{{5.1}{15}}
+\newlabel{eq:formulaRuido}{{5.2}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Resultados del Agente 1}{15}}
+\@writefile{toc}{\contentsline {subsubsection}{Trayectorias}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Fragmento de trayectorias del conjunto de agentes de tipo 1 que demuestran comportamiento de fototaxis colectiva.\relax }}{16}}
+\newlabel{fig:agente1Trayectoria}{{5.2}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{Activaciones neuronales}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Activaciones de las 6 neuronas del agente representativo del grupo de agentes de tipo 1.\relax }}{17}}
+\newlabel{fig:activ1}{{5.3}{17}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Tabla con el \IeC {\'a}rea que cada neurona de cada agente del conjunto de agentes de tipo 1 ha permanecido fuera de los l\IeC {\'\i }mites de estabilidad establecidos.\relax }}{18}}
+\newlabel{table:tActivaciones1}{{5.1}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{Robustez ante ruido en los sensores}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los sensores de los agentes de tipo 1.\relax }}{18}}
+\newlabel{fig:boxPlot1}{{5.4}{18}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces P-valores obtenidos de la ejecuci\IeC {\'o}n del test \textit  {t de Student} sobe los pares de poblaciones de mediciones obtenidas.\relax }}{19}}
+\newlabel{table:tAgente1}{{5.2}{19}}
+\@writefile{toc}{\contentsline {subsubsection}{Robustez ante ruido en par\IeC {\'a}metros de la plasticidad}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los ritmos de plasticidad de los agentes de tipo 1.\relax }}{20}}
+\newlabel{fig:boxPlotNP1}{{5.5}{20}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.3}{\ignorespaces P-valores obtenidos de la ejecuci\IeC {\'o}n del test \textit  {t de Student} sobe los pares de poblaciones de mediciones obtenidas.\relax }}{20}}
+\newlabel{table:tAgenteNP1}{{5.3}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los pesos sin\IeC {\'a}pticos de los agentes de tipo 1.\relax }}{21}}
+\newlabel{fig:boxPlotNW1}{{5.6}{21}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.4}{\ignorespaces P-valores obtenidos de la ejecuci\IeC {\'o}n del test \textit  {t de Student} sobe los pares de poblaciones de mediciones obtenidas.\relax }}{21}}
+\newlabel{table:tAgenteNW1}{{5.4}{21}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Resultados del Agente 2}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{Trayectorias}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Fragmento de trayectorias del conjunto de agentes de tipo 2 que demuestran comportamiento de fototaxis colectiva.\relax }}{22}}
+\newlabel{fig:agente2Trayectoria}{{5.7}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{Activaciones neuronales}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Activaciones de las 6 neuronas del agente representativo del grupo de agentes de tipo 2.\relax }}{23}}
+\newlabel{fig:activ2}{{5.8}{23}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.5}{\ignorespaces Tabla con el \IeC {\'a}rea que cada neurona de cada agente del conjunto de agentes de tipo 2 ha permanecido fuera de los l\IeC {\'\i }mites de estabilidad establecidos.\relax }}{24}}
+\newlabel{table:tActivaciones2}{{5.5}{24}}
+\@writefile{toc}{\contentsline {subsubsection}{Robustez ante ruido en los sensores}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los sensores de los agentes de tipo 2.\relax }}{24}}
+\newlabel{fig:boxPlot2}{{5.9}{24}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.6}{\ignorespaces P-valores obtenidos de la ejecuci\IeC {\'o}n del test \textit  {t de Student} sobe los pares de poblaciones de mediciones obtenidas.\relax }}{25}}
+\newlabel{table:tAgente2}{{5.6}{25}}
+\@writefile{toc}{\contentsline {subsubsection}{Robustez ante ruido en par\IeC {\'a}metros de la plasticidad}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los ritmos de plasticidad de los agentes de tipo 2.\relax }}{26}}
+\newlabel{fig:boxPlotNP2}{{5.10}{26}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.7}{\ignorespaces P-valores obtenidos de la ejecuci\IeC {\'o}n del test \textit  {t de Student} sobe los pares de poblaciones de mediciones obtenidas.\relax }}{26}}
+\newlabel{table:tAgenteNP2}{{5.7}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Diagramas de caja para las mediciones de la fitness en presencia de ruido en los pesos sin\IeC {\'a}pticos de los agentes de tipo 2.\relax }}{27}}
+\newlabel{fig:boxPlotNW2}{{5.11}{27}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.8}{\ignorespaces P-valores obtenidos de la ejecuci\IeC {\'o}n del test \textit  {t de Student} sobe los pares de poblaciones de mediciones obtenidas.\relax }}{27}}
+\newlabel{table:tAgenteNW2}{{5.8}{27}}
+\citation{Bratman}
+\citation{Tomasello}
+\citation{KernMoll}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusiones}{28}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {subsubsection}{Comportamientos o conducta externa}{29}}
+\@writefile{toc}{\contentsline {subsubsection}{Estructura o robustez interna}{29}}
+\citation{Duijn}
+\citation{Rohde}
 \bibstyle{unsrt}
 \bibdata{Capitulos/Bibliografia}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}Conclusiones}{13}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}Conclusiones personales}{31}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\bibcite{DiPaolo_1}{1}
-\bibcite{DiPaolo_2}{2}
-\bibcite{DiPaolo_3}{3}
-\bibcite{MathayomchanBeer}{4}
-\bibcite{HoinvilleHenaff}{5}
-\bibcite{TurrigianoGG}{6}
-\bibcite{JesperDario}{7}
-\bibcite{FunaYNaka}{8}
-\bibcite{Nolfi}{9}
-\bibcite{BeerRD}{10}
-\bibcite{Hywel}{11}
-\bibcite{JennaCarr}{12}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}Bibliograf\'{\i }a}{15}}
+\bibcite{Ashby}{1}
+\bibcite{DiPaolo_1}{2}
+\bibcite{DiPaolo_2}{3}
+\bibcite{DiPaolo_3}{4}
+\bibcite{MathayomchanBeer}{5}
+\bibcite{HoinvilleHenaff}{6}
+\bibcite{TurrigianoGG}{7}
+\bibcite{JesperDario}{8}
+\bibcite{FunaYNaka}{9}
+\@writefile{toc}{\contentsline {chapter}{\numberline {8}Bibliograf\'{\i }a}{32}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
+\bibcite{Nolfi}{10}
+\bibcite{KernMoll}{11}
+\bibcite{Carruthers}{12}
+\bibcite{McDowell}{13}
+\bibcite{BeerRD}{14}
+\bibcite{Hywel}{15}
+\bibcite{Bratman}{16}
+\bibcite{Tomasello}{17}
+\bibcite{Duijn}{18}
+\bibcite{Rohde}{19}
+\bibcite{JennaCarr}{20}
 \citation{*}
-\@writefile{toc}{\contentsline {chapter}{Anexos}{17}}
+\@writefile{toc}{\contentsline {chapter}{Anexos}{34}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Homeostat}{35}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:anexo1}{{A}{35}}
+\@writefile{lof}{\contentsline {figure}{\numberline {A.1}{\ignorespaces Gr\IeC {\'a}fica de salidas del Homeostato implementado. \textbf  {Eje X:} tiempo. \textbf  {Eje Y: } salidas de cada una de las neuronas que componen el Homeostato.\relax }}{36}}
+\newlabel{fig:customHomeostat}{{A.1}{36}}
+\citation{JennaCarr}
+\@writefile{toc}{\contentsline {chapter}{\numberline {B}Algoritmo gen\IeC {\'e}tico}{37}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:anexo2}{{B}{37}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {B.0.1}Componentes, estructura y terminolog\IeC {\'\i }a}{37}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.1}{\ignorespaces Ejemplo de estructura de poblaci\IeC {\'o}n, cromosomas y genes.\relax }}{38}}
+\newlabel{fig:figuraPoblacionGA}{{B.1}{38}}
+\@writefile{lof}{\contentsline {figure}{\numberline {B.2}{\ignorespaces Ejemplo de operaci\IeC {\'o}n de recombinaci\IeC {\'o}n de dos cromosomas.\relax }}{39}}
+\newlabel{fig:figuraCrossover}{{B.2}{39}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {C}Gr\IeC {\'a}ficas completas de las activaciones neuronales del grupo de agentes de tipo 1}{41}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:anexo3}{{C}{41}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.1}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 1 del tipo 1.\relax }}{41}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.2}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 2 del tipo 1.\relax }}{42}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.3}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 3 del tipo 1.\relax }}{42}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.4}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 4 del tipo 1.\relax }}{43}}
+\@writefile{lof}{\contentsline {figure}{\numberline {C.5}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 5 del tipo 1.\relax }}{43}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {D}Gr\IeC {\'a}ficas completas de las activaciones neuronales del grupo de agentes de tipo 2}{44}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:anexo4}{{D}{44}}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.1}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 1 del tipo 2.\relax }}{44}}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.2}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 2 del tipo 2.\relax }}{45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.3}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 3 del tipo 2.\relax }}{45}}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.4}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 4 del tipo 2.\relax }}{46}}
+\@writefile{lof}{\contentsline {figure}{\numberline {D.5}{\ignorespaces Activaciones de las 6 neuronas del agente n\IeC {\'u}mero 5 del tipo 2.\relax }}{46}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {E}Planificaci\IeC {\'o}n y cronograma}{47}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\newlabel{ch:anexo5}{{E}{47}}
+\@writefile{lof}{\contentsline {figure}{\numberline {E.1}{\ignorespaces Cronograma del proyecto dividido por semanas, incluyendo las horas dedicadas cada semana a cada tarea.\relax }}{47}}
+\newlabel{fig:figuraCrono}{{E.1}{47}}

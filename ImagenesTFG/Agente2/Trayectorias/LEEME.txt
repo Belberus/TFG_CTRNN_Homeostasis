@@ -1,0 +1,4 @@
+Son las trayectorias de cada uno de los agentes de tipo 2. Como puede verse, se reparten las luces de manera que no hay tres a la vez en ellas (Considero
+que puede verse al ver los borrones concentrados de puntos que representar estar quieto en la luz).
+
+Con tu visto bueno puedo intentar representar esto de otra forma, pero Python es el que mejores resultados me esta dando a la hora de representar cantidades tan grandes de valores.

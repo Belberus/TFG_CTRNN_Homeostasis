@@ -1,25 +1,28 @@
 \chapter{Introducción}
 \pagenumbering{arabic}
-Incorporar comportamiento adaptativo en agentes artificales es uno de los medios esenciales para que estos puedan desenvolverse en entornos con cambios o incertidumbre de manera satisfactoria.
+Incorporar comportamiento adaptativo en agentes artificiales es uno de los medios esenciales para que estos puedan desenvolverse en entornos con cambios o incertidumbre de manera satisfactoria. En este proyecto
+estamos interesados, en particular, en unos de los sistemas de autoregulación presentes en los organismos daptativos conocidos como mecanismos homeostáticos.
 
-En ingeniería, uno de los pioneros trabajos en este ámbito se debe a William Ashby ('A Design for a Brain'), en el que se interesó por investigar como funcionan los mecanismos de
+En ingeniería, uno de los pioneros trabajos en este ámbito se debe a William Ashby (autor del famoso libro ``Design for a Brain''\cite{Ashby}), en el que se interesó por investigar cómo funcionan los mecanismos de
 adaptación en sistemas vivos. La tesis de Ashby fue que todos los organismos tienen ciertas variables esenciales, que deben mantenerse dentro de unos límites, y que a menudo están
 vinculadas entre sí, provocando que cambios en algunas de ellas puedan afectar a las demás. El estado de supervivencia del organismo ocurre cuando un comportamiento no mueve ninguna variable esencial
-fuera de sus límites. Al conjunto de mecanismos que permiten esta estabilidad se lo conoce como regulación homeostática. En lugar de atribuir a los organismos conductas intencionales de búsqueda de objetivos,
-Ashby exploró estos mecanismos que permitían generar un comportamiento adaptativo autoinducido mediante el mantenimiento de la estabilidad interna de sus variables esenciales.
+fuera de sus límites. Al conjunto de mecanismos que permiten esta estabilidad se lo conoce como regulación homeostática. Ashby exploró estos mecanismos que permitían generar un comportamiento adaptativo
+autoinducido mediante el mantenimiento de la estabilidad interna de sus variables esenciales desde una perspectiva matemática y de sistemas dinámicos.
 
-Trabajos recientes en neurociencia han mostrado que existen mecanismos reguladores homeostáticos de eficacia sináptica en el cerebro. Estos mecanismos entre neuronas están impulsados por la
-necesidad de adaptarse a los cambios que dependen de una actividad, al tiempo que mantienen la estabilidad interna.
+Aunque este tipo de mecanismos son de carácter fisiológico, y relacionan formas de automantenimiento del sistema con la estabilidad de ciertos niveles físico-químicos de carácter metabólico, trabajos recientes
+en neurocienca proponen extender estas nociones basadas en mecanísmos reguladores homeostáticos de eficacia sináptica en el cerebro, como modos de estabilización de conducta. Estos mecanismos entre neuronas están
+impulsados por la necesidad de adaptarse a los cambios que dependen de una actividad, al tiempo que mantienen la estabilidad interna.
 
-Dotar a un agente artificial de propiedades de adaptación homeostática le permitiría adaptarse y resolver problemas para los que inicialmente no fue entrenado, permitiéndole alterar sus variables
+Dotar a un agente artificial de este tipo de propiedades de adaptación homeostática le permitiría adaptarse y resolver problemas para los que inicialmente no fue entrenado, permitiéndole alterar sus variables
 internas hasta obtener una estabilidad completa de su sistema al mismo tiempo que ejecuta las tareas encomendadas.
 
 \section{Contexto y motivación}
-Me planteo estudiar el comportamiento de agentes con objetivos de fototaxis y propiedades adaptativas basadas en la plasticidad en entornos coletivos, donde más de un agente participa en una
-determinada tarea u objetivo. Las capacidades sociales de los agentes se añadiran a los mismos siguiendo dos ideas distintas. La primera, de (NOMBRE DEL TIO), defiende que el comportamiento
-social es una capacidad innata que se va entrenando conforme pasa el tiempo. La segunda, de (NOMBRE DEL TIO), defiende que el comporamiento social es una capacidad externa a las capacidades innatas
-y que puede añadirse de manera independiente al individuo. Por tanto, se desarrollarán dos agentes, cada uno con las capacidades sociales añadidas siguiendo cada una de las anteriores ideas, para posteriormente
-someter a ambos a una prueba de la que se puedan obtener conclusiones que permitan comparar las dos aproximaciones.
+El proyecto se centra en el análisis del comportamiento de agentes con objetivos de fototaxis y propiedades adaptativas basadas en la plasticidad. Se probarán las hipótesis en entornos colectivos, donde más de un agente
+participa en una determinada tarea u objetivo.
+
+Las capacidades sociales de los agentes se añadirán a los mismos siguiendo dos ideas distintas. La primera, defiende que el comportamiento social es una capacidad que, cuando surge, estructura por completo el ``cerebro'' de
+los agentes programados. La segunda defiende que el comportamiento social es una capacidad aditiva y que puede añadirse de manera independiente al individuo. Por tanto, se desarrollarán dos agentes, cada uno con las capacidades
+sociales añadidas siguiendo cada una de las anteriores ideas, para posteriormente someter a ambos a una prueba de la que se puedan obtener conclusiones que permitan comparar las dos aproximaciones.
 
 \section{Objetivos}
 En este trabajo de fin de grado se pretenden aplicar y analizar las ideas de
@@ -28,7 +31,7 @@ basados en redes neuronales recurrentes a las que se les impondrá una regulaci�
 homeostática de su actividad sináptica (las neuronas tendrán funciones de activación
 adecuadas para generar estas estructuras de estabilidad). Los agentes serán evolucionados
 para solucionar un problema de fototaxis (búsqueda y acercamiento a una fuente de luz).
-Una vez programados agentes artificiales homeostáticos se buscará analizar:
+Una vez programados los agentes artificiales homeostáticos se buscará analizar:
 
 \begin{itemize}
 \item Si los agentes pueden adaptarse a cambios en las reglas del entorno, aunque no hayan
@@ -38,8 +41,9 @@ implícitamente el mantenimiento de estabilidad y el desarrollo de nuevos
 comportamientos.
 \item  Si en entornos sociales de agentes artificiales, donde los comportamientos para resolver
 problemas se basen en estrategias colectivas, los patrones de estabilidad son más
-robustos. Para ello se someterán las configuraciones obtenidas a estímulos ruidosos o
-perturbaciones, y mediremos el grado de estabilidad de los patrones homeostáticos.
+robustos según programemos, tal y como hemos indicado anteriormente, las capacidades sociales como ``aditivas'' o ``estructurales''.
+Para ello se someterán las configuraciones obtenidas a estímulos ruidosos o
+perturbaciones, y mediremos el grado de estabilidad de los patrones homeostáticos que se generan.
 \end{itemize}
 
 \section{Estructura}
@@ -50,3 +54,13 @@ realización de los dos objetivos anteriormente descritos.
 
 En los anexos se puede observar el tiempo invertido en este proyecto junto con las tareas las que se dedicó. Además,
 se incluye el código correspondiente en el lenguaje de programación Python desarollado para la obtención de los resultados necesarios.
+
+\section{Planificación}
+
+En la planificación inicial del proyecto, se identificaron una serie de tareas que se han abordado en orden hasta alcanzar los objetivos finales. El proyecto comenzó (obviando el proceso inicial de aprendizaje y la introducción a la materia) con
+el diseño y la implementación de un Homeostato, con el fin de comprender de manera práctica los fundamentos de la homeostasis. Las siguiente tarea fue la de diseñar e implementar un agente artificial básico, dotado con dos sensores, dos motores y un controlador
+neuronal (basado en una CTRNN) para  comprobar el correcto funcionamiento de su comportamiento de fototaxis y sus mecanismos de plasticidad. Durante esta tarea también se implementó el algoritmo genético encargado de evolucionar a todos los agentes. Una vez con un agente individual
+completado se procedió al diseño e implementación de los agentes colectivos (``Agente 1'' y ``Agente 2''). Por último, se implementaron una serie de pruebas a las que someter a los agentes diseñados con el fin de estudiar su comportamiento, analizar los resultados y sacar las conclusiones
+pertinentes.
+
+El cronográma del proyecto, dividido por semanas, junto con las horas dedicadas a cada tarea puede verse en el Anexo \ref{ch:anexo5}.

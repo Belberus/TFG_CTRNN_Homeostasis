@@ -50,7 +50,7 @@ muestran todos los puntos de equilibrio para la activación de las neuronas de l
 A pesar de que la homeostasis es una propiedad biológica, es posible representar un sistema lógico que se comporte de forma similar a como
 sistemas vivos con estas propiedades lo harían\cite{Hywel}.
 
-Un \textit{Homeostato}, es un sistema artificial que presenta porpiedades de homeostasis. El Homeostato desarrolado por Ashby era un aparato
+Un \textit{Homeostato}, es un sistema artificial que presenta porpiedades de homeostasis. El Homeostato desarrollado por Ashby era un aparato
 electromagnético mientras que el que va a ser utilizado es un componente implementado computacionalmente.
 
 Un Homeostato es un sistema de $N$ neuronas completamente interconectadas entre si. Cada neurona recibe $N$ entradas, de si misma y del resto de neuronas,
@@ -68,12 +68,12 @@ dependientes del peso de la fuerza de conexión de las uniones entre ellas (ver 
     \centering
     \includegraphics[width=0.6\textwidth,height=6cm]{Imagenes/HomeostatTransfer}
     \caption{Ejemplo de función de transferencia de una unidad Homeostat. La función es lineal por partes con puntos en ($x_{1},j_{1}$),...,($x_{p},y_{p}$) donde $x_{1}$ = 0 y $x_{p}$ = $N$, para todas las
-		unidades en una red de $N$ unidades. Las lineas discontinuas representan el rango homeostatico de la red.}
+		unidades en una red de $N$ unidades. Las líneas discontinuas representan el rango homeostatico de la red.}
     \label{fig:homeostatTransferFunction}
 \end{figure}
 
-La suma ponderada $I$ (ver equación \ref{eq:sumaPonderadaHomeostat}) de las entradas de una unidad determina su salida $s$, tal y como esta especificado por la función linear de transferencia por
-partes $F$ (equación \ref{eq:ecuPartesHomeostat} y figura \ref{fig:homeostatTransferFunction}).
+La suma ponderada $I$ (ver ecuación \ref{eq:sumaPonderadaHomeostat}) de las entradas de una unidad determina su salida $s$, tal y como está especificado por la función linear de transferencia por
+partes $F$ (ecuación \ref{eq:ecuPartesHomeostat} y figura \ref{fig:homeostatTransferFunction}).
 
 \begin{equation} \label{eq:sumaPonderadaHomeostat}
 	I = \sum_{i}^{N}w_{i}s_{i}
@@ -91,8 +91,8 @@ Al inicializar la red, los pesos de las conexiones se aleatorizan a partir de un
 especificado para la salida, donde $\delta$ determina la rigidez de la restricción homeostática. Si $s \in R$ la unidad es homeostática. Si $s \notin R$ significa que la homeostasis se ha perdido
 y se activan los mecanismos de cambio adaptativo.
 
-Hay dos mecanismos de cambio adaptivo que se aplican a los parametros de las unidades no homeostáticas. El primer mecanismo asigna valores aleatorios a los pesos de las conexiones aferentes a la unidad (equación \ref{eq:aferenteEQ}).
-El segundo mecanismo asigna nuevos valores aleatorios a los parametros que indican las coordenadas de la función de transferencia de la unidad (equación \ref{eq:transferEQ}). Los rangos de estas reasignaciones son los mismos utilizados
+Hay dos mecanismos de cambio adaptativo que se aplican a los parámetros de las unidades no homeostáticas. El primer mecanismo asigna valores aleatorios a los pesos de las conexiones aferentes a la unidad (ecuación \ref{eq:aferenteEQ}).
+El segundo mecanismo asigna nuevos valores aleatorios a los parámetros que indican las coordenadas de la función de transferencia de la unidad (ecuación \ref{eq:transferEQ}). Los rangos de estas reasignaciones son los mismos utilizados
 en la inicialización. Donde $rand(a,b)$ representa a la función que devuelve un número real aleatorio obtenido de una distribución uniforme en el rango $[a,b]$.
 
 \begin{equation} \label{eq:aferenteEQ}
@@ -106,84 +106,20 @@ en la inicialización. Donde $rand(a,b)$ representa a la función que devuelve u
  \end{aligned}
 \end{equation}
 
+Durante la realización de este trabajo de diseñó e implementó un sencillo Homeostato para comprender mejor los fundamentos que lo definen. La descripción de este Homeostato puede encontrase en el Anexo \ref{ch:anexo1} y puede servir como
+ejemplo sencillo para ayudar a comprender los fundamentos de la homeostasis.
+
 
 \section{Algoritmo genético}
-Los algoritmos genéticos son un tipo de algoritmos de optimización, lo que quiere decir que se utilizan para
-obtener la solución o soluciones óptimas de un problema computacional\cite{JennaCarr}.
+Los algoritmos genéticos son un método para resolver problemas de optimización. Estos algoritmos están basados en la selección natural, que es el proceso que dirige la evolución biológica. Un algoritmo genético modifica repetidas veces
+una poblacion de posibles soluciones. En cada iteración, se seleccionan las mejores posibles soluciones encontradas hasta el momento y se genera a partir de ellas una nueva generación de candidatos. Generación tras generación la
+población evoluciona hacia la solución óptima.
 
-Estos algoritmos representan una rama dentro del campo conocido como ''Computación evolutiva". En ella, se
-imitan los procesos biológicos de reproducción y selección natural con el fin de encontrar la mejor solución al
-problema para el que son creados. Al igual que en la evolución, muchos de los procesos de un algoritmo genético son
-aleatorios, aunque las técnicas de optimización permiten limitar el nivel de aleatoriedad y adaptar el control sobre
-el algoritmo que se considere necesario.
+Los algoritmos genéticos difieren de los los algoritmos clásicos de optimización en tres puntos principales:
+\begin{enumerate}
+	\item{Los algoritmos clásicos generan un único punto con cada iteración mientras que los algoritmos genéticos generan una población de puntos con cada iteración.}
+	\item{En los algoritmos clásicos la secuencia de puntos se aproxima en cada iteración a la solución óptima mientras que en los algoritmos genéticos es el mejor punto de la población el que se aproxima a la solución óptima.}
+	\item{Los algoritmos clásicos generan el siguiente punto de la secuencia mediante un cálculo determinista mientras que los algoritmos genéticos selecciona el siguiente punto en la secuencia mediante cálculos que utiliza generadores de números aleatorios.}
+\end{enumerate}
 
-Este tipo de algoritmos permiten encontrar soluciones a problemas que otros algoritmos de optimización no pueden calcular
-por falta de continuidad, derivabilidad, linealidad u otras características.
-
-\subsection{Componentes, estructura y terminología}
-Dado que los algoritmos genéticos están diseñados para simular procesos biológicos, gran parte de su terminología ha sido tomado
-prestada de la biología. A pesar de ello, las entidades a las que esta terminología se refieren en el entorno de los algoritmos genéticos
-son mucho más simples que sus equivalentes biológicos. Los componentes básicos de prácticamente todos los algoritmos genéticos son:
-
-\begin{itemize}
-	\item{Una función \textbf{fitness} para la optimización}
-	\item{Una \textbf{población} de \textbf{cromosomas}}
-	\item{Una función de \textbf{selección} para elegir los cromosomas que van a reproducirse}
-	\item{Una función de \textbf{recombinación} (o \textit{crossover}) para la producción de la siguiente generación de cromosomas}
-	\item{Una función de \textbf{mutación} para aleatorizar algunos cromosomas de la nueva población}
-\end{itemize}
-
-La \textit{función fitness} es la función que el algoritmo está tratando de optimizar. La palabra "fitness" se toma prestada de la teoría evolutiva.
-Se utiliza porque la función de fitness testea y valora como de buena (como de "\textit{fit}") es cada solución potencial del problema. El término
-\textit{cromosoma} hace referencia al valor o valores numéricos que representan posibles soluciones candidatas al problema que se está intentando resolver.
-Cada cromosoma está formado por una lista de parámetros, llamados \textit{genes}. Al conjunto de cromosomas que van a evaluarse como posibles candidatos a solución
-del problema se le llama \textit{población}. Antiguamente los cromosomas eran codificados como listas de unos y ceros (codificación binaria), sin embargo, actualmente la computación
-moderna permite codificar los cromosomas como números reales u otros objetos.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\textwidth,height=5cm]{Imagenes/PoblacionGA}
-    \caption{Ejemplo de estructura de población, cromosomas y genes.}
-    \label{fig:figuraPoblacionGA}
-\end{figure}
-
-Un algoritmo genético comienza con una \textit{población inicial} de cromosomas, generados de forma aleatoria, que representan la primera generación de posibles soluciones. A continuación,
-se evalúa cada cromosoma de dicha población mediante la función fitness para comprobar cómo de bien resuelve el problema planteado. Al finalizar, cada candidato tiene asignada una puntuación
-de fitness que representa lo bien (o lo mal) que lo ha hecho intentando resolver el problema.
-Una vez con la población inidical completamente evaluada, el \textit{operador de selección} escoge de entre toda la población de candidatos algunos cromosomas para la reproducción (creación
-de una nueva generación). Existen muchos tipos de algoritmos de selección, pero generalmente en todos ellos se eligen los cromosomas que mejor puntuación fitness han obtenido, buscando que
-las siguientes generaciones creadas a partir de ellos den resultados como mínimo igual de buenos a los suyos.
-En el siguiente paso, el \textit{operador de recombinación} simula las operaciones de recombinación de cromosomas presentes en las operaciones de división celular de tipo \textit{meiosis}. En la figura
-\ref{fig:figuraCrossover} se puede observar un ejemplo de operación de recombinación. En este proceso se seleccionan dos cromosomas de la población y se recombinan para crear dos descendientes.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1.0\textwidth,height=5cm]{Imagenes/CrossoverExample}
-    \caption{Ejemplo de operación de recombinación de dos cromosomas.}
-    \label{fig:figuraCrossover}
-\end{figure}
-
-El \textit{operador de mutación} modifica de forma aleatoria genes de los cromosomas descendientes (por ejemplo cambiando un 1 por un 0 y viceversa, en cromosomas binarios). Estas mutaciones ocurren
-generalmente con una probabilidad bastante baja. A primera vista, el proceso de mutación puede parecer inecesario e incluso entorpecedor. La realidad es que toma un papel muy importante. Las operaciones
-de selección y recombinación mantienen la información genética de los cromosomas con mejor puntuación fitness, pero estos cromosomos sólo son considerados los mejores respecto a la población de la generación
-en la que fueron elegidos. Esto puede provocar que el algoritmo converga demasiado rápido y de una solución final alejada de la solución máxima. En otras palabras, puede provocar que el algoritmo se quede
-atascado en un máximo local antes de encontrar el máximo global óptimo. El operador de mutación ayuda a proteger el algoritmo de este problema manteniendo la diversidad en la población, a costa de aumentar
-el tiempo de convergencia.
-
-Lo normal es que la selección, recombinación y mutación continuen hasta que el numero de descendientes es igual al número de cromosomas de la población inicial, para que esta segunda generación este compuesta
-en su totalidad por descendentienes y reemplace a la población anterior.
-
-Ahora la segunda generación se evalúa mediante la función fitness y todo el proceso se repite. Es una práctica comúm el almacenar el cromosoma con la mayor puntuación de fitness junto con dicha puntuación para
-guardar un registro del mejor cromosoma hasta el momento.
-
-Los algoritmos genéticos iteran hasta que la puntuación fitness del mejor cromosoma hasta el momento se estabiliza y no cambia en una serie de generaciones. Esto significa que el algoritmo ha convergido en una
-o solución. A todo el proceso de iteraciones se llama \textit{carrera} (en inglés, \textit{run}). Al final de cada carrera se tiene, normalmente, al menos un cromosoma que es una solución lo suficientemente
-buena (lo suficientemente \textit{fit}) del problema. Dependiendo del tipo de algoritmo utilizado, la mejor solución puede ser el mejor cromosoma que ha aparecido en todas las iteraciones o el mejor cromosoma
-de la última generación.
-
-El rendimiento de un algoritmo genético depende enormemente de los métodos utilizados para codificar posibles soluciones en cromosomas y el criterio utilizado en la función fitness para evaluar a los candidatos.
-Otros detalles importantes a tener en cuenta son las probabilidades de recombinación y mutación, el tamaño de la población y el número de iteraciones. Estos valores puedes ser ajustados convenientemente después
-de analizar el rendimiento del algoritmo tras unas carreras de prueba.
-
-Los algoritmos genéticos tienen una gran variedad de aplicaciones. Algunos ejemplos destacados son la \textit{programación automática} y el \textit{"machine learning"}. Funcionan también especialmente bien para
-modelar distintos fenómenos en economía, ecología, el sistema inmunológico humano, genética y sistemas sociales.
+Una descripción más detalla de los algoritmos genéticos, tanto de su funcionamiento como de las partes que lo componen, puede encontrarse en el Anexo \ref{ch:anexo2}.

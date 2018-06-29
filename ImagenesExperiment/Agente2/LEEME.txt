@@ -1,0 +1,9 @@
+Este es el agente 2.
+
+Por si te vale de guia:
+
+Neuronas 0 y 1 -> sensores de luz
+
+Neuronas 2 y 3 -> Sensores de agentes
+
+Neuronas 4 y 5 -> Motores

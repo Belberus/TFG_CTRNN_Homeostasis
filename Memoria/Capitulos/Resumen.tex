@@ -4,17 +4,20 @@
 \vspace{1cm}
 {\Large \bfseries RESUMEN}
 
-\vspace{2.5cm}
+\vspace{1.5cm}
 \end{center}
 
-Conseguir dotar a un agente artificial con la capacidad de adaptabilidad presente en los seres vivos le proporcionaria las habilidades necesarias para que pudiera realizar tareas para las que no ha sido entrenado o
-para realizar tareas para las que se le ha entrenado pero en un entorno cambiante o con incertidumbre. Los mecanismos necesarios para conseguir estas propiedades se llaman mecanismos homeostáticos.
+Conseguir dotar a un agente artificial con la capacidad de adaptabilidad presente en los seres vivos le proporcionaría habilidades necesarias para realizar tareas para las que no ha sido entrenado o
+para las que se le ha entrenado pero en un entorno cambiante o con incertidumbre. En este trabajo nos interesaremos, desde una perspectiva ingenieril, por unos de los sistemas de autoregulación presentes
+en los organismos vivos conocidos como mecanismos homeostáticos, que están en la base de ciertas capacidades de adaptación.
 
-En este trabajo se ha buscado diseñar e implementar un agente homeostático basado en redes neuronales recurrentes de tiempo continuo con capacidad de fototaxis (búsqueda y acercamiento a una serie de luces en un espacio).
-Este agente se corresponde con el mejor candidate de entre una cierta población de candidatos, el cual ha sido seleccionado mediante un algorítmo genético. El agente desarrolla el comportamiento homeostático a través de
-la evolución y de sus mecanismos de plasticidad, que le permiten modificar sus variables internas para alcanzar un estado estable y mantenerse en el mismo.
+En particular, se ha partido del diseño e implementación de un agente homeostático basado en redes neuronales recurrentes de tiempo continuo con capacidad de fototaxis (búsqueda y acercamiento a una serie de luces en un espacio).
+Este agente se corresponde con el mejor candidato de una cierta población, seleccionado mediante un algorítmo genético. La peculiaridad del mismo, es que despliega comportamiento homeostático a través de mecanismos de plasticidad,
+que le permiten modificar sus variables internas para alcanzar un estado estable y mantenerse en el mismo aunque se vea sometido a perturbaciones externas.
 
-Una vez obtenido el agente con las propiedades de fototaxis y plasticidad, se ha buscado dotar al mismo de comportamientos sociales para estudiar como interacciona en situaciones o pruebas donde hay más de un agente
-involucrado. El comportamiento social se ha añadido al agente siguiendo dos aproximaciones diferentes. La primera, desarrollada por () defiende que el comportamiento social es una característica que se tiene de manera
-innata pero que se va entrenando con el tiempo. La segunda, desarrollada por () defiende que el comportamiento social es una característica añadida a la red neuronal e independiente de la misma. El objetivo es comparar
-estas dos aproximaciones y sacar conclusiones sobre ello creando un experimento en el que varios agentes tienen que interactuar de manera social para la obtención de un objetivo.
+Una vez obtenido el agente con las propiedades de fototaxis y plasticidad homeostática, se ha buscado dotar al mismo de capacidades para que emerjan comportamientos sociales con el fin de analizar cómo interacciona en situaciones donde hay más de un agente
+involucrado. El comportamiento social se ha añadido siguiendo dos aproximaciones diferentes. La primera, asume que las capacidades del agente son aditivas. Es decir, que el agente tras ser capaz de navegar y orientarse
+hacia un foco de luz (o comida), necesitaría una nueva estructura neuronal con la que codificar otra capacidad novedosa (en este caso, coordinación social). Se modelará el sistema con dos mecanismos independientes en el controlador
+del sistema, uno para la navegación y otro para el aspecto social. La segunda, defiende que el comportamiento social es una característica estructural del sistema. Por tanto, una nueva capacidad atraviesa (en ocasiones se
+dice que ``percola'') las capacidades previas, reestructurando el controlador neuronal del agente en su conjunto. El objetivo es comparar estas dos aproximaciones y sacar conclusiones sobre ello mediante experimentos en los que
+varios agentes tienen que interactuar de manera social para la consecución de un objetivo.
