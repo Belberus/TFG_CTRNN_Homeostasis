@@ -1,0 +1,14 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {english}
+\beamer@sectionintoc {1}{Motivaci\IeC {\'o}n}{3}{0}{1}
+\beamer@sectionintoc {2}{Objetivos}{5}{0}{2}
+\beamer@sectionintoc {3}{Modelo}{8}{0}{3}
+\beamer@sectionintoc {4}{Agente individual}{17}{0}{4}
+\beamer@subsectionintoc {4}{1}{Controlador}{18}{0}{4}
+\beamer@subsectionintoc {4}{2}{Funci\IeC {\'o}n fitness}{19}{0}{4}
+\beamer@subsectionintoc {4}{3}{Experimentos}{21}{0}{4}
+\beamer@sectionintoc {5}{Agentes colectivos}{22}{0}{5}
+\beamer@subsectionintoc {5}{1}{Controladores}{24}{0}{5}
+\beamer@subsectionintoc {5}{2}{Funci\IeC {\'o}n fitness}{25}{0}{5}
+\beamer@subsectionintoc {5}{3}{Experimentos}{27}{0}{5}
+\beamer@sectionintoc {6}{Conclusiones}{37}{0}{6}

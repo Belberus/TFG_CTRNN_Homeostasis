@@ -1,0 +1,200 @@
+PORTADA
+-----------
+
+
+
+ÍNDICE
+-----------
+
+
+
+
+MOTIVACIÓN
+------------
+En este proyecto se ha buscado modelar agentes artificiales basados en hábitos en lugar de basados en instrucciones directas. No se le dice al agente que tiene que hacer directamente, sino que, mediante computación
+evolutiva, se refuerzan o recompensan las acciones que llevan al agente hacia el objetivo buscado, de forma que el agente convierte en un hábito comportarse de esa determinada manera buscada. Por ejemplo, es un hábito
+bajar a echar un cigarro cada dos horas de trabajo, mirar en la calle a ambos lados antes de cruzar, girar la cabeza cuando presenciamos algo desagradable, etc.
+
+En los agentes que hemos diseñado se busca que obtengan, en un primer nivel, un comportamiento de fototaxis. La fototaxis es la búsqueda y acercamiento a fuentes de luz. Como ya he nombrado, este comportamientos se desarrollará
+en base a hábitos. En ningún momento se le dice al agente de forma directa o programada que tiene que ir hacia una luz.
+
+Una vez con el comportamiento de fototaxis, se ha buscado añadir comportamientos sociales a los agentes, es decir, restricciones en escenarios donde más de un agente está presentes, por ejemplo, establecer un máximo de agentes
+que puede estar a la vez en una luz o impedir que los agentes se choquen.
+
+Para que los agentes desarrollen estos ámbitos sociales se les ha dotado de mecanismos de plasticidad, que les permiten modificar ciertas variables internas con el fin de adaptarse y desarrollar nuevas funcionalidades que,
+inicialmente, no tenían.
+
+Estos comportamientos sociales añadidos van a plantearse desde dos puntos de vista o corrientes distintas:
+La primera corriente considera a las capacidades neuronales de los seres vivos como ADITIVAS. Esto quiere decir que para añadir una nueva capacidad a un agente, es necesaria una estructura neuronal completamente nueva e
+independiente que se encargue de dicha capacidad. Podriamos considerar las capacidad como módulos que se van añadiendo a un sistema. Por tanto, un agente con capacidades de fototaxis y sociales será modelado, siguiendo esta
+corriente, con un controlador con dos redes independientes.
+
+La segunda corriente considera las capacidades neuronales de los seres vivos como ESTRUCTURADAS. Esto quiere decir que una nueva capacidad o habilidad atravesaría las ya existentes, reestructurando el controlador del agente
+en conjunto.
+
+OBJETIVOS  ->>>>>>>>>>> ANTES DE AQUÍ NO DEBERÍA HABLAR ALGO DE HOMEOSTASIS O LO DEJO PARA LOS PUNTOS POSTERIORES ¿?
+------------
+En este proyecto se han buscado comprobar:
+
+La adaptabilidad de los agentes frente a cambios en las reglas del entorno, por ejemplo resolviendo tareas para las que no han específicamente entrenados, con el fin de probar que, al igual que en los seres vivos,
+los mecanismos de adaptación facilitan el mantenimiento de la estabilidad y el desarrollo de nuevos comportamientos.
+
+Si en entornos sociales de agentes artificiales, donde existen estrategias colectivas, los patrones de estabilidad son más robustos según programemos las capacidades sociales como ADITIVAS o ESTRUCTURALES. Para lo cual
+se someterán a las configuraciones obtenidas a estímulos ruidosos o perturbaciones para medir el grado de estabilidad de los patrones neuronales generados.
+
+Para ello, las tareas que se han desarrollado han sido las siguientes:
+Un primer ejercicio para comprender los fundamentos de la homeostasis y en que se basa.
+Diseño e implementación de un agente artificial con comportamientos de fototaxis y con capacidades de plasticidad.
+Diseño e implementación de dos agentes artificiales con comportamientos sociales además de fototaxis y plasticidad. Cada uno siguiendo una de las dos corrientes, aditiva o estructural.
+
+Y por último, con los agentes sociales implementados, se sometieron a una serie de pruebas colectivas con el fin de estudiar su comportamiento para obtener conclusiones que permitan establecer una diferenciación (o no) entre
+la implementación aditiva y la implementación estructural.
+
+MODELO
+-----------
+- AGENTE ARTIFICIAL: el agente artificial esta modelado de una forma simple. Compuesto por dos sensores en la parte frontal, dos motores en los laterales y un controlador basado en una Red Neuronal Recurrente de Tiempo Continuo, que
+veremos a continuación. El controlador encargado del comportamiento individual esta formado por 4 neuronas interconectadas. Cuando añadamos los comportamientos sociales se añadiran 2 neuronas más.
+
+- CONTROLADOR BASADO EN UNA CTRRN: el controlador de los agentes va a estar formado por una Red Neuronal Recurrente de Tiempo Continuo, CTRNN de sus siglas en inglés, que se corresponde con la siguiente ecuación. Donde tenemos:
+-> la nueva activación o estado que tendra la neurona i
+-> la constante de tiempo de la neurona i, que hace que la función sea dependiente del tiempo
+-> la activación actual de la neurona i
+-> Como podemos ver se hace un sumatorio para cada neurona j con la que esta conectada la neurona i (en este caso son todas las demas e incluso ella misma, ya que es una red de cuatro neuronas complemtamente interconectadas)
+-> el peso sináptico de la conexión entre la neurona i y la neurona j, que es la fuerza con la que estan unidas esas dos neuronas
+-> la función sigmoide de activación, cuya ecuación veremos en la siguiente diapositiva, a la que se le pasa como parámetros el estado actual de la neurona j, al que se le suma su bias. Como he dicho, en la siguiente
+diapositiva comentaremos esta parte un poco mas en detalle.
+-> y por último la entrada de la neurona i, que en este caso sólamente tendrá valor distinto de 0 para las neuronas que estan conectadas a los sensores, ya que son las unicas que reciben algun tipo de entrada.
+-> el sumatorio se realiza en las N neuronas de la red
+
+La función sigmoide es la función de activación de la neurona y se corresponde con la siguiente ecuación que se visualiza con la siguiente gráfica. Donde recordemos que el x es el estado de la neurona j y el bias de esa
+neurona. El bias es un parámetro que desplaza el punto de activación de la neurona (señalar con ayuda de la gráfica). La función sigmoide devuelve valores entre 0 y 1. Cuando la entrada es muy pequeña se acerca a 0 y cuando
+es muy grande se acerca a 1.
+
+Se han seleccionado estas redes por dos motivos. Primero, son capaces simularr o representar cualquier sistema dinámico. Y segundo, son las más fieles al funcionamiento biológico de las activaciones neuronales. La constante de tiempo por ejemplo,
+imita el decaimiento de la señal enviada entre neuronas con el tiempo si esta no se realimenta. (ALGO MÁS PARA JUSTIFICAR ESTAS DOS AFIRMACIONES MANUEL¿?¿?¿?).
+
+- HOMEOSTASIS: hablar de Ashby, sus teorias y que proponia (variables internas, estabilidad).
+Dotar a un agente artificial de este tipo de propiedades de adaptación homeostática
+le permitirı́a adaptarse y resolver problemas para los que inicialmente no fue entrenado,
+permitiéndole alterar sus variables internas hasta obtener una estabilidad completa de
+1su sistema al mismo tiempo que ejecuta las tareas encomendadas
+
+Diapositiva de homeostasis 2:
+Esta “plasticidad homeostática” no es solo un mecanismo formal sino que tiene
+evidencia empı́rica [7], pues se ha observado que las neuronas buscan estabilidad en
+su frecuencia de disparo. El modo de conseguir estabilidad conductual, por tanto,
+parece exigir que los modos de estabilidad en la conducta aparezcan acoplados a
+los mecanismos de estabilidad de los parámetros sinápticos, de manera que cuando
+la estabilidad conductual se pierde induce inestabilidad sináptica hasta recuperar la
+estabilidad conductual.
+El método para implementar plasticidad homeostática normalmente se apoya en
+los resultados de la teorı́a Hebbiana, que describe un mecanismo básico de plasticidad
+sináptica en el que el valor de una conexión sináptica se incrementa si las neuronas
+de ambos lados de dicha sinapsis se activan repetidas veces de forma simultánea.
+Introducida por Donald Hebb, en 1949, es también llamada “regla de Hebb” o “Teorı́a
+de la Asamblea Celular” y afirma que, en palabras del propio Hebb: ((Cuando el axón
+de una célula A está lo suficientemente cerca como para excitar a una célula B y
+repetidamente toma parte en la activación, ocurren procesos de crecimiento o cambios
+metabólicos en una o ambas células de manera que tanto la eficiencia de la célula A,
+como la capacidad de excitación de la célula B son aumentadas)).
+
+Diapositiva homeostasis, hablar de las 4 fórmulas de plasticidad que pueden usarse en el agente. Donde tenemos que delta es el factor de amortiguacion, que hace que el peso se mantenga dentro de los limites establecidos.
+El grado de facilitación plástica local (p) se ve incrementado linealmente (hasta
+un valor máximo de 1) cuando la frecuencia de activación aumenta hasta salirse de sus
+lı́mites, facilitando ası́ los cambios plásticos. Cuando la frecuencia de activación entra
+en sus lı́mites, p decrece linealmente (hasta un valor mı́nimo de -1), disminuyendo la
+facilidad de los cambios plásticos.
+El factor de valor lı́mite (z ij o ) depende linealmente del valor actual del peso que se
+está actualizando plásticamente, por lo que es calculado en cada modificación.
+Y nij es el factor de aprendizaje o ritmo de plasticidad. Cada neurona tiene un valor propio para ese parámetro que actua como potenciador de la plasticidad.
+
+- ALGORITMO GENÉTICO: Se ha utilizado un algoritmo genético para entrenar a los Agentes en la tarea de alcanzar los objetivos propuestos, lo que se conoce como computación evolutiva. Los candidatos, en este caso los agentes, se han representado como
+vectores de reales y enteros (formados por sus parámetros).
+<< Explicar el funcionamiento del genético muy rapidamente >>
+<< Explicar por encima como es la selección por torneo, la mutación y la recombinación, pero de palabra y rápidamente >>
+Las funciones fitness utilizadas para cada tipo de agente se explicarán junto con la descripción de los mismos en el siguiente apartado.
+
+EXPERIMENTOS
+--------------
+A continuación vamos a comentar los experimentos que se han llevado a cabo con agentes artificiales basados en las explicaciones del punto anterior. Primero veremos en que consiste el Agente 0 o agente individual,
+y despues analizaremos los agentes 1 y 2, con comportamiento colectivo.
+
+AGENTE INDIVIDUAL:
+El agente individual, también llamado Agente 0, por ser el agente base para los todos los utilizados, fue el primer agente diseñado. Únicamente tiene comportamientos de fototaxis individual y plasticidad. Consta por tanto, de dos
+sensores de luz y dos motores, como ya hemos comentado anteriormente. Además existe una simetría en la ganancia de los motores y de los sensores (que es un factor multiplicativo que intensifica la salida). La finalidad de la implemnetación
+de este agente fue la de poder comprobar el correcto funcionamiento de la implementación de la fototaxis y de la plasticidad. Además, se estableció la base del algoritmo genético que sería común a las evoluciones de todos los agentes.
+
+Respecto a la función fitness implementada para su evolución se llegó a lo siguiente:
+El agente que se va a evaluar se situará en el punto (0,0) de un espacio bidimensional. Durante la ejecución, irán apareciendo 6 luces a una distancia mínima y máxima del agente, para dar un poco de juego y evitar que aparezcan o muy cerca o muy lejos.
+Cada luz estará encendida un número aleatorio de iteraciones, elegidas de dentro de un rango. En ningun momento puede haber más de una luz encendida al mismo tiempo. A partir de ahi, el agente recibe lecturas de la fuente de luz, si la ve, con sus sensores
+y se mueve de forma libre. En ningun momento se le especifica que tiene que acercarse a la luz. Se busca recompensar tres ocurrencias (Describir los tres puntos que se valoran en la fitness).
+Para evaluar lo bien que lo ha hecho el agente durante la iteración, se le dará una puntuación (entre 0 y 1) que será resultado de la siguiente fórmula.
+(explicar las fórmulas de la función fitness). Se calcula la fitness que el agente ha tenido para cada una de las 6 luces y la fitness resultado final es la media.
+
+Tras dejar el proceso de evolución durante un número considerable de generaciones, la fitness más alta conseguida fue de 0,80. Como era lo suficientemente alta y representaba bien el comportamiento esperado no se intentó mejorar (lo que habría
+supuesto una cantidad de tiempo extra y de la que no se disponía).
+
+Una vez con el agente entreado nos dispusimos a probarlo, para ver si su comportamiento era el correcto. Recordemos que el agente 0, como hemos visto en la función fitness, habia sido entrenado para acercarse a la luz encendida, permaneciendo el máximo tiempo
+posible en ella y manteniendo el mayor número de neuronas estables durante todo el desarrollo. Por tanto el experimento consistió en ejecutar ese agente entrenado en pruebas similares a la función fitness. (Volver a repetir la fitness).
+Aquí en esta gráfica podemos las trayectorias que hizo el agente y como estas representaban perfectamente un comportamiento como el esperado.
+
+Satisfechos con los resultados para los comportamientos de fototaxis y plasticidad, procedimos a implementar los agentes colectivos.
+
+AGENTES COLECTIVOS
+Los agentes colectivos van a presentar un comportamiento de fototaxis colectivo ademas de las capacidades de plasticidad presentes en los agentes individuales. Para la fototaxis colectiva, ademas de poder obtener lecturas de las luces
+mediante sensores luminosos, tal y como hacia el agente 0, tambien necesita obtener lecturas del resto de agentes. Asi, del mismo modo que las luces, cada agente emite con una cierta intensidad una señal luminosa, que los agentes puede leer a traves
+de unos sensores situados en la misma posicion que los sensores lumínicos y que funcionan exactamente de la misma manera.
+Contamos tambien con una simetría en las ganancias de los sensores y los motores.
+
+Recordemos que tenemos dos tipos de agentes colectivos, unos basados en la corriente aditiva y otros basados en la corriente estructural. Vamos a pasar por una serie de subapartados comparando ambos agentes al mismo tiempo, para observar mejor sus diferencias.
+Como los agentes de estos dos tipos necesitan la presentica de mas agentes tanto para evolucionar como para ser probados, se forman dos grupos de trabajo. Un grupo formado por 5 agentes de tipo 1 o aditivos, y un grupo formado por 5 agentes de tipo 2 o estructurales.
+
+Controladores:
+Como puede verse en estos esquemas de los controladores, sobre las 4 neuronas que ya estaban presentes en el agente individual se han añadido dos neuronas más, que se encargarán de las capacidades sociales.
+Puede verse la distinción entre el agente aditivo, donde la capa esta aparte y forma una red independiente de la anterior, y el agente estructural, donde la capa se ha añadido a la red ya existente y se ha interconectado con el resto de neuronas.
+
+Fitness:
+La función de evaluación es similar a la individual, solo que se añade la restricción colectiva y participan 5 agentes del tipo a evolucionar, en vez de uno solo. (Explicarla por encima y describir que se busca). (Explicar las funciones y las fitness obtenidas).
+Tras 10 horas de ejecución, se comprobó que ambas fitness habían convergido en los valores aquí presentes. Como nota, una fitness de estos valores no tiene porque considerarse mala, ya que la forma en la que se evalúa en la función fitness puede hacer imposible
+que la fitness sea extremadamente alta (por ejemplo si cuentas ciclos que esta cerca de la luz, nunca podra sacar un 100% ahi, porque siempre tendrá que hacer un pequeño desplazamiento hasta acercarse a ella).
+
+Experimentos:
+En los experimentos colectivos se ha buscado analizar las respuestas de los dos grupos de agentes a distintas pruebas, para poder comprar ambos y extraer conclusiones de los resultados. Primero se han comparado sus trayectorias, las cuales son un reflejo de
+la correcta realización de la fototaxis colectiva.
+Despues nos hemos interesado por analizar las activaciones neuronales para observar la existencia de algun tipo de patrón interesante.
+Como últimas pruebas, se ha aplicado ruido, primero a los sensores y luego en la plasticidad, para ver si la presencia de estas perturbaciones tiene algún efecto en la fitness de los grupos de agentes.
+
+En las trayectorias (las cuales han sido recortadas para centrar la vista en las partes significativa), podemos observar en las gráficas que ambos grupos de agentes respetan la fototaxis colectiva, con la
+restricción de no más de tres agentes a la vez en la luz. Sin embargo, las trayectorias de los agentes de tipo son más erráticas que las de tipo 2.
+
+Para las activaciones neuronales, debido a hay 5 agentes por grupo y cada uno cuenta con 6 neuronas, se ha seleccionado un agente de cada uno de los grupos para que actue como representante. Podemos observar en las gráficas,
+que los agentes de tipo 1 pierden la estabilidad con más frecuencia, pero se recuperar de forma rápida. Los agentes de tipo 2 presentan patrones de activación más estables y pierden la estabilidad con menos frecuencia, aunque tardan
+más en recuperarse y volver a la estabilidad. (NO SE SI METER LAS TABLAS DE LAS AREAS DE CUANDO SE SALEN FUERA, ME PARECE QUE DICEN POCO, NOMBRARLO DE ALGUNA FORMA?.)
+
+Para analizar la robustez en los sensores, se han sometido a ruido, alterando ligeramente la medición obtenida por los mismos durante la ejecución. Se han aplicado factores de ruido de 0.0, 0.2, 0.34 y 0.44, los cuales aumentan o disminuyen el valor
+de la medicion en esa proporción. Se han tomado 30 medidas de la fitness resultado, para cada grupo de agentes y para cada nivel de ruido. Los resultados se muestran en una gráfica de boxplot para comparar la distribución de los valores de fitness obtenidos.
+
+Par aañadir rigor a las conclusiones, se ha efectuado un test t de Student a las mediciones de fitness de los dos grupos, para comprobar si las medias de los resultados pueden considerarse iguales. En este tests, se comparan las mediciones de cada nivel de ruido con las obtenidas
+sin ruido. Los resultados los podemos observar en las tablas.
+Como podemos ver el p-valor siempre es superior a 0.05, por lo que, según las bases del t de Student, podemos afirmar la hipótesis de que las medias de las mediciones ante los distintos valores de ruido, puede considerarse iguales.
+
+Podemos concluir, que ambos tipos de agente responden de manera similar a las perturbaciones en los sensores.
+
+El siguiente experimento servira para analizar la robustez de los agentes ante perturbaciones en dos de los parametros internos que participan en la plasticidad: ritmo de platicidad y peso sináptico. (Explicar el resto de puntos de forma similar al punto anterior de los sensores).
+(De forma similar explicar los boxplots y las tablas de t-student).
+
+Podemos concluir, que las perturbaciones en los pesos sinapticos afectan negativamente a los dos agentes. Y las perturbaciones en los ritmos de plasticidad sólo parecen afectar a los agentes de tipo 2.
+
+CONCLUSIONES:
+--------------
+A la vista de los resultados, podemos concluir lo siguiente. Explicar las conclusiones como están en la memoria.
+
+(DIJISTE DE DECIR ALGO TAMBIÉN DE TRABAJO FUTURO¿?)
+
+
+
+
+
+
+CONCLUSIONES
+--------------
