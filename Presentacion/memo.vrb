@@ -1,6 +1,9 @@
-\frametitle{Cronograma}
-
-\end{frame}
-
-
-\end{document}
+\frametitle{}
+\begin{columns}
+    \begin{column}{0.47\textwidth}
+      \includegraphics[width=1.0\textwidth,height=.5\textheight]{Imagenes/CustomHomeostat}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=1.0\textwidth,height=.5\textheight]{Imagenes/Decaimiento}
+    \end{column}
+  \end{columns}

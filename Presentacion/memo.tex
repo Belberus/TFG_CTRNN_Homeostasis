@@ -36,31 +36,53 @@
 \section{Motivación}
 \begin{frame}{Motivación}
 \begin{itemize}
-  \item {Agentes basados en \textbf{hábitos} en lugar de en instrucciones.}
-  \item {Comportamiento de fototaxis.}
-  \item {Comportamientos sociales mediante \textbf{plasticidad}.}
-  \item {Comportamientos sociales entendidos como dos corrientes distintas:}
-  \begin{itemize}
-    \item {Entendidos desde una aproximación \textbf{aditiva}.}
-    \item {Entendidos desde una aproximación \textbf{estructurada}.}
-  \end{itemize}
+  \item {Agentes artificiales basados en \textbf{hábitos} en lugar de en \textbf{instrucciones}.}
+  \item {Sistemas o modelos automantenidos (\textbf{Sistema homeostático}).}
 \end{itemize}
+  \vspace{1cm}
+  \begin{columns}
+    \begin{column}{0.47\textwidth}
+      \includegraphics[width=0.9\textwidth,height=.5\textheight]{Imagenes/MirarCalle}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=0.9\textwidth,height=.5\textheight]{Imagenes/Camino}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Motivación}
+  \begin{itemize}
+    \item {Controladores con \textbf{plasticidad} neuronal.}
+    \item {Comportamientos sociales entendidos como dos corrientes distintas:}
+    \begin{itemize}
+      \item {Entendidos desde una aproximación \textbf{aditiva}.}
+      \item {Entendidos desde una aproximación \textbf{estructurada}.}
+    \end{itemize}
+  \end{itemize}
+  \vspace{1cm}
+  \begin{columns}
+    \begin{column}{0.47\textwidth}
+      \includegraphics[width=0.9\textwidth,height=.5\textheight]{Imagenes/Plasticidad}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+       \includegraphics[width=0.9\textwidth,height=.5\textheight]{Imagenes/Robots}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 \section{Objetivos}
 \begin{frame}{Objetivos}
   \begin{itemize}
-  \item {Estudiar las capacidades de adaptabilidad de los agentes artificiales ante cambios en las reglas del entorno.}
-  \item {Comprobar la robustez de los agentes en entornos sociales según las capacidades sociales se hayan programado como \textbf{aditivas} o \textbf{estructurales}.}
+  \item {Diseño de agentes artificiales homeostáticos capaces de desarrollar un comportamiento de \textbf{fototaxis}.}
+  \item {Comprobar la robustez de los agentes artificiales en entornos colectivos según las capacidades sociales se hayan desarrollado de manera \textbf{aditivas} o \textbf{estructurales}.}
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Objetivos: pasos seguidos}
   \begin{itemize}
   \item {Comprensión del concepto de homeostasis.}
-  \item {Diseño e implementación de un agente artificial con comportamientos de fototaxis y plasticidad.}
-  \item {Diseño e implementación de dos agentes artificales (uno según cada corriente) con comportamientos de fototaxis, plasticidad y sociales.}
-  \item {Comprobar la robustez de los agentes en entornos sociales según las capacidades sociales se hayan programado como \textbf{aditivas} o \textbf{estructurales}.}
+  \item {Diseño e implementación de un agente artificial con comportamientos de fototaxis individual y plasticidad.}
+  \item {Diseño e implementación de dos agentes artificiales (uno según cada corriente) con comportamientos de fototaxis colectiva y plasticidad.}
   \item {Ejecución de pruebas colectivas, análisis de los resultados y obtención de conclusiones.}
   \end{itemize}
 \end{frame}
@@ -77,16 +99,16 @@
         \end{itemize}
     \end{column}
     \begin{column}{0.5\textwidth}
-        \includegraphics[width=0.9\textwidth,height=.35\textheight]{Imagenes/AgentSchema}
+        \includegraphics[width=0.8\textwidth,height=.35\textheight]{Imagenes/AgentSchema}
     \end{column}
 \end{columns}
 \end{block}
 \end{frame}
 
 \begin{frame}{Modelo}
-  \begin{block}{Controlador basado en una CTRNN}
+  \begin{block}{Controlador basado en una Red Neuronal Recurrente de Tiempo Continuo (CTRNN)}
     \begin{equation*}
-    	\dot{y_{i}}= \frac{1}{\tau_{i}} * \left ( -y_{i}+\sum_{j=1}^{N}w_{ji}*\sigma \left ( y_{j} + \theta _{j} \right ) + I_{i} \right ) \qquad i =1,2,...,N
+    	\dot{y_{i}}= \frac{1}{\tau_{i}} * \left ( -y_{i}+\sum_{j=1}^{N}w_{ji}*\sigma \left ( g(y_{j} + \theta _{j}) \right ) + I_{i} \right ) \qquad i =1,2,...,N
     \end{equation*}
     \begin{columns}
       \begin{column}{0.47\textwidth}
@@ -94,14 +116,15 @@
             \item $\dot{y_{i}}$: nueva activación (estado) de la neurona i.
             \item $\tau_{i}$: constante de tiempo de la neurona i.
             \item $y_{i}$: activación actual de la neurona i.
-            \item $w_{ji}$: peso de la conexión entre las neuronas i y j.
+            \item $w_{ji}$: peso de la conexión (sináptico) entre las neuronas i y j.
           \end{itemize}
       \end{column}
       \begin{column}{0.5\textwidth}
         \begin{itemize}
           \item $\sigma ()$: función sigmoide de activación.
-          \item $y_{i}$: activación actual de la neurona j.
+          \item $y_{j}$: activación actual de la neurona j.
           \item $\theta_{j}$: bias de la neurona j.
+          \item g: ganancia de la neurona i.
           \item $I_{i}$: entrada de la neurona i.
         \end{itemize}
       \end{column}
@@ -112,12 +135,15 @@
 \begin{frame}{Modelo}
   \begin{columns}
     \begin{column}{0.47\textwidth}
+      \vspace{1cm}
       \begin{equation*}
         \sigma (x)=\frac{1}{1+e^{-x}}
       \end{equation*}
         \begin{itemize}
-          \item Recordamos: $x = y_{j} + \theta_{j}$.
+          \item Recordamos: $x = g(y_{j} + \theta_{j})$.
           \item Devuelve valores entre 0 y 1.
+          \item $\theta$ (bias): desplazamiento de la función.
+          \item g (ganancia): inclinación de la función.
         \end{itemize}
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -128,7 +154,7 @@
     \item Se han seleccionado estas redes porque:
     \begin{itemize}
       \item Permiten simular cualquier sistema dinámico.
-      \item Son las más fieles al funcionamiento biológico las activaciones neuronales.
+      \item Son las más fieles al funcionamiento biológico de las activaciones neuronales.
     \end{itemize}
   \end{itemize}
 \end{frame}
@@ -137,10 +163,11 @@
 \begin{block}{Homeostasis}
 \begin{itemize}
   \item "A Design for a Brain"(1952), William Ashby
+  \item Matematiza la homeostasis, la cual viene de la fisiología.
   \item Seres vivos tienen variables internas que deben mantenerse dentro de unos límites.
   \item Estado de supervivencia (Ultraestabilidad): ninguna variable se encuentra fuera de los límites de estabilidad.
   \item \textbf{Regulación homeostática}: mecanismos que permiten esta estabilidad.
-  \item Generación de comportamiento adaptativo autoinducido mediante el mantenimiento de la estabilidad interna.
+  \item Permite la generación de comportamiento adaptativo autoinducido mediante el mantenimiento de la estabilidad interna.
 \end{itemize}
 \end{block}
 \end{frame}
@@ -149,10 +176,11 @@
   \begin{columns}
     \begin{column}{0.5\textwidth}
         \begin{itemize}
-          \item Mecanismos homeostáticos en los agentes mediante plasticidad.
+          \item Se busca la estabilidad en la \textbf{conducta} de los agentes.
+          \item Mecanismos homeostáticos en los agentes: \textbf{plasticidad}.
           \item Modificación de los pesos sinápticos para fortalecer o debilitar una conexión interneuronal.
           \item Basados en la "Teoría Hebbiana" (1949), Donal Hebb.
-            \item La plasticidad de una neurona está basada en cuatro reglas:
+          \item La plasticidad de una de nuestras neuronas artificiales puede seguir cuatro reglas:
         \end{itemize}
     \end{column}
     \begin{column}{0.5\textwidth}
@@ -163,11 +191,13 @@
 \end{frame}
 
 \begin{frame}{Modelo}
+
 R0: Sin plasticidad:
 \begin{equation*}
  \centering
  \Delta w_{ij}= 0
 \end{equation*}
+
 R1: Aprendizaje Hebbiano acotado:
 \begin{equation*}
  \centering
@@ -185,16 +215,12 @@ R3: Potenciación o depresión amortiguadas de la neurona postsináptica cuando 
  \centering
  \Delta w_{ij}= \delta n_{ij} p_{j} z_{i} (z_{j} - z_{ij}^{o})
 \end{equation*}
-
-
 \end{frame}
 
-
-
 \begin{frame}{Modelo}
-\begin{block}{Algoritmo genético}
+\begin{block}{Computación evolutiva}
   \begin{itemize}
-    \item Utilizado para entrenar a los agentes (\textbf{Computación Evolutiva}).
+    \item Utilizado para entrenar a los agentes (\textbf{Algoritmo genético}).
     \item Agentes codificados como vector de reales y enteros.
   \end{itemize}
   \begin{figure}
@@ -205,7 +231,7 @@ R3: Potenciación o depresión amortiguadas de la neurona postsináptica cuando 
 \end{frame}
 
 \begin{frame}{Modelo}
-Funcionamiento:
+\onslide{Funcionamiento:}
   \begin{enumerate}
     \item Generación de \textbf{población inicial} (primera generación).
     \item Evaluación de la generación mediante la \textbf{función fitness}.
@@ -213,7 +239,8 @@ Funcionamiento:
     \item Creación de una nueva generación a partir de los individuos seleccionados (mediante \textbf{recombinaciones} y \textbf{mutaciones}).
     \item Volver al punto 2 hasta que el mejor individuo de la generación actual cumpla con las expectativas.
   \end{enumerate}
-  Algunas anotaciones sobre el algoritmo genético:
+
+  \onslide{Algunas anotaciones sobre el algoritmo genético:}
   \begin{itemize}
     \item Población inicial de \textbf{60} candidatos.
     \item Función de selección de torneo.
@@ -229,7 +256,7 @@ Funcionamiento:
     \item Agente con capacidades de fototaxis individual y plasticidad.
     \item Dos sensores luminosos y dos motores.
     \item Simetría en las ganancias de los motores y de los sensores.
-    \item Finalidad: comprobar el correcto funcionamiento de la implementación de la fototaxis y la plasticidad.
+    \item Prueba de concepto. Comprobar el correcto funcionamiento de la implementación de la fototaxis y la plasticidad.
   \end{itemize}
   \begin{figure}
     \centering
@@ -240,21 +267,22 @@ Funcionamiento:
 \subsection{Función fitness}
 \begin{frame}{Agente individual: Función fitness}
   \begin{itemize}
-    \item Un agente de tipo 0 situado en (0,0).
+    \item Un agente individual situado en (0,0).
     \item De forma progresiva aparecen 6 luces a una distancia determinada del agente.
-    \item Cada luz está encendida un número de ciclos aleatorio (dentro de un rango).
+    \item Cada luz está encendida un número de ciclos aleatorio [1200, 2000].
     \item Solamente una luz encendida al mismo tiempo.
-    \item Se busca recompensar:
-    \begin{itemize}
-      \item Que para cada luz, el agente acabe más cerca de la luz que cuando se encendió.
-      \item Que para cada luz, el agente permanezca alrededor de ella el mayor número de ciclos posibles.
-      \item Que para cada luz, el máximo número de neuronas del agente se mantengan estables.
-    \end{itemize}
+    \item La fitness está compuesta por tres factores:
+    \begin{enumerate}
+      \item \textbf{Fd}: Que para cada luz, el agente acabe más cerca de ella que cuando se encendió.
+      \item \textbf{Fp}: Que para cada luz, el agente permanezca alrededor de ella el mayor número de ciclos posibles.
+      \item \textbf{Fh}: Que para cada luz, el máximo número de neuronas del agente se mantengan estables.
+    \end{enumerate}
   \end{itemize}
 \end{frame}
 
 \begin{frame}{Agente individual: Función fitness}
 \begin{itemize}
+
   \item Máxima fitness alcanzada: \textbf{0.81}.
 \end{itemize}
 
@@ -263,6 +291,7 @@ Funcionamiento:
   fitness = (0.34Fd + 0.54Fp + 0.12Fh)
 \end{equation*}
 \noindent\rule{14cm}{0.4pt}
+
 \begin{equation*}
   Fd=\begin{cases}
 0.0 & \text{ IF }\quad D_{f} > D_{i}  \\
@@ -270,6 +299,7 @@ Funcionamiento:
 \end{cases}
 \end{equation*}
 \noindent\rule{14cm}{0.4pt}
+
 \begin{equation*}
 \centering
 Fp = \frac{\text{Nº ciclos cerca de la luz}}{\text{Nº de ciclos que la luz ha estado encendida}}
@@ -293,7 +323,7 @@ Fh = \frac{\text{Nº neuronas que no han perdido estabilidad}}{\text{Nº de neur
 \section{Agentes colectivos}
 \begin{frame}{Agentes colectivos}
   \begin{itemize}
-    \item Agentes con capacidades de fototaxis colectiva y plasticidad.
+    \item Agentes artificiales con capacidades de fototaxis colectiva y plasticidad.
     \item Restricción colectiva: no más de \textbf{3} agentes pueden estar situados cerca de una luz al mismo tiempo.
     \item Dos sensores luminosos, dos sensores de agentes y dos motores.
     \item Simetría en las ganancias de los motores y de los sensores.
@@ -325,19 +355,20 @@ Fh = \frac{\text{Nº neuronas que no han perdido estabilidad}}{\text{Nº de neur
   \begin{itemize}
     \item Un grupo de 5 agentes de tipo 1 o tipo 2 situado en torno al (0,0).
     \item De forma progresiva aparecen 6 luces a una distancia mínima del centroide de los agentes.
-    \item Cada luz está encendida un número de ciclos aleatorio (dentro de unos rangos).
+    \item Cada luz está encendida un número de ciclos aleatorio [1200, 2000].
     \item Solamente una luz encendida al mismo tiempo.
-    \item Se busca recompensar:
-    \begin{itemize}
-      \item Que para cada luz, los agentes acaben más cerca de ella que cuando se encenció.
-      \item Que para cada luz, se respete correctamente la restricción colectiva añadida.
-      \item Que para cada luz, cada agente mantenga estables el mayor número posible de neuronas.
-    \end{itemize}
+    \item La fitness está compuesta por tres factores:
+    \begin{enumerate}
+      \item \textbf{Fd}: Que para cada luz, los agentes acaben más cerca de ella que cuando se encendió.
+      \item \textbf{Fp colectiva}: Que para cada luz, se respete correctamente la restricción colectiva añadida.
+      \item \textbf{Fh}: Que para cada luz, cada agente mantenga estables el mayor número posible de neuronas.
+    \end{enumerate}
   \end{itemize}
 
 \end{frame}
 
 \begin{frame}{Agentes colectivos: Función fitness}
+
   \begin{columns}
       \begin{column}{0.5\textwidth}
         \begin{block}{Agente 1 (aditivo)}
@@ -355,11 +386,13 @@ Fh = \frac{\text{Nº neuronas que no han perdido estabilidad}}{\text{Nº de neur
       \end{column}
   \end{columns}
   \vspace{-0.2cm}
+
   \begin{equation*}
    \centering
   	fitness = (0.44Fd + 0.44Fp + 0.12Fh)
   \end{equation*}
   \noindent\rule{14cm}{0.4pt}
+
   \begin{equation*}
     Fd = \frac{\sum_{k=1}^{5}(\frac{\sum_{j=1}^{NºLuces}Fd_{kj}}{NºLuces})}{5} \qquad \Rightarrow \qquad Fd_{kj}=\begin{cases}
     0.0 & \text{ IF }\quad D_{fkj} > D_{ikj}  \\
@@ -367,11 +400,13 @@ Fh = \frac{\text{Nº neuronas que no han perdido estabilidad}}{\text{Nº de neur
     \end{cases}
   \end{equation*}
   \noindent\rule{14cm}{0.4pt}
+
   \begin{equation*}
    \centering
   		Fp = \frac{\sum_{i= 1}^{\text{NºLuces}}\text{Contador}_{i}}{(\sum_{i =1}^{\text{NºLuces}}\text{Ciclos encendida}_{i}) * 3}
   \end{equation*}
   \noindent\rule{14cm}{0.4pt}
+
   \begin{equation*}
    \centering
   		Fh = \frac{\sum_{i = 1}^{Nº Luces}\frac{\sum_{k=1}^{5}(\frac{\text{Nº neuronas que no han perdido estabilidad}_{ki}}{\text{Nº de neuronas del agente}_{ki}})}{5}}{Nº Luces}
@@ -381,10 +416,11 @@ Fh = \frac{\text{Nº neuronas que no han perdido estabilidad}}{\text{Nº de neur
 \subsection{Experimentos}
 \begin{frame}{Agentes colectivos: Experimentos}
 \begin{itemize}
+  \item Función similar función fitness colectiva.
   \item Se ha buscado comparar a los dos grupos de agentes respecto a:
   \begin{itemize}
     \item Sus trayectorias y el cumplimiento de la fototaxis colectiva.
-    \item Las activaciones de sus neuronas.
+    \item Posibles patrones de activación en sus neuronas.
     \item La robustez de los agentes ante ruido en los sensores.
     \item La robustez de los agentes ante ruido en la plasticidad.
   \end{itemize}
@@ -447,6 +483,10 @@ Fh = \frac{\text{Nº neuronas que no han perdido estabilidad}}{\text{Nº de neur
 \end{frame}
 
 \begin{frame}{Agentes colectivos: Experimentos (Robustez en los sensores)}
+  \begin{itemize}
+    \item Test \textbf{t de Student}.
+    \item Hipótesis: ¿Pueden considerarse las medias de las distribuciones iguales?
+  \end{itemize}
   \begin{columns}
     \begin{column}{0.47\textwidth}
       \begin{block}{Agente 1 (aditivo)}
@@ -510,6 +550,10 @@ Fh = \frac{\text{Nº neuronas que no han perdido estabilidad}}{\text{Nº de neur
 \end{frame}
 
 \begin{frame}{Agentes colectivos: Experimentos (Robustez en la plasticidad)}
+  \begin{itemize}
+    \item Test \textbf{t de Student}.
+    \item Hipótesis: ¿Pueden considerarse las medias de las distribuciones iguales?
+  \end{itemize}
   \begin{columns}
     \begin{column}{0.47\textwidth}
       \begin{block}{Agente 1 (aditivo)}
@@ -563,6 +607,10 @@ Fh = \frac{\text{Nº neuronas que no han perdido estabilidad}}{\text{Nº de neur
 \end{frame}
 
 \begin{frame}{Agentes colectivos: Experimentos (Robustez en la plasticidad)}
+  \begin{itemize}
+    \item Test \textbf{t de Student}.
+    \item Hipótesis: ¿Pueden considerarse las medias de las distribuciones iguales?
+  \end{itemize}
   \begin{columns}
     \begin{column}{0.47\textwidth}
       \begin{block}{Agente 1 (aditivo)}
@@ -601,7 +649,7 @@ Fh = \frac{\text{Nº neuronas que no han perdido estabilidad}}{\text{Nº de neur
 \begin{frame}{Conclusiones}
 \begin{block}{Comportamientos o conducta externa}
   \begin{enumerate}
-    \item Los mecanismos de doble red neurnal (Agente 1), hacen que tengan menor eficacia en el alcance de los objetivos (fitness sustancialmente menor).
+    \item Los mecanismos de doble red neuronal (Agente 1), hacen que tengan menor eficacia en el alcance de los objetivos (fitness sustancialmente menor).
     \item En los agentes de tipo 1, las trayectorias tienen un caracter más errático.
     \item Ambos tipos de agente no se ven afectados por las perturbaciones en los sensores.
   \end{enumerate}
@@ -614,24 +662,43 @@ Fh = \frac{\text{Nº neuronas que no han perdido estabilidad}}{\text{Nº de neur
     \item Las perturbaciones en los pesos sinápticos afectan significativamente al rendimiento de los dos agentes. Las estructuras neuronales obtenidas por evolución son sensibles a cambios.
     \item Los agentes de tipo 1 pierden estabilidad con más frecuencia pero se recuperan rápido. Los agentes de tipo 2 son más estables, pero tardan más ciclos en volver a la estabilidad cuando salen.
     \item Las perturbaciones en los ritmos de plasticidad afectan al rendimiento de los agentes de tipo 2, pero no a los de tipo 1. Aunque a nivel de comportamiento, el Agente 2 presente características más robustas,
-    mantiene un nivel crítico en su estrctura homeostática.
+    mantiene un nivel crítico en su estructura homeostática.
   \end{enumerate}
 \end{block}
 \end{frame}
 
 \begin{frame}{Conclusiones}
-\begin{block}{Trabajo futuro}
-
+\begin{block}{Discusión}
+  \vspace{-0.2cm}
+  \begin{itemize}
+    \item Debate de Psicología o Estudios del desarrollo cognitivo $=>$ abordarlo desde el \textbf{modelado cognitivo mínimo} (agentes artificiales).
+    \item Busca modelos que, con mínimos recursos, puedan materializar las bases de capacidades cognitivas más elaboradas.
+    \item Concentrarse en una versión simplificada de un fenómeno sirve como herramienta para pensar sobre dicho fenómeno.
+    \item \textbf{Metodología sintética}: uso de robots, modelos de simulación, bots, etc. como plataformas experimentales para la investigación sobre cuestiones relacionadas con la inteligencia.
+    \item Permite un acercamiento a cualquier ciencia desde la ingeniería. Útil para contrastar hipótesis.
+    \item \textbf{Modelos mínimos}: su simpleza permite que sean estudiados de manera completa.
+  \end{itemize}
 \end{block}
 \end{frame}
 
-
-
-{\setbeamercolor{palette primary}{fg=black, bg=yellow}
+{\setbeamercolor{palette primary}{fg=black, bg=white}
 \begin{frame}[standout]
   Muchas gracias por su atención.
 \end{frame}
 }
 
+\begin{frame}[fragile]{Cronograma}
+  \includegraphics[width=1.0\textwidth,height=.45\textheight]{Imagenes/Cronograma}
+\end{frame}
 
+\begin{frame}[fragile]{}
+  \begin{columns}
+    \begin{column}{0.47\textwidth}
+      \includegraphics[width=1.0\textwidth,height=.5\textheight]{Imagenes/CustomHomeostat}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=1.0\textwidth,height=.5\textheight]{Imagenes/Decaimiento}
+    \end{column}
+  \end{columns}
+\end{frame}
 \end{document}

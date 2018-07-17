@@ -164,6 +164,7 @@ la correcta realización de la fototaxis colectiva.
 Despues nos hemos interesado por analizar las activaciones neuronales para observar la existencia de algun tipo de patrón interesante.
 Como últimas pruebas, se ha aplicado ruido, primero a los sensores y luego en la plasticidad, para ver si la presencia de estas perturbaciones tiene algún efecto en la fitness de los grupos de agentes.
 
+Se han seleccionado dos de las trayectorias más representativas de los dos grupos de agentes.
 En las trayectorias (las cuales han sido recortadas para centrar la vista en las partes significativa), podemos observar en las gráficas que ambos grupos de agentes respetan la fototaxis colectiva, con la
 restricción de no más de tres agentes a la vez en la luz. Sin embargo, las trayectorias de los agentes de tipo son más erráticas que las de tipo 2.
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.30)  5 JUL 2018 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.5.30)  17 JUL 2018 10:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -975,392 +975,465 @@ File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/mat
 ) [3
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 48.
-LaTeX Font Info:    No file OMScmss.fd. on input line 48.
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 51.
+LaTeX Font Info:    No file OMScmss.fd. on input line 51.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 48.
+(Font)              for symbol `textbullet' on input line 51.
 
+<Imagenes/MirarCalle.png, id=96, 449.68pt x 337.26pt>
+File: Imagenes/MirarCalle.png Graphic file (type png)
+ <use Imagenes/MirarCalle.png>
+Package pdftex.def Info: Imagenes/MirarCalle.png used on input line 51.
+(pdftex.def)             Requested size: 168.49234pt x 114.07507pt.
+ <Imagenes/Camino.png, id=97, 380.403pt x 291.051pt>
+File: Imagenes/Camino.png Graphic file (type png)
+ <use Imagenes/Camino.png>
+Package pdftex.def Info: Imagenes/Camino.png used on input line 51.
+(pdftex.def)             Requested size: 179.25378pt x 114.07788pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 48--48
+Overfull \hbox (0.4pt too wide) in paragraph at lines 51--51
 [][]  
  []
 
 [4
 
-] [5
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/MirarCalle.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Camino.png>] <Imagenes/Plasticidad.jpg, id=104, 493.0922pt x 277.035pt>
+File: Imagenes/Plasticidad.jpg Graphic file (type jpg)
+ <use Imagenes/Plasticidad.jpg>
+Package pdftex.def Info: Imagenes/Plasticidad.jpg used on input line 71.
+(pdftex.def)             Requested size: 168.49933pt x 114.07967pt.
+ <Imagenes/Robots.jpg, id=105, 481.8pt x 361.35pt>
+File: Imagenes/Robots.jpg Graphic file (type jpg)
+ <use Imagenes/Robots.jpg>
+Package pdftex.def Info: Imagenes/Robots.jpg used on input line 71.
+(pdftex.def)             Requested size: 179.24832pt x 114.07948pt.
 
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 56--56
+Overfull \hbox (0.4pt too wide) in paragraph at lines 71--71
 [][]  
  []
 
-[6
+
+Overfull \vbox (12.64246pt too high) detected at line 71
+ []
+
+[5
+
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Plasticidad.jpg> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Robots.jpg>] [6
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 66--66
+Overfull \hbox (0.4pt too wide) in paragraph at lines 79--79
 [][]  
  []
 
 [7
 
-] [8
+]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 88--88
+[][]  
+ []
 
-] <Imagenes/AgentSchema.png, id=123, 755.82375pt x 473.77pt>
+[8
+
+] [9
+
+] <Imagenes/AgentSchema.png, id=132, 755.82375pt x 473.77pt>
 File: Imagenes/AgentSchema.png Graphic file (type png)
  <use Imagenes/AgentSchema.png>
-Package pdftex.def Info: Imagenes/AgentSchema.png used on input line 84.
-(pdftex.def)             Requested size: 179.24474pt x 79.85306pt.
+Package pdftex.def Info: Imagenes/AgentSchema.png used on input line 106.
+(pdftex.def)             Requested size: 159.32738pt x 79.85306pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 84--84
+Overfull \hbox (0.4pt too wide) in paragraph at lines 106--106
 [][]  
- []
-
-[9
-
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/AgentSchema.png>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 110--110
-[][]  
- []
-
-
-Overfull \vbox (16.64555pt too high) detected at line 110
  []
 
 [10
 
-] <Imagenes/Sigmoid.png, id=139, 656.4525pt x 467.7475pt>
-File: Imagenes/Sigmoid.png Graphic file (type png)
- <use Imagenes/Sigmoid.png>
-Package pdftex.def Info: Imagenes/Sigmoid.png used on input line 134.
-(pdftex.def)             Requested size: 199.17097pt x 114.07454pt.
-
-Overfull \hbox (0.4pt too wide) in paragraph at lines 134--134
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/AgentSchema.png>]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 133--133
 [][]  
+ []
+
+
+Overfull \vbox (25.85805pt too high) detected at line 133
  []
 
 [11
 
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Sigmoid.png>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 146--146
+] <Imagenes/Sigmoid.png, id=148, 656.4525pt x 467.7475pt>
+File: Imagenes/Sigmoid.png Graphic file (type png)
+ <use Imagenes/Sigmoid.png>
+Package pdftex.def Info: Imagenes/Sigmoid.png used on input line 160.
+(pdftex.def)             Requested size: 199.17097pt x 114.07454pt.
+
+Overfull \hbox (0.4pt too wide) in paragraph at lines 160--160
 [][]  
+ []
+
+
+Overfull \vbox (21.34648pt too high) detected at line 160
  []
 
 [12
 
-] <Imagenes/Neurona.jpg, id=151, 492.84125pt x 381.425pt>
-File: Imagenes/Neurona.jpg Graphic file (type jpg)
- <use Imagenes/Neurona.jpg>
-Package pdftex.def Info: Imagenes/Neurona.jpg used on input line 163.
-(pdftex.def)             Requested size: 159.33676pt x 114.07916pt.
-
-Overfull \hbox (0.4pt too wide) in paragraph at lines 163--163
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Sigmoid.png>]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 173--173
 [][]  
  []
 
 [13
 
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Neurona.jpg>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 190--190
+] <Imagenes/Neurona.jpg, id=161, 492.84125pt x 381.425pt>
+File: Imagenes/Neurona.jpg Graphic file (type jpg)
+ <use Imagenes/Neurona.jpg>
+Package pdftex.def Info: Imagenes/Neurona.jpg used on input line 191.
+(pdftex.def)             Requested size: 159.33676pt x 114.07916pt.
+
+Overfull \hbox (0.4pt too wide) in paragraph at lines 191--191
 [][]  
  []
 
 
-Overfull \vbox (10.24365pt too high) detected at line 190
+Overfull \vbox (5.45914pt too high) detected at line 191
  []
 
 [14
 
-] <Imagenes/vector0.png, id=163, 805.0075pt x 202.7575pt>
-File: Imagenes/vector0.png Graphic file (type png)
- <use Imagenes/vector0.png>
-Package pdftex.def Info: Imagenes/vector0.png used on input line 205.
-(pdftex.def)             Requested size: 278.8334pt x 68.4478pt.
-
-Overfull \hbox (0.4pt too wide) in paragraph at lines 205--205
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Neurona.jpg>]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 218--218
 [][]  
+ []
+
+
+Overfull \vbox (15.71866pt too high) detected at line 218
  []
 
 [15
 
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/vector0.png>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 223--223
+] <Imagenes/vector0.png, id=172, 805.0075pt x 202.7575pt>
+File: Imagenes/vector0.png Graphic file (type png)
+ <use Imagenes/vector0.png>
+Package pdftex.def Info: Imagenes/vector0.png used on input line 231.
+(pdftex.def)             Requested size: 278.8334pt x 68.4478pt.
+
+Overfull \hbox (0.4pt too wide) in paragraph at lines 231--231
 [][]  
- []
-
-
-Overfull \vbox (26.86992pt too high) detected at line 223
  []
 
 [16
 
-] [17
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/vector0.png>]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 250--250
+[][]  
+ []
 
-] <Imagenes/Agent0Controller.png, id=181, 342.27875pt x 522.95375pt>
+
+Overfull \vbox (26.86992pt too high) detected at line 250
+ []
+
+[17
+
+] [18
+
+] <Imagenes/Agent0Controller.png, id=190, 342.27875pt x 522.95375pt>
 File: Imagenes/Agent0Controller.png Graphic file (type png)
  <use Imagenes/Agent0Controller.png>
-Package pdftex.def Info: Imagenes/Agent0Controller.png used on input line 238.
+Package pdftex.def Info: Imagenes/Agent0Controller.png used on input line 265.
 (pdftex.def)             Requested size: 99.58209pt x 114.07666pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 238--238
+Overfull \hbox (0.4pt too wide) in paragraph at lines 265--265
 [][]  
  []
 
 
-Overfull \vbox (23.00635pt too high) detected at line 238
- []
-
-[18
-
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agent0Controller.png>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 254--254
-[][]  
+Overfull \vbox (23.00635pt too high) detected at line 265
  []
 
 [19
 
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 283--283
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agent0Controller.png>]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 281--281
 [][]  
- []
-
-
-Overfull \vbox (24.65598pt too high) detected at line 283
  []
 
 [20
 
-] <Imagenes/Agente0Trayectoria.png, id=199, 700.11563pt x 422.32782pt>
-File: Imagenes/Agente0Trayectoria.png Graphic file (type png)
- <use Imagenes/Agente0Trayectoria.png>
-Package pdftex.def Info: Imagenes/Agente0Trayectoria.png used on input line 291.
-(pdftex.def)             Requested size: 278.83412pt x 159.71292pt.
-
-Overfull \hbox (0.4pt too wide) in paragraph at lines 291--291
+]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 313--313
 [][]  
+ []
+
+
+Overfull \vbox (53.88583pt too high) detected at line 313
  []
 
 [21
 
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agente0Trayectoria.png>] [22
-
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 303--303
-[][]  
- []
-
-[23
-
-] <Imagenes/Agent1Controller.png, id=216, 703.62875pt x 573.14125pt>
-File: Imagenes/Agent1Controller.png Graphic file (type png)
- <use Imagenes/Agent1Controller.png>
-Package pdftex.def Info: Imagenes/Agent1Controller.png used on input line 321.
-(pdftex.def)             Requested size: 159.3296pt x 114.07526pt.
- <Imagenes/Agent2Controller.png, id=217, 583.17876pt x 522.95375pt>
-File: Imagenes/Agent2Controller.png Graphic file (type png)
- <use Imagenes/Agent2Controller.png>
-Package pdftex.def Info: Imagenes/Agent2Controller.png used on input line 321.
-(pdftex.def)             Requested size: 159.32907pt x 114.07666pt.
+] <Imagenes/Agente0Trayectoria.png, id=208, 700.11563pt x 422.32782pt>
+File: Imagenes/Agente0Trayectoria.png Graphic file (type png)
+ <use Imagenes/Agente0Trayectoria.png>
+Package pdftex.def Info: Imagenes/Agente0Trayectoria.png used on input line 321.
+(pdftex.def)             Requested size: 278.83412pt x 159.71292pt.
 
 Overfull \hbox (0.4pt too wide) in paragraph at lines 321--321
 [][]  
  []
 
+[22
+
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agente0Trayectoria.png>] [23
+
+]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 333--333
+[][]  
+ []
+
 [24
 
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agent1Controller.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agent2Controller.png>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 338--338
+] <Imagenes/Agent1Controller.png, id=225, 703.62875pt x 573.14125pt>
+File: Imagenes/Agent1Controller.png Graphic file (type png)
+ <use Imagenes/Agent1Controller.png>
+Package pdftex.def Info: Imagenes/Agent1Controller.png used on input line 351.
+(pdftex.def)             Requested size: 159.3296pt x 114.07526pt.
+ <Imagenes/Agent2Controller.png, id=226, 583.17876pt x 522.95375pt>
+File: Imagenes/Agent2Controller.png Graphic file (type png)
+ <use Imagenes/Agent2Controller.png>
+Package pdftex.def Info: Imagenes/Agent2Controller.png used on input line 351.
+(pdftex.def)             Requested size: 159.32907pt x 114.07666pt.
+
+Overfull \hbox (0.4pt too wide) in paragraph at lines 351--351
 [][]  
  []
 
 [25
 
-]
-
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 379.
-
-
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 379.
-
-
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 379.
-
-
-LaTeX Warning: Command \textordmasculine invalid in math mode on input line 379.
-
-
-Overfull \hbox (0.4pt too wide) in paragraph at lines 379--379
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agent1Controller.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agent2Controller.png>]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 368--368
 [][]  
- []
-
-
-Overfull \vbox (30.18823pt too high) detected at line 379
  []
 
 [26
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 392--392
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 414.
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 414.
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 414.
+
+
+LaTeX Warning: Command \textordmasculine invalid in math mode on input line 414.
+
+
+Overfull \hbox (0.4pt too wide) in paragraph at lines 414--414
 [][]  
+ []
+
+
+Overfull \vbox (80.53302pt too high) detected at line 414
  []
 
 [27
 
-] <Imagenes/Agente1Trayectoria.png, id=242, 692.5875pt x 415.5525pt>
-File: Imagenes/Agente1Trayectoria.png Graphic file (type png)
- <use Imagenes/Agente1Trayectoria.png>
-Package pdftex.def Info: Imagenes/Agente1Trayectoria.png used on input line 409.
-(pdftex.def)             Requested size: 219.08563pt x 136.89178pt.
-
-Overfull \hbox (19.91634pt too wide) in paragraph at lines 409--409
-[][]  
- []
-
-<Imagenes/Agente2Trayectoria.png, id=243, 696.35156pt x 413.29407pt>
-File: Imagenes/Agente2Trayectoria.png Graphic file (type png)
- <use Imagenes/Agente2Trayectoria.png>
-Package pdftex.def Info: Imagenes/Agente2Trayectoria.png used on input line 409.
-(pdftex.def)             Requested size: 219.08626pt x 136.89827pt.
-
-Overfull \hbox (19.91696pt too wide) in paragraph at lines 409--409
-[][]  
- []
-
-
-Overfull \hbox (0.4pt too wide) in paragraph at lines 409--409
+]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 428--428
 [][]  
  []
 
 [28
 
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agente1Trayectoria.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agente2Trayectoria.png>] <Imagenes/Neurona0.png, id=251, 602.25pt x 451.6875pt>
-File: Imagenes/Neurona0.png Graphic file (type png)
- <use Imagenes/Neurona0.png>
-Package pdftex.def Info: Imagenes/Neurona0.png used on input line 426.
-(pdftex.def)             Requested size: 187.21938pt x 136.8995pt.
- <Imagenes/Neurona4.png, id=252, 602.25pt x 451.6875pt>
-File: Imagenes/Neurona4.png Graphic file (type png)
- <use Imagenes/Neurona4.png>
-Package pdftex.def Info: Imagenes/Neurona4.png used on input line 426.
-(pdftex.def)             Requested size: 199.16583pt x 136.8995pt.
+] <Imagenes/Agente1Trayectoria.png, id=251, 692.5875pt x 415.5525pt>
+File: Imagenes/Agente1Trayectoria.png Graphic file (type png)
+ <use Imagenes/Agente1Trayectoria.png>
+Package pdftex.def Info: Imagenes/Agente1Trayectoria.png used on input line 445.
+(pdftex.def)             Requested size: 219.08563pt x 136.89178pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 426--426
+Overfull \hbox (19.91634pt too wide) in paragraph at lines 445--445
+[][]  
+ []
+
+<Imagenes/Agente2Trayectoria.png, id=252, 696.35156pt x 413.29407pt>
+File: Imagenes/Agente2Trayectoria.png Graphic file (type png)
+ <use Imagenes/Agente2Trayectoria.png>
+Package pdftex.def Info: Imagenes/Agente2Trayectoria.png used on input line 445.
+(pdftex.def)             Requested size: 219.08626pt x 136.89827pt.
+
+Overfull \hbox (19.91696pt too wide) in paragraph at lines 445--445
+[][]  
+ []
+
+
+Overfull \hbox (0.4pt too wide) in paragraph at lines 445--445
 [][]  
  []
 
 [29
 
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Neurona4.png>] <Imagenes/BoxPlot1.png, id=260, 602.25pt x 451.6875pt>
-File: Imagenes/BoxPlot1.png Graphic file (type png)
- <use Imagenes/BoxPlot1.png>
-Package pdftex.def Info: Imagenes/BoxPlot1.png used on input line 447.
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agente1Trayectoria.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Agente2Trayectoria.png>] <Imagenes/Neurona0.png, id=260, 602.25pt x 451.6875pt>
+File: Imagenes/Neurona0.png Graphic file (type png)
+ <use Imagenes/Neurona0.png>
+Package pdftex.def Info: Imagenes/Neurona0.png used on input line 462.
 (pdftex.def)             Requested size: 187.21938pt x 136.8995pt.
- <Imagenes/BoxPlot2.png, id=261, 602.25pt x 451.6875pt>
-File: Imagenes/BoxPlot2.png Graphic file (type png)
- <use Imagenes/BoxPlot2.png>
-Package pdftex.def Info: Imagenes/BoxPlot2.png used on input line 447.
+ <Imagenes/Neurona4.png, id=261, 602.25pt x 451.6875pt>
+File: Imagenes/Neurona4.png Graphic file (type png)
+ <use Imagenes/Neurona4.png>
+Package pdftex.def Info: Imagenes/Neurona4.png used on input line 462.
 (pdftex.def)             Requested size: 199.16583pt x 136.8995pt.
 
-Overfull \hbox (0.4pt too wide) in paragraph at lines 447--447
+Overfull \hbox (0.4pt too wide) in paragraph at lines 462--462
 [][]  
- []
-
-
-Overfull \vbox (27.90007pt too high) detected at line 447
  []
 
 [30
 
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlot1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlot2.png>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 482--482
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Neurona0.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Neurona4.png>] <Imagenes/BoxPlot1.png, id=269, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlot1.png Graphic file (type png)
+ <use Imagenes/BoxPlot1.png>
+Package pdftex.def Info: Imagenes/BoxPlot1.png used on input line 483.
+(pdftex.def)             Requested size: 187.21938pt x 136.8995pt.
+ <Imagenes/BoxPlot2.png, id=270, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlot2.png Graphic file (type png)
+ <use Imagenes/BoxPlot2.png>
+Package pdftex.def Info: Imagenes/BoxPlot2.png used on input line 483.
+(pdftex.def)             Requested size: 199.16583pt x 136.8995pt.
+
+Overfull \hbox (0.4pt too wide) in paragraph at lines 483--483
 [][]  
+ []
+
+
+Overfull \vbox (27.90007pt too high) detected at line 483
  []
 
 [31
 
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 492--492
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlot1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlot2.png>]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 522--522
 [][]  
  []
 
 [32
 
-] <Imagenes/BoxPlotNP1.png, id=280, 602.25pt x 451.6875pt>
-File: Imagenes/BoxPlotNP1.png Graphic file (type png)
- <use Imagenes/BoxPlotNP1.png>
-Package pdftex.def Info: Imagenes/BoxPlotNP1.png used on input line 510.
-(pdftex.def)             Requested size: 187.21938pt x 136.8995pt.
- <Imagenes/BoxPlotNP2.png, id=281, 602.25pt x 451.6875pt>
-File: Imagenes/BoxPlotNP2.png Graphic file (type png)
- <use Imagenes/BoxPlotNP2.png>
-Package pdftex.def Info: Imagenes/BoxPlotNP2.png used on input line 510.
-(pdftex.def)             Requested size: 199.16583pt x 136.8995pt.
-
-Overfull \hbox (0.4pt too wide) in paragraph at lines 510--510
+]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 532--532
 [][]  
  []
 
 [33
 
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlotNP1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlotNP2.png>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 545--545
+] <Imagenes/BoxPlotNP1.png, id=289, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlotNP1.png Graphic file (type png)
+ <use Imagenes/BoxPlotNP1.png>
+Package pdftex.def Info: Imagenes/BoxPlotNP1.png used on input line 550.
+(pdftex.def)             Requested size: 187.21938pt x 136.8995pt.
+ <Imagenes/BoxPlotNP2.png, id=290, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlotNP2.png Graphic file (type png)
+ <use Imagenes/BoxPlotNP2.png>
+Package pdftex.def Info: Imagenes/BoxPlotNP2.png used on input line 550.
+(pdftex.def)             Requested size: 199.16583pt x 136.8995pt.
+
+Overfull \hbox (0.4pt too wide) in paragraph at lines 550--550
 [][]  
  []
 
 [34
 
-] <Imagenes/BoxPlotNW1.png, id=294, 602.25pt x 451.6875pt>
-File: Imagenes/BoxPlotNW1.png Graphic file (type png)
- <use Imagenes/BoxPlotNW1.png>
-Package pdftex.def Info: Imagenes/BoxPlotNW1.png used on input line 563.
-(pdftex.def)             Requested size: 187.21938pt x 136.8995pt.
- <Imagenes/BoxPlotNW2.png, id=295, 602.25pt x 451.6875pt>
-File: Imagenes/BoxPlotNW2.png Graphic file (type png)
- <use Imagenes/BoxPlotNW2.png>
-Package pdftex.def Info: Imagenes/BoxPlotNW2.png used on input line 563.
-(pdftex.def)             Requested size: 199.16583pt x 136.8995pt.
-
-Overfull \hbox (0.4pt too wide) in paragraph at lines 563--563
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlotNP1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlotNP2.png>]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 589--589
 [][]  
  []
 
 [35
 
- </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlotNW1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlotNW2.png>]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 598--598
+] <Imagenes/BoxPlotNW1.png, id=303, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlotNW1.png Graphic file (type png)
+ <use Imagenes/BoxPlotNW1.png>
+Package pdftex.def Info: Imagenes/BoxPlotNW1.png used on input line 607.
+(pdftex.def)             Requested size: 187.21938pt x 136.8995pt.
+ <Imagenes/BoxPlotNW2.png, id=304, 602.25pt x 451.6875pt>
+File: Imagenes/BoxPlotNW2.png Graphic file (type png)
+ <use Imagenes/BoxPlotNW2.png>
+Package pdftex.def Info: Imagenes/BoxPlotNW2.png used on input line 607.
+(pdftex.def)             Requested size: 199.16583pt x 136.8995pt.
+
+Overfull \hbox (0.4pt too wide) in paragraph at lines 607--607
 [][]  
  []
 
 [36
 
-] [37
-
-]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 609--609
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlotNW1.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/BoxPlotNW2.png>]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 646--646
 [][]  
  []
 
-[38
+[37
+
+] [38
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 620--620
+Overfull \hbox (0.4pt too wide) in paragraph at lines 657--657
 [][]  
  []
 
 [39
 
 ]
-Overfull \hbox (0.4pt too wide) in paragraph at lines 626--626
+Overfull \hbox (0.4pt too wide) in paragraph at lines 668--668
 [][]  
  []
 
 [40
 
-] [41
+]
+Overfull \hbox (0.4pt too wide) in paragraph at lines 682--682
+[][]  
+ []
+
+
+Overfull \vbox (31.55864pt too high) detected at line 682
+ []
+
+[41
+
+] [42
 
 ]
+\openout4 = `memo.vrb'.
+
+ (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/memo.vrb <Imagenes/Cronograma.png, id=344, 887.56593pt x 169.38281pt>
+File: Imagenes/Cronograma.png Graphic file (type png)
+ <use Imagenes/Cronograma.png>
+Package pdftex.def Info: Imagenes/Cronograma.png used on input line 2.
+(pdftex.def)             Requested size: 398.33107pt x 102.67462pt.
+)
+Overfull \hbox (0.4pt too wide) in paragraph at lines 692--692
+[][]  
+ []
+
+[43
+
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Cronograma.png>]
+\openout4 = `memo.vrb'.
+
+ (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/memo.vrb <Imagenes/CustomHomeostat.png, id=351, 597.23125pt x 448.67625pt>
+File: Imagenes/CustomHomeostat.png Graphic file (type png)
+ <use Imagenes/CustomHomeostat.png>
+Package pdftex.def Info: Imagenes/CustomHomeostat.png used on input line 4.
+(pdftex.def)             Requested size: 187.21753pt x 114.07889pt.
+ <Imagenes/Decaimiento.png, id=352, 660.4675pt x 450.68375pt>
+File: Imagenes/Decaimiento.png Graphic file (type png)
+ <use Imagenes/Decaimiento.png>
+Package pdftex.def Info: Imagenes/Decaimiento.png used on input line 7.
+(pdftex.def)             Requested size: 199.16972pt x 114.07353pt.
+) [44
+
+ </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/CustomHomeostat.png> </home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/Imagenes/Decaimiento.png>]
 \tf@nav=\write6
 \openout6 = `memo.nav'.
 
@@ -1370,13 +1443,13 @@ Overfull \hbox (0.4pt too wide) in paragraph at lines 626--626
 \tf@snm=\write8
 \openout8 = `memo.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 637.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 637.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 704.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 704.
  (/home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/memo.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 637.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 637.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 704.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 704.
 Package rerunfilecheck Info: File `memo.out' has not changed.
-(rerunfilecheck)             Checksum: FAF75E61F990F495A750B21656670AA0;672.
+(rerunfilecheck)             Checksum: 643DD876155A50A85F25AED4DE046831;672.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1385,21 +1458,21 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 637.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 704.
  ) 
 Here is how much of TeX's memory you used:
- 31531 strings out of 493029
- 749936 string characters out of 6136234
+ 31593 strings out of 493029
+ 751463 string characters out of 6136234
  940379 words of memory out of 5000000
- 34279 multiletter control sequences out of 15000+600000
+ 34323 multiletter control sequences out of 15000+600000
  13512 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,13n,95p,1750b,920s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/memo.pdf (41 pages, 917299 bytes).
+Output written on /home/belbus/GitHub/tfg/TrabajoFinDeGrado/Presentacion/memo.pdf (44 pages, 1421387 bytes).
 PDF statistics:
- 395 PDF objects out of 1000 (max. 8388607)
- 296 compressed objects within 3 object streams
- 95 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 420 PDF objects out of 1000 (max. 8388607)
+ 310 compressed objects within 4 object streams
+ 101 named destinations out of 1000 (max. 500000)
+ 269 words of extra memory for PDF output out of 10000 (max. 10000000)
 
